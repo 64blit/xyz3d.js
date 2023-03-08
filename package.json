@@ -1,0 +1,20 @@
+{
+  "name": "Z3D.js",
+  "version": "1.0.0",
+  "description": "An extensible Three.js, flat file cms, with a 3D interface.",
+  "repository": "64blit/Z3D.js",
+  "files": [
+    "./Z3D.umd.js",
+    "./Z3D.es.js"
+  ],
+  "main": "./Z3D.es.js",
+  "module": "./Z3D.umd.js",
+  "keywords": [
+    "3d",
+    "cms",
+    "three.js",
+    "webgl"
+  ],
+  "author": "64blit",
+  "license": ""
+}
