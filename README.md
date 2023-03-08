@@ -1,4 +1,4 @@
-# Z3D.js
+# xyz3d-cms
 
 An extensible flat file cms with a 3D interface built on Three.js. The easiest way to create fully 3D websites.
 
@@ -9,7 +9,7 @@ Features:
 - Clickable models that open iframe or popup window
 - JSON file for scene configuration and loading dynamic lights/hdr environments
 - Custom Blender plugin for rapid development
-- Smooth 3D scene navigation with JS APIs - "z3d.changeSceneZoneByName('HomePage')"
+- Smooth 3D scene navigation with JS APIs - "XYZ3d.changeSceneZoneByName('HomePage')"
 - Built in post processing
 - Mobile devices supported + gryo based movement
 - Easy fallback method for legacy devices
@@ -21,7 +21,7 @@ Features:
 
 ### Table of Contents
 
-- [new Z3D()][1]
+- [new XYZ3d()][1]
   - [Parameters][2]
   - [Examples][3]
 - [changeSceneZoneByName('')][4]
@@ -49,42 +49,42 @@ Features:
   - [Parameters][26]
   - [Examples][27]
 
-## new Z3D(z3dConfig)
+## new XYZ3d(XYZ3dConfig)
 
 ### Parameters
 
-- `z3dConfig` **[Object][28]**&#x20;
+- `XYZ3dConfig` **[Object][28]**&#x20;
 
-  - `z3dConfig.debug` **[Boolean][29]** Turns on or off debugging which ads an AxisHelper to the scene and logs more details of the scene, this introduces significant startup lag. Default is false.
-  - `z3dConfig.jsonPath` **[String][30]** The path of the 3D scene created with the corresponding plugin.
-  - `z3dConfig.domElements` **[Object][28]** All html IDs required to link the Threejs componenets.
+  - `XYZ3dConfig.debug` **[Boolean][29]** Turns on or off debugging which ads an AxisHelper to the scene and logs more details of the scene, this introduces significant startup lag. Default is false.
+  - `XYZ3dConfig.jsonPath` **[String][30]** The path of the 3D scene created with the corresponding plugin.
+  - `XYZ3dConfig.domElements` **[Object][28]** All html IDs required to link the Threejs componenets.
 
-    - `z3dConfig.domElements.canvasID` **[String][30]** The rendering canvas.
-    - `z3dConfig.domElements.iframeID` **[String][30]** The parent dom object for the content iframe.
-    - `z3dConfig.domElements.loadingScreenId` **[String][30]** The dom object to destroy once the 3d scene is loaded.
+    - `XYZ3dConfig.domElements.canvasID` **[String][30]** The rendering canvas.
+    - `XYZ3dConfig.domElements.iframeID` **[String][30]** The parent dom object for the content iframe.
+    - `XYZ3dConfig.domElements.loadingScreenId` **[String][30]** The dom object to destroy once the 3d scene is loaded.
 
-  - `z3dConfig.camera` **[Object][28]** The object containing camera options.
+  - `XYZ3dConfig.camera` **[Object][28]** The object containing camera options.
 
-    - `z3dConfig.camera.orbit` **[Boolean][29]** Turns on or off orbit camera controls. When enabled, gyro and followMouse is disabled automatically. Default is false.
-    - `z3dConfig.camera.followMouse` **[Boolean][29]** Turns on or off camera movement based on hovering pointer position, only for desktop. Default is true.
-    - `z3dConfig.camera.gyro` **[Boolean][29]** Turns on or off camera movement based on gyroscope movement, only for mobile.
-    - `z3dConfig.camera.fov` **[String][30]** Controls camera fov, default is 30.
-    - `z3dConfig.camera.postEffects` **[Object][28]** Controls post effects.
+    - `XYZ3dConfig.camera.orbit` **[Boolean][29]** Turns on or off orbit camera controls. When enabled, gyro and followMouse is disabled automatically. Default is false.
+    - `XYZ3dConfig.camera.followMouse` **[Boolean][29]** Turns on or off camera movement based on hovering pointer position, only for desktop. Default is true.
+    - `XYZ3dConfig.camera.gyro` **[Boolean][29]** Turns on or off camera movement based on gyroscope movement, only for mobile.
+    - `XYZ3dConfig.camera.fov` **[String][30]** Controls camera fov, default is 30.
+    - `XYZ3dConfig.camera.postEffects` **[Object][28]** Controls post effects.
 
-      - `z3dConfig.camera.postEffects.enabled` **[Boolean][29]** Turns on or off post effects. Default is true.
-      - `z3dConfig.camera.postEffects.bloom` **[Object][28]** Controls bloom post effects.
+      - `XYZ3dConfig.camera.postEffects.enabled` **[Boolean][29]** Turns on or off post effects. Default is true.
+      - `XYZ3dConfig.camera.postEffects.bloom` **[Object][28]** Controls bloom post effects.
 
-        - `z3dConfig.camera.postEffects.bloom.enabled` **[Boolean][29]** Turns on or off bloom post effects. Default is true.
+        - `XYZ3dConfig.camera.postEffects.bloom.enabled` **[Boolean][29]** Turns on or off bloom post effects. Default is true.
 
-        - `z3dConfig.camera.postEffects.bloom.exposure` **[Number][31]** Controls bloom post effects exposure. Default is 1.1.
-        - `z3dConfig.camera.postEffects.bloom.threshold` **[Number][31]** Controls bloom post effects threshold. Default is 0.1.
-        - `z3dConfig.camera.postEffects.bloom.strength` **[Number][31]** Controls bloom post effects strength. Default is 2.
-        - `z3dConfig.camera.postEffects.bloom.radius` **[Number][31]** Controls bloom post effects radius. Default is 1.
+        - `XYZ3dConfig.camera.postEffects.bloom.exposure` **[Number][31]** Controls bloom post effects exposure. Default is 1.1.
+        - `XYZ3dConfig.camera.postEffects.bloom.threshold` **[Number][31]** Controls bloom post effects threshold. Default is 0.1.
+        - `XYZ3dConfig.camera.postEffects.bloom.strength` **[Number][31]** Controls bloom post effects strength. Default is 2.
+        - `XYZ3dConfig.camera.postEffects.bloom.radius` **[Number][31]** Controls bloom post effects radius. Default is 1.
 
 ### Examples
 
 ```javascript
-const ZED = new Z3D({
+const ZED = new XYZ3d({
 	jsonPath: '../../assets/crypto_scene.json',
 	debug: false,
 	domElements: {
@@ -229,7 +229,7 @@ such as a "Home Page," or an "Ecommerce Storefront"
 ### Examples
 
 ```javascript
-z3d.changeSceneZoneByName('About')
+XYZ3d.changeSceneZoneByName('About')
 ```
 
 ## nextSceneZone
@@ -239,7 +239,7 @@ Moves the camera to the next scene zone - this is defined by the index parameter
 ### Examples
 
 ```javascript
-z3d.nextSceneZone()
+XYZ3d.nextSceneZone()
 ```
 
 ## setup
@@ -249,7 +249,7 @@ Runs asynchronous setup.
 ### Examples
 
 ```javascript
-z3d.setup()
+XYZ3d.setup()
 ```
 
 ## reset
@@ -259,7 +259,7 @@ Resets the camera to the current scene zone position.
 ### Examples
 
 ```javascript
-z3d.reset()
+XYZ3d.reset()
 ```
 
 ## onPointerDownCallback
@@ -273,7 +273,7 @@ The callback function for when the pointer down event is fired in the 3d scene.
 ### Examples
 
 ```javascript
-z3d.onPointerDownCallback = (event) => {
+XYZ3d.onPointerDownCallback = (event) => {
 	console.log(event)
 }
 ```
@@ -289,7 +289,7 @@ The callback function for when the pointer hover event is fired in the 3d scene.
 ### Examples
 
 ```javascript
-z3d.onHoverOverCallback = (event) => {
+XYZ3d.onHoverOverCallback = (event) => {
 	console.log(event)
 }
 ```
@@ -305,7 +305,7 @@ The callback function for when the pointer hover off event is fired in the 3d sc
 ### Examples
 
 ```javascript
-z3d.onHoverOffCallback = (event) => {
+XYZ3d.onHoverOffCallback = (event) => {
 	console.log(event)
 }
 ```
@@ -321,7 +321,7 @@ The callback function fired every frame
 ### Examples
 
 ```javascript
-z3d.onUpdate = (deltaTime) => {
+XYZ3d.onUpdate = (deltaTime) => {
 	console.log(deltaTime)
 }
 ```
@@ -339,12 +339,12 @@ The callback function fired while the scene is loading.
 ### Examples
 
 ```javascript
-z3d.onProgressLoading = (step, steps, percent) => {
+XYZ3d.onProgressLoading = (step, steps, percent) => {
 	console.log(step, steps, percent)
 }
 ```
 
-[1]: #z3d
+[1]: #XYZ3d
 [2]: #parameters
 [3]: #examples
 [4]: #changescenezonebyname
