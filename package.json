@@ -1,7 +1,7 @@
 {
-  "name": "z3d",
+  "name": "xyz3d-cms",
   "version": "1.0.0",
-  "description": "An extensible Three.js, flat file cms, with a 3D interface.",
+  "description": "An fully extensible 3D flat file cms, built with Three.js.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/64blit/Z3D.js.git"
