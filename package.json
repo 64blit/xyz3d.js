@@ -1,6 +1,6 @@
 {
-  "name": "z3d.js",
-  "version": "1.0.1",
+  "name": "z3d",
+  "version": "1.0.0",
   "description": "An extensible Three.js, flat file cms, with a 3D interface.",
   "repository": {
     "type": "git",
