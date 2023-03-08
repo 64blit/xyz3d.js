@@ -9,13 +9,17 @@ Features:
 - Clickable models that open iframe or popup window
 - JSON file for scene configuration and loading dynamic lights/hdr environments
 - Custom Blender plugin for rapid development
-- Smooth 3D scene navigation with JS APIs - "XYZ3d.changeSceneZoneByName('HomePage')"
+- Smooth 3D scene navigation with JS APIs - "xyz3d.changeSceneZoneByName('HomePage')"
 - Built in post processing
 - Mobile devices supported + gryo based movement
 - Easy fallback method for legacy devices
 - No database, or complex server setup required. Fully static!
 - Three.js "animationLoop" and variables, such as "scene, camera, renderer," exposed for simpler development
 - And more! :-)
+
+### Blender plugin
+
+[xyz3d.js-blender-plugin](https://github.com/64blit/xyz3d.js-blender-plugin)
 
 ## API
 
@@ -84,7 +88,7 @@ Features:
 ### Examples
 
 ```javascript
-const ZED = new XYZ3d({
+const xyz3d = new XYZ3d({
 	jsonPath: '../../assets/crypto_scene.json',
 	debug: false,
 	domElements: {
