@@ -1,14 +1,16 @@
 {
-  "name": "Z3D.js",
-  "version": "1.0.0",
+  "name": "z3d.js",
+  "version": "1.0.1",
   "description": "An extensible Three.js, flat file cms, with a 3D interface.",
-  "repository": "64blit/Z3D.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/64blit/Z3D.js.git"
+  },
   "files": [
     "./Z3D.umd.js",
     "./Z3D.es.js"
   ],
-  "main": "./Z3D.es.js",
-  "module": "./Z3D.umd.js",
+  "main": "./Z3D.umd.js",
   "keywords": [
     "3d",
     "cms",
@@ -16,5 +18,15 @@
     "webgl"
   ],
   "author": "64blit",
-  "license": ""
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/64blit/Z3D.js/issues"
+  },
+  "homepage": "https://github.com/64blit/Z3D.js#readme",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
