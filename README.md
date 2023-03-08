@@ -1,4 +1,4 @@
-## Z3D.js
+# Z3D.js
 
 An extensible flat file cms with a 3D interface built on Three.js. The easiest way to create fully 3D websites.
 
@@ -17,7 +17,7 @@ Features:
 - Three.js "animationLoop" and variables, such as "scene, camera, renderer," exposed for simpler development
 - And more! :-)
 
-# API
+## API
 
 ### Table of Contents
 

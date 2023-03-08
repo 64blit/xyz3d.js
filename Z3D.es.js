@@ -1,794 +1,795 @@
-import * as l from "https://unpkg.com/three/build/three.module.js";
-import { GLTFLoader as H } from "https://unpkg.com/three@0.149.0/examples/jsm/loaders/GLTFLoader.js";
-import { DRACOLoader as Z } from "https://unpkg.com/three@0.149.0/examples/jsm/loaders/DRACOLoader.js";
-import { RGBELoader as W } from "https://unpkg.com/three@0.149.0/examples/jsm/loaders/RGBELoader.js";
-import { EXRLoader as G } from "https://unpkg.com/three@0.149.0/examples/jsm/loaders/EXRLoader.js";
+import * as d from "https://unpkg.com/three/build/three.module.js";
+import { GLTFLoader as j } from "https://unpkg.com/three@0.149.0/examples/jsm/loaders/GLTFLoader.js";
+import { DRACOLoader as H } from "https://unpkg.com/three@0.149.0/examples/jsm/loaders/DRACOLoader.js";
+import { RGBELoader as G } from "https://unpkg.com/three@0.149.0/examples/jsm/loaders/RGBELoader.js";
+import { EXRLoader as W } from "https://unpkg.com/three@0.149.0/examples/jsm/loaders/EXRLoader.js";
 import { UnrealBloomPass as F } from "https://unpkg.com/three@0.149.0/examples/jsm/postprocessing/UnrealBloomPass.js";
 import { RenderPass as N } from "https://unpkg.com/three@0.149.0/examples/jsm/postprocessing/RenderPass.js";
-import { EffectComposer as U } from "https://unpkg.com/three@0.149.0/examples/jsm/postprocessing/EffectComposer.js";
+import { EffectComposer as q } from "https://unpkg.com/three@0.149.0/examples/jsm/postprocessing/EffectComposer.js";
 import "https://unpkg.com/three@0.149.0/examples/jsm/postprocessing/ShaderPass.js";
 import "https://unpkg.com/three@0.149.0/examples/jsm/shaders/FXAAShader.js";
 import "https://cdn.jsdelivr.net/npm/camera-controls/dist/camera-controls.min.js";
-const i = p;
-(function(g, t) {
-  const e = p, x = g();
+const i = S;
+(function(p, t) {
+  const e = S, x = p();
   for (; []; )
     try {
-      if (parseInt(e(544)) / 1 + parseInt(e(697)) / 2 + parseInt(e(585)) / 3 + parseInt(e(782)) / 4 + parseInt(e(728)) / 5 * (-parseInt(e(555)) / 6) + parseInt(e(708)) / 7 + -parseInt(e(749)) / 8 === t)
+      if (parseInt(e(628)) / 1 * (-parseInt(e(591)) / 2) + -parseInt(e(684)) / 3 * (-parseInt(e(544)) / 4) + parseInt(e(576)) / 5 + parseInt(e(542)) / 6 + parseInt(e(595)) / 7 + parseInt(e(477)) / 8 * (-parseInt(e(486)) / 9) + -parseInt(e(588)) / 10 * (parseInt(e(607)) / 11) === t)
         break;
       x.push(x.shift());
     } catch {
       x.push(x.shift());
     }
-})(E, 657077);
-function p(g, t) {
-  const e = E();
-  return p = function(x, s) {
-    return x = x - 473, e[x];
-  }, p(g, t);
+})(D, 386830);
+function D() {
+  const p = ["showLoadingScreen", "onClickAnimations", "raycastTarget", "build", "point", "setDynamicContent", "updateSceneZones", "_hovered", "exposure", "ambientLight", "gltf", "raycastManager", "isPostEffectsEnabled", "Raycaster", "onPointerDownCallback", "jsonPath", "isOverlayActive", "enableAll", "setZoom", "pointermove", "2045862XivHvZ", "ROTATE", "1873744Iakbeh", "paused", "addPointLight", "compileEquirectangularShader", "contentType", "getSceneZoneByName", "log", "includes", "history", "DEBUG", "mouse", "touch", "models", "size", "gltfLoader", "rotation", "aspect", "DirectionalLightHelper", "forEach", "getBoundingBox", "onWindowResized", "PMREMGenerator", "scale", "innerHTML", "An error happened ", "zeroSlopeAtStart", "bloom", "getAnimations", "threshold", ":>> GLTF element unrecognized:", "defaultDampFactor", "finalComposer", "321775wLlOcq", "Box3", "_objects", "ACTION", "wrappedModels", "Mesh", "targetPosition", "minPolarAngle", "atan", "insertAdjacentHTML", "onUpdate", "filmOffset", "363770bdbZRz", "getScene", "sub", "278PNLrVP", "right", "loadingScreen", "iframe not found. Make sure this returns the correct element: document.getElementById(", "3170300RRqpbU", "saveState", "values", "NoBlending", "pushHashURL", "fov", "polarAngle", "getInteractablesByZone", "hoverOverCallback", "interactable", "updatePointer", "max", "66OwpaBF", "iframeID", "maxZoom", "lookAtTarget", "intersectObjects", "hdr", "createModelContainer", ");  ", "domElement", "add", "light", "pop", "changeSceneZoneByName", "controls", "_camera", "error", "strength", "setFromCamera", "pointer", "backgroundIntensity", "cameraAnimations", "3637zJczAX", "setModelMatrixData", "update", "buttonZone", "exr", "canvasID", "loadModel", "addDynamicCloseButton", "updateProjectionMatrix", "bind", "scene", "open", "classList", "children", "onPointerMove", "getObjects", "activeSceneZone", "getSceneZoneByIndex", "keys", "onHoverAnimations", "Vector2", "multiplyScalar", "position", "onHoverOff", "enabled", "camera", '<div id="z3d-close-btn" class="z3d-close-btn"><span>✕</span', "content", "moveTo", "renderer", "setupCamera", "height", "WebGLRenderer", "expandByObject", "getModel", "interactablesContent", "bloomPass", "mouseup", "activeZoneIndex", "looping", "getWrappedAnimations", "name", "touchend", "debug", "getHitObject", "resetControlsLimits", "fps", "load", "toneMapping", "setInputActive", "pointLight", "quaternion", "deactivate", "duration", "getAnimationsFromCSV", "cursor", "3CKuUZz", "onhashchange", "SpotLight", "quaternionToVector3", "tracks", "intersectableObjects", "smoothTime", "sceneWrapper", "rotationTarget", "getCenter", ".z3d-close", "Vector3", "type", "distance", "_domElement", "Camera", "getRandomIntRange", "openLink", "spot", "castShadow", "start", "clientX", "onHoverOver", "then", "hoveroff", "setSize", "Missing raycast target for: ", "pointerDownCallback", "side", "min", "two", "click", "map", "tiltX", "all", "wrappedSceneZones", "hash", "iframe", "The gryto motion sensor is not supported on this device.", "LoopOnce", "orbitCameraTo", "directionalLight", "clientY", "clampWhenFinished", "background", "gyro", "Cache", "getLoopingAnimations", "getInteractableModelsByZone", "average", "setup", "mapping", "jsonData", "high-performance", "defaultRotationDistance", "AmbientLight", "addEXR", "AnimationMixer", "fill", "animations", "auto", "getInteractableObject", "followMouse", "orbit", "none", "getElementById", "#z3d-close-btn", "lerp", "pointerdown", "setLoop", "tiltXArr", "interactables", "getHtmlData", "back", "Scene", "resize", "resetCamera", "model", "clipAction", "setupGyro", ".quaternion", "rotateCamera", "bgMesh", "tiltYArr", "addEventListener", "material", "EquirectangularReflectionMapping", "Group", "backgroundBlurriness", "getDelta", "moveCamera", "getCameraBoundsObject", "showDynamicHTML", "split", "getRaycastTarget", "addHDR", "fitCameraOffset", "setupRenderer", "ReinhardToneMapping", "pushState", "directional", "zone", "test", "getBackgroundModelsByZone", "changeCameraZone", "round", "touches", "scrollHeight", "beforeend", "bloomParams", "getHtml", "minAzimuthAngle", "frame", "getRenderer", "path", "addAmbientLight", "domElements", "setCameraOffset", "nextScene", "onClick", "lookAt", "remove", "wrappedAnimations", "dispatchEvent", "closeDynamicContent", "_intersections", "azimuthAngle", "removeEventListener", "setDampFactor", "player", "z3d-hidden", "active", "getSceneWrapper", "transformGroup", "radius", "TOUCH_ZOOM", "raycastMesh", "width", "getPlayer", "texture", "contentContainer", "_selected", "visible", "maxPolarAngle", "Object3D", "onProgressLoading", "lookAtTargetSize", "length", "onHoverOffCallback", "Clock", "loopAnimations", "intensity", "normalBias", "onHoverOverCallback", "layers", "addGLTFModel", "addLighting", "addPass", "changeSceneZoneByIndex", "scrollWidth", "tiltY", "loadJson", "setLookAt", "element", "https://unpkg.com/three@0.147.0/examples/js/libs/draco/", "createLightContainer", "loadingScreenID", "boxCenter", "currentAction", "stop", "visibleSelector", "index", "setupRaycaster", "getRandomRange", "copy", "nextSceneZone", "addDirectionalLight", "stopAllAction", "processModel", "24zxtZrG", "userData", "wrapScene", "isMobileDevice", "maxGyroSignals", "buttonNextZone", "push", "getSize", "hoveron", "648099uKLIKT", "lights", "EventDispatcher", "color", "fitCameraToZone", "setupPostEffects", "onPointerUp", "init", "mouseButtons", "activate", "canvas", "setPaused", "z3d-visible", "environment", "zoneBox", "target", "postEffects", "render", "random", "maxAzimuthAngle", "style", "getCamera", "set", "innerWidth", "PointLight", "object", "setDynamicHTML", "reset", "fromEquirectangular", "cameraParams", "onHover", "getIntersectableObjects", "reading", "hiddenSelector", "dispose", "BackSide"];
+  return D = function() {
+    return p;
+  }, D();
 }
-function E() {
-  const g = ["clientY", "set", "wrapScene", "isOverlayActive", "_hovered", "aspect", "getAnimationTrack", "clipAction", "updatePointer", "interactable", "filmOffset", ".z3d-close", "azimuthAngle", "getInteractableModelsByZone", "enableAll", "smoothTime", "mapping", "2475096lhIFpZ", "DEBUG", "install", "setDynamicHTML", "fps", "closeDynamicContent", "polarAngle", "player", "activeZoneIndex", "toneMappingExposure", "raycastTarget", "497084pWvxRs", "gyro", "getModel", "restThreshold", "onHover", "setDecoderPath", "Vector2", "type", "iframe not found. Make sure this returns the correct element: document.getElementById(", "innerWidth", "background", "getBackgroundModelsByZone", "processModel", "gammaFactor", "deactivate", "touchend", "EventDispatcher", "scene", "getAnimation", "BackSide", "120jNIkEd", "getRaycastTarget", "getAnimations", "exr", "onhashchange", "shadowMap", "model", "getSceneZoneByName", "z3d-visible", "zoomTo", "map", "minStaticFrames", "hdr", "fromEquirectangular", "addHDR", "rotationTarget", "top", "changeSceneZoneByName", '<div id="z3d-close-btn" class="z3d-close-btn"><span>✕</span', "sub", "ACTION", "27105808wINmVF", "backgroundBlurriness", "click", "innerHTML", "PerspectiveCamera", "nextScene", "wrappedAnimations", "receiveShadow", "onHoverOff", "texture", "lights", "intensity", "expandByObject", "multiplyScalar", "Missing raycast target for: ", "controls", "getRandomRange", "An error happened ", "test", "reset", "MAX_SAFE_INTEGER", "onPointerDown", "animations", "setModelMatrixData", "cameraParams", "removeEventListener", "material", "activeSceneZone", "onHoverOffCallback", "Box3", "changeCameraZone", "showLoadingScreen", "lookAtTargetSize", "3866848omlxQr", "openLink", "minPolarAngle", "toneMapping", "Clock", "minAzimuthAngle", '<iframe id="z3d-fullscreen" src="', "userAgent", "size", "setDynamicContent", "index", "getSceneZoneByIndex", "push", "tiltYArr", "total", "resetControlsLimits", "target", "innerHeight", "tiltY", "orbitCameraTo", "Raycaster", "setupCamera", "forEach", "onHoverOverCallback", "length", "all", "onClick", "pointer", "loadJson", "getSceneWrapper", "loadingScreenID", "wrappedSceneZones", "nextSceneZone", "fitCameraToZone", "play", "querySelector", "Object3D", "looping", "strength", "parse", "lookAtTarget", "zone", "PointLight", "createLightContainer", "setFromCamera", "jsonPath", "camera", "loadingScreen", "round", "pointerdown", "load", "setSize", "getSize", "interactables", "values", ":>> GLTF element unrecognized:", "radius", "zeroSlopeAtStart", "_intersections", "followMouse", "_selected", "loopAnimations", "bind", "defaultRotationDistance", "getDelta", "onHoverAnimations", "setInputActive", "ROTATE", "log", "max", "setupRaycaster", "getPlayer", "start", "clone", "maxAzimuthAngle", "changeSceneZoneByIndex", "models", "light", "resize", "setPaused", "gltfLoader", "Canvas not found. Make sure this returns the correct element: document.GetElementByID(", "Vector3", "bloomParams", "active", "activate", "getRenderer", "userData", "scale", "getCameraBoundsObject", "update", "average", "boxCenter", "jsonData", "AnimationMixer", "iframe", "lookAtTargetBox", "gltf", "tiltXArr", "currentAction", "WebGLRenderer", "dispatchEvent", "right", "pushState", "enabled", "onHoverOver", "pow", "buttonZone", "scrollHeight", "modelName", "onPointerMove", "addPointLight", "onClickAnimations", "Cache", "back", "intersectObjects", "then", "renderer", "maxGyroSignals", "_objects", "buttonNextZone", "intersectableObjects", "visibleSelector", "maxDistance", "onUpdate", "init", "contentType", "getHtmlData", "scrollWidth", "getScene", "addDirectionalLight", "build", ");  ", "fov", "threshold", "contentContainer", "bgMesh", "width", "fitCameraOffset", "canvas", "normalBias", "addGLTFModel", "wrappedModels", '"></iframe>', "name", "1270669LQXfMp", "maxZoom", "touches", "content", "zoneBox", "ambientLight", "spot", "high-performance", "bloomPass", "getWrappedAnimations", "Scene", "123126CTVjSm", "setupRenderer", "iframeID", "getCamera", "domElements", "mouseup", "The gryto motion sensor is not supported on this device.", "finalComposer", "pointLight", "addEXR", "showDynamicHTML", "getAnimationsFromCSV", "left", "pen", "cameraAnimations", "beforeend", "environment", "compileEquirectangularShader", "updateSceneZones", "DirectionalLight", "createModelContainer", "pointerType", "postEffects", "add", "_domElement", "_camera", "directionalLight", "gltf children :>> ", "fill", "getHitObject", "2975598HXPSir", "pop", "two", "position", "classList", "hash", "setLoop", "LoopOnce", "raycastManager", "paused", "lookAt", "onPointerDownCallback", "rotateTo", "raycastMesh", "setLookAt", "cursor", "element", "onPointerUp", "auto", "dispose", "object", "distance", "frame", "sceneWrapper", "getIntersectableObjects", "saveState", "side", "exposure", "getObjects", "Camera", "hiddenSelector", "setupGyro", "history", "z3d-hidden", "getBoundingBox", "castShadow", "rotateCamera", "loadModel", "getLoopingAnimations", "pointerDownCallback", "getHtml", "updateProjectionMatrix", "color", "reading", "includes", "hoveron", "pointermove", "tiltX", "onProgressLoading", "hoverOffCallback", "getInteractableObject", "interactablesContent", "addLighting", "render", "lerp", "addAmbientLight", "height", "AmbientLight", "halfWindowWidth", "addDynamicCloseButton", "children", "random", "zeroSlopeAtEnd", "resetCamera", "backgroundIntensity", "setupPostEffects", "split", "clientX", "getInteractablesByZone", "isMobileDevice", "moveCamera", "hoverOverCallback", "addPass", "atan", "ReinhardToneMapping", "error", "duration", "normalize", "PointLightHelper", "getElementById", "isPostEffectsEnabled", "AxesHelper", "style", "insertAdjacentHTML", "addEventListener", "quaternionToVector3", "pushHashURL", "remove", "getCameraAnimationStart", "tracks", "rotation", "maxPolarAngle", "onWindowResized", "Group", "bloom"];
-  return E = function() {
-    return g;
-  }, E();
-}
-class P {
-  static [i(765)](t, e) {
-    return Math[i(646)]() * (e - t) + t;
+class z {
+  static [i(471)](t, e) {
+    return Math[i(504)]() * (e - t) + t;
   }
-  static getRandomIntRange(t, e) {
-    const x = i;
-    return Math[x(830)](Math[x(646)]() * (e - t) + t);
+  static [i(700)](t, e) {
+    return Math[i(789)](Math.random() * (e - t) + t);
   }
-  static [i(670)](t, e, x, s) {
-    const a = t + t, n = e + e, o = x + x, c = t * n, d = t * o, u = e * o, f = s * a, w = s * n, v = s * o;
-    return { x: c - v, y: u + f, z: d - w };
+  static [i(687)](t, e, x, s) {
+    const o = t + t, n = e + e, a = x + x, c = t * n, l = t * a, b = e * a, f = s * o, g = s * n, y = s * a;
+    return { x: c - y, y: b + f, z: l - g };
   }
-  static [i(738)](t, e, x, s, a) {
-    return (t - e) * (a - s) / (x - e) + s;
+  static [i(716)](t, e, x, s, o) {
+    return (t - e) * (o - s) / (x - e) + s;
   }
-  static [i(490)](t) {
+  static [i(733)](t) {
     const e = i;
     let x = 0;
-    return t[e(804)]((s) => {
+    return t.forEach((s) => {
       x += s;
-    }), x / t[e(806)];
+    }), x / t[e(445)];
   }
 }
-class q {
+class U {
   constructor(t, e, x) {
     const s = i;
-    this[s(771)] = x, this.models = t, this[s(759)] = e, this.wrappedModels = { interactables: [], bg: [], player: null }, this.wrappedAnimations = { looping: [], onClick: [], onHover: [], camera: [] }, this[s(813)] = [], this[s(682)](this[s(475)]), this.updateSceneZones(this[s(813)]);
+    this.animations = x, this[s(556)] = t, this[s(487)] = e, this[s(580)] = { interactables: [], bg: [], player: null }, this.wrappedAnimations = { looping: [], onClick: [], onHover: [], camera: [] }, this[s(719)] = [], this.wrapScene(this[s(556)]), this[s(528)](this.wrappedSceneZones);
   }
-  wrapScene(t) {
+  [i(479)](t) {
     const e = i, x = { interactables: [], bgMesh: [], player: null }, s = [];
-    for (let a = 0; a < t[e(806)]; a++) {
-      const n = t[a], o = n[e(734)].userData;
+    for (let o = 0; o < t.length; o++) {
+      const n = t[o], a = n.model[e(478)];
       let c = {};
-      const d = this[e(730)](o, n[e(543)]);
-      switch (o[e(715)]) {
-        case e(689):
-          c = this[e(635)](n, o, d), x.interactables[e(794)](c);
+      const l = this[e(571)](a, n[e(669)]);
+      switch (a[e(696)]) {
+        case e(604):
+          c = this.getInteractableObject(n, a, l), x[e(755)].push(c);
           break;
         case "cameraBounds":
-          c = this[e(488)](n, o), s[e(794)](c);
+          c = this[e(775)](n, a), s[e(483)](c);
           break;
-        case e(535):
-          x[e(535)].push(n[e(734)]);
+        case e(766):
+          x[e(766)][e(483)](n[e(761)]);
           break;
-        case e(598):
-          x[e(535)][e(794)](n[e(734)]);
+        case e(820):
+          x.bgMesh.push(n[e(761)]);
           break;
-        case e(704):
-          x.player = n[e(734)];
+        case "player":
+          x.player = n[e(761)];
           break;
       }
     }
-    this[e(541)] = x, this[e(813)] = s;
+    this[e(580)] = x, this[e(719)] = s;
   }
-  [i(573)](t) {
+  [i(528)](t) {
     const e = i, x = [...t];
-    for (let s = 0; s < x[e(806)]; s++) {
-      const a = x[s], n = a.position, o = this[e(693)](a[e(823)]);
-      o[e(806)] <= 0 && this.getBackgroundModelsByZone(a[e(823)])[e(804)]((w) => {
-        o[e(794)](w);
+    for (let s = 0; s < x[e(445)]; s++) {
+      const o = x[s], n = o[e(650)], a = this[e(732)](o[e(785)]);
+      a[e(445)] <= 0 && this[e(787)](o[e(785)])[e(562)]((g) => {
+        a[e(483)](g);
       });
-      const c = this[e(619)](o), d = new l[e(481)]();
-      c.getCenter(d);
-      const u = new l[e(481)]();
-      c[e(834)](u), x[s][e(491)] = n, x[s][e(495)] = c, x[s].lookAtTargetSize = u, x[s].lookAtTarget = d;
+      const c = this[e(563)](a), l = new d[e(695)]();
+      c[e(693)](l);
+      const b = new d.Vector3();
+      c[e(484)](b), x[s][e(465)] = n, x[s].lookAtTargetBox = c, x[s][e(830)] = b, x[s][e(610)] = l;
     }
-    this[e(813)] = x;
+    this.wrappedSceneZones = x;
   }
-  [i(793)](t) {
+  [i(645)](t) {
     const e = i;
     let x = null;
-    return this.wrappedSceneZones[e(804)]((s) => {
-      s.index === t && (x = s);
+    return this[e(719)].forEach((s) => {
+      s[e(469)] === t && (x = s);
     }), x;
   }
-  [i(735)](t) {
+  [i(549)](t) {
     const e = i;
     let x = null, s = null;
-    return this[e(813)][e(804)]((a) => {
-      a.zone === t && (x = a);
+    return this[e(719)][e(562)]((o) => {
+      o[e(785)] === t && (x = o);
     }), { zoneBox: x, index: s };
   }
-  [i(623)]() {
+  [i(731)]() {
     const t = i, e = { looping: [] };
-    return this[t(755)][t(819)].forEach((x) => {
+    return this.wrappedAnimations[t(667)][t(562)]((x) => {
       const s = t;
-      x.animations[s(804)]((a) => {
+      x[s(743)][s(562)]((o) => {
         const n = s;
-        e[n(819)][n(794)](a);
+        e[n(667)][n(483)](o);
       });
     }), e;
   }
-  [i(553)]() {
-    return this.wrappedAnimations;
+  [i(668)]() {
+    return this[i(806)];
   }
-  [i(853)]() {
+  [i(822)]() {
     const t = i;
-    return this[t(541)][t(704)];
+    return this[t(580)][t(813)];
   }
   getInteractables() {
     const t = i;
-    return this[t(541)][t(835)];
+    return this.wrappedModels[t(755)];
   }
-  [i(653)](t) {
+  [i(602)](t) {
     const e = i, x = [];
-    for (let s = 0; s < this[e(541)][e(835)][e(806)]; s++) {
-      const a = this[e(541)][e(835)][s];
-      a.zone === t && x[e(794)](a);
+    for (let s = 0; s < this[e(580)][e(755)][e(445)]; s++) {
+      const o = this.wrappedModels.interactables[s];
+      o[e(785)] === t && x.push(o);
     }
     return x;
   }
   getInteractableModelsByZone(t) {
     const e = i, x = [];
-    for (let s = 0; s < this[e(541)][e(835)][e(806)]; s++) {
-      const a = this.wrappedModels[e(835)][s];
-      a[e(823)] === t && x[e(794)](a[e(601)][e(734)]);
+    for (let s = 0; s < this[e(580)][e(755)][e(445)]; s++) {
+      const o = this.wrappedModels.interactables[s];
+      o.zone === t && x[e(483)](o.element.model);
     }
     return x;
   }
-  [i(719)](t) {
+  [i(787)](t) {
     const e = i, x = [];
-    for (let s = 0; s < this[e(541)][e(535)][e(806)]; s++) {
-      const a = this[e(541)].bgMesh[s];
-      a[e(715)] === "Group" ? a[e(645)][e(804)]((n) => {
-        const o = e;
-        a.userData[o(823)] === t && x.push(n);
-      }) : a[e(486)].zone === t && x.push(a);
+    for (let s = 0; s < this[e(580)].bgMesh[e(445)]; s++) {
+      const o = this[e(580)].bgMesh[s];
+      o.type === e(771) ? o[e(641)][e(562)]((n) => {
+        const a = e;
+        o[a(478)][a(785)] === t && x[a(483)](n);
+      }) : o[e(478)][e(785)] === t && x[e(483)](o);
     }
     return x;
   }
-  getBoundingBox(t) {
-    const e = i, x = new l[e(778)]();
-    t.type === e(678) && (t = [...t[e(645)]]);
-    for (let s = 0; s < t.length; s++) {
-      const a = t[s];
-      x[e(761)](a);
+  [i(563)](t) {
+    const e = i, x = new d[e(577)]();
+    t[e(696)] === e(771) && (t = [...t.children]);
+    for (let s = 0; s < t[e(445)]; s++) {
+      const o = t[s];
+      x[e(661)](o);
     }
     return x;
   }
-  [i(710)](t) {
+  [i(662)](t) {
     const e = i;
-    for (let x = 0; x < this.models[e(806)]; x++) {
-      const s = this.models[x][e(734)];
-      if (s[e(543)] === t)
+    for (let x = 0; x < this[e(556)][e(445)]; x++) {
+      const s = this[e(556)][x][e(761)];
+      if (s.name === t)
         return s;
     }
     return null;
   }
   getAnimation(t) {
     const e = i;
-    for (let x = 0; x < this.animations[e(806)]; x++) {
-      const s = this.animations[x];
-      if (s[e(543)] === t)
+    for (let x = 0; x < this[e(743)][e(445)]; x++) {
+      const s = this[e(743)][x];
+      if (s.name === t)
         return s;
     }
     return null;
   }
-  [i(566)](t) {
-    const e = i, x = t[e(651)](","), s = [];
-    for (let a = 0; a < x[e(806)]; a++) {
-      const n = x[a];
-      s.push(this[e(726)](n));
+  [i(682)](t) {
+    const e = i, x = t[e(777)](","), s = [];
+    for (let o = 0; o < x[e(445)]; o++) {
+      const n = x[o];
+      s[e(483)](this.getAnimation(n));
     }
     return s;
   }
-  [i(686)](t, e) {
+  getAnimationTrack(t, e) {
     const x = i;
-    for (let s = 0; s < t[x(674)][x(806)]; s++)
-      if (t[x(674)][s][x(543)] === e)
-        return t[x(674)][s];
+    for (let s = 0; s < t[x(688)][x(445)]; s++)
+      if (t[x(688)][s][x(669)] === e)
+        return t[x(688)][s];
     return null;
   }
-  [i(673)](t) {
+  getCameraAnimationStart(t) {
     const e = i, x = { position: null, rotation: null };
-    for (let s = 0; s < t.camera[e(806)]; s++) {
-      const a = t[e(828)][s];
-      for (let n = 0; n < a[e(674)].length; n++) {
-        const o = a[e(674)][n];
-        if (o[e(543)][e(629)](".position"))
-          x[e(588)] = new l[e(481)](o[e(836)][0], o[e(836)][1], o[e(836)][2]);
-        else if (o[e(543)][e(629)](".quaternion")) {
-          const c = new l.Quaternion(o[e(836)][0], o.values[1], o[e(836)][2], o.values[3]);
-          x[e(675)] = c;
+    for (let s = 0; s < t[e(653)][e(445)]; s++) {
+      const o = t[e(653)][s];
+      for (let n = 0; n < o[e(688)][e(445)]; n++) {
+        const a = o[e(688)][n];
+        if (a[e(669)][e(551)](".position"))
+          x[e(650)] = new d.Vector3(a[e(597)][0], a.values[1], a[e(597)][2]);
+        else if (a.name.includes(e(764))) {
+          const c = new d.Quaternion(a[e(597)][0], a[e(597)][1], a[e(597)][2], a[e(597)][3]);
+          x[e(559)] = c;
         }
       }
     }
     return x;
   }
-  [i(730)](t, e) {
+  getAnimations(t, e) {
     const x = i;
-    let s = null, a = null, n = null, o = null;
-    return "loopAnimations" in t && (s = this[x(566)](t[x(843)]), this.wrappedAnimations.looping[x(794)]({ name: e, animations: s })), x(511) in t && (a = this[x(566)](t[x(511)]), this[x(755)][x(808)].push({ name: e, animations: a })), x(847) in t && (n = this[x(566)](t.onHoverAnimations), this[x(755)][x(712)][x(794)]({ name: e, animations: n })), "cameraAnimations" in t && (o = this[x(566)](t[x(569)]), this[x(755)][x(828)][x(794)]({ name: e, animations: o })), { loopAnimations: s, onHoverAnimations: n, onClickAnimations: a, cameraAnimations: o };
+    let s = null, o = null, n = null, a = null;
+    return "loopAnimations" in t && (s = this.getAnimationsFromCSV(t[x(448)]), this[x(806)][x(667)][x(483)]({ name: e, animations: s })), x(523) in t && (o = this.getAnimationsFromCSV(t[x(523)]), this[x(806)][x(803)].push({ name: e, animations: o })), x(647) in t && (n = this[x(682)](t.onHoverAnimations), this[x(806)].onHover[x(483)]({ name: e, animations: n })), "cameraAnimations" in t && (a = this[x(682)](t[x(627)]), this[x(806)][x(653)].push({ name: e, animations: a })), { loopAnimations: s, onHoverAnimations: n, onClickAnimations: o, cameraAnimations: a };
   }
-  getInteractableObject(t, e, x) {
-    const s = i, a = this[s(729)](e[s(707)]), n = { name: t[s(543)], raycastTarget: a, element: t, animations: {}, zone: e[s(823)] };
-    return x[s(847)] !== null && (n[s(771)][s(712)] = x[s(847)]), x.onClickAnimations !== null && (n[s(771)].onClick = x[s(511)]), x.cameraAnimations !== null && (n[s(771)].camera = x[s(569)]), n;
+  [i(745)](t, e, x) {
+    const s = i, o = this[s(778)](e[s(524)]), n = { name: t[s(669)], raycastTarget: o, element: t, animations: {}, zone: e[s(785)] };
+    return x[s(647)] !== null && (n[s(743)][s(516)] = x.onHoverAnimations), x[s(523)] !== null && (n[s(743)][s(803)] = x[s(523)]), x[s(627)] !== null && (n.animations[s(653)] = x[s(627)]), n;
   }
-  getCameraBoundsObject(t, e) {
-    const x = i, s = { zone: e[x(823)], index: parseInt(e[x(792)], 10), position: t.model[x(588)] };
-    return t[x(734)].visible = ![], s;
+  [i(775)](t, e) {
+    const x = i, s = { zone: e[x(785)], index: parseInt(e[x(469)], 10), position: t.model.position };
+    return t[x(761)].visible = ![], s;
   }
   getRaycastTarget(t) {
-    const e = i, x = this[e(710)](t);
-    return x == null ? (console[e(850)](e(763), t), null) : (x[e(775)][e(611)] = l[e(727)], x[e(775)].visible = ![], x);
+    const e = i, x = this[e(662)](t);
+    return x == null ? (console[e(550)](e(710), t), null) : (x[e(769)][e(712)] = d[e(521)], x[e(769)][e(826)] = ![], x);
   }
 }
-class X {
-  async [i(821)](t) {
+class V {
+  async parse(t) {
     const e = i;
     let x = null;
-    return await fetch(t)[e(515)]((s) => s.json())[e(515)]((s) => {
+    return await fetch(t)[e(707)]((s) => s.json())[e(707)]((s) => {
       x = s;
     }), x;
   }
 }
-class V {
+class X {
   constructor(t, e, x) {
     const s = i;
-    this.scene = t, this[s(516)] = e, this[s(827)] = x, this[s(608)];
-    const a = new Z();
-    if (a[s(713)]("https://unpkg.com/three@0.147.0/examples/js/libs/draco/"), this.gltfLoader = new H(), this.gltfLoader.setDRACOLoader(a), window[s(698)]) {
-      const n = new l[s(666)](5e3);
-      this.scene[s(578)](n);
+    this[s(638)] = t, this.renderer = e, this.jsonPath = x, this[s(691)];
+    const o = new H();
+    if (o.setDecoderPath(s(462)), this[s(558)] = new j(), this[s(558)].setDRACOLoader(o), window.DEBUG) {
+      const n = new d.AxesHelper(5e3);
+      this[s(638)].add(n);
     }
   }
-  [i(811)]() {
-    return this[i(608)];
+  [i(816)]() {
+    return this.sceneWrapper;
   }
-  async [i(810)]() {
+  async [i(459)]() {
     const t = i;
-    return await new X()[t(821)](this.jsonPath);
+    return await new V().parse(this[t(537)]);
   }
-  async [i(530)](t) {
-    const e = i, x = await this[e(810)](), s = [], a = [], n = await this.addGLTFModel(x.models, t), o = this.addLighting(x[e(759)]);
-    return o[e(794)](...n[e(759)]), s.push(...n.models), a[e(794)](...n.animations), this[e(608)] = new q(s, o, a), this[e(608)];
+  async build(t) {
+    const e = i, x = await this[e(459)](), s = [], o = [], n = await this[e(453)](x[e(556)], t), a = this[e(454)](x[e(487)]);
+    return a.push(...n[e(487)]), s[e(483)](...n[e(556)]), o[e(483)](...n[e(743)]), this.sceneWrapper = new U(s, a, o), this[e(691)];
   }
-  async [i(540)](t, e) {
-    const x = i, s = [], a = [], n = [];
-    for (let o = 0; o < t[x(806)]; o++) {
-      const c = t[o], d = function(u) {
+  async [i(453)](t, e) {
+    const x = i, s = [], o = [], n = [];
+    for (let a = 0; a < t[x(445)]; a++) {
+      const c = t[a], l = function(b) {
         const f = x;
-        e(o + 1, t.length, 100 * u.loaded / u[f(796)]);
+        e(a + 1, t[f(445)], 100 * b.loaded / b.total);
       };
-      await this.loadModel(c, d)[x(515)]((u) => {
+      await this[x(634)](c, l)[x(707)]((b) => {
         const f = x;
-        window[f(698)] && console[f(850)](f(582), [...u.gltf[f(725)][f(645)]]);
-        const w = this[f(720)](u);
-        s[f(794)](...w[f(475)]), a[f(794)](...w[f(759)]), n.push(...w[f(771)]);
+        window[f(553)] && console.log("gltf children :>> ", [...b[f(532)][f(638)][f(641)]]);
+        const g = this.processModel(b);
+        s[f(483)](...g[f(556)]), o[f(483)](...g[f(487)]), n[f(483)](...g[f(743)]);
       });
     }
-    return { models: s, lights: a, animations: n };
+    return { models: s, lights: o, animations: n };
   }
-  [i(710)](t, e) {
+  getModel(t, e) {
     const x = i;
-    for (let s = 0; s < t[x(806)]; s++) {
-      const a = t[s];
-      if (a[x(543)] === e)
-        return a;
+    for (let s = 0; s < t.length; s++) {
+      const o = t[s];
+      if (o[x(669)] === e)
+        return o;
     }
     return null;
   }
-  [i(575)](t, e) {
-    const x = i, s = { name: t.name, model: t };
-    switch (this[x(772)](t, e), t[x(620)] = e.castShadow, t[x(756)] = e.receiveShadow, t.userData.type) {
-      case x(535):
+  [i(613)](t, e) {
+    const x = i, s = { name: t[x(669)], model: t };
+    switch (this.setModelMatrixData(t, e), t.castShadow = e.castShadow, t.receiveShadow = e.receiveShadow, t.userData[x(696)]) {
+      case "bgMesh":
         break;
-      case x(689):
-        const a = this[x(625)](e, t[x(543)]);
-        s[x(525)] = a[x(715)], s[x(547)] = a[x(547)];
+      case x(604):
+        const o = this[x(794)](e, t[x(669)]);
+        s.contentType = o[x(696)], s.content = o[x(655)];
         break;
     }
     return s;
   }
-  [i(825)](t, e) {
+  [i(463)](t, e) {
     return { type: t, light: e };
   }
-  [i(720)](t) {
-    const e = i, x = [...t.gltf[e(725)].children], s = t[e(496)][e(771)], a = [], n = [], o = 1e5;
+  [i(476)](t) {
+    const e = i, x = [...t[e(532)].scene[e(641)]], s = t[e(532)][e(743)], o = [], n = [], a = 1e5;
     for (let c = 0; c < x.length; c++) {
-      const d = x[c];
-      switch (d.layers[e(694)](), d[e(715)]) {
-        case "Mesh":
-          a[e(794)](this[e(575)](d, t[e(492)]));
+      const l = x[c];
+      switch (l[e(452)].enableAll(), l[e(696)]) {
+        case e(581):
+          o[e(483)](this[e(613)](l, t[e(736)]));
           break;
-        case e(678):
-          d.children[e(804)]((u) => {
-            this[e(772)](u, t.jsonData);
-          }), a.push(this.createModelContainer(d, t[e(492)]));
+        case e(771):
+          l[e(641)][e(562)]((b) => {
+            const f = e;
+            this[f(629)](b, t[f(736)]);
+          }), o[e(483)](this[e(613)](l, t[e(736)]));
           break;
-        case e(818):
-          a.push(this.createModelContainer(d, t.jsonData));
+        case e(828):
+          o[e(483)](this.createModelContainer(l, t[e(736)]));
           break;
-        case e(824):
-          d[e(760)] /= o, n[e(794)](this.createLightContainer("point", d));
+        case e(510):
+          l[e(449)] /= a, n.push(this[e(463)](e(526), l));
           break;
-        case e(574):
-          d[e(760)] /= o, n.push(this[e(825)]("directional", d));
+        case "DirectionalLight":
+          l[e(449)] /= a, n[e(483)](this.createLightContainer(e(784), l));
           break;
-        case "SpotLight":
-          d[e(760)] /= o, n[e(794)](this[e(825)](e(550), d));
+        case e(686):
+          l[e(449)] /= a, n.push(this.createLightContainer(e(702), l));
           break;
         default:
-          console[e(850)](e(837), d);
+          console.log(e(573), l);
           break;
       }
-      this[e(725)].add(d);
+      this[e(638)][e(616)](l);
     }
-    return { models: a, lights: n, animations: s };
+    return { models: o, lights: n, animations: s };
   }
-  [i(772)](t, e) {
+  [i(629)](t, e) {
     const x = i;
-    t[x(588)].set(t[x(588)].x + e.position.x, t[x(588)].y + e[x(588)].y, t[x(588)].z + e.position.z), t.quaternion[x(681)](e[x(675)].x, e[x(675)].y, e[x(675)].z, e[x(675)].w), t.scale.set(e[x(487)].x, e.scale.y, e.scale.z);
+    t.position.set(t[x(650)].x + e[x(650)].x, t[x(650)].y + e.position.y, t.position.z + e[x(650)].z), t[x(679)][x(508)](e[x(559)].x, e[x(559)].y, e.rotation.z, e[x(559)].w), t.scale[x(508)](e.scale.x, e.scale.y, e[x(566)].z);
   }
-  [i(625)](t, e) {
-    const x = i, s = this[x(526)](t, e);
-    if (s[x(547)] !== void 0)
-      return s.type === x(494) && (s[x(547)] = x(788) + s[x(547)] + x(542)), s;
+  [i(794)](t, e) {
+    const x = i, s = this[x(756)](t, e);
+    if (s[x(655)] !== void 0)
+      return s[x(696)] === x(721) && (s[x(655)] = '<iframe id="z3d-fullscreen" src="' + s[x(655)] + '"></iframe>'), s;
   }
-  [i(526)](t, e) {
-    const x = i, s = t[x(636)];
-    for (let a = 0; a < s[x(806)]; a++) {
-      const n = s[a];
-      if (n[x(508)] === e)
+  [i(756)](t, e) {
+    const x = i, s = t[x(663)];
+    for (let o = 0; o < s[x(445)]; o++) {
+      const n = s[o];
+      if (n.modelName === e)
         return n;
     }
     return null;
   }
-  async [i(622)](t, e) {
+  async [i(634)](t, e) {
     return new Promise((x) => {
-      const s = p;
-      return this[s(479)][s(832)](".." + t.path, function(a) {
-        x({ gltf: a, jsonData: t });
-      }, e, function(a) {
+      const s = S;
+      return this[s(558)][s(675)](".." + t[s(798)], function(o) {
+        x({ gltf: o, jsonData: t });
+      }, e, function(o) {
         const n = s;
-        console[n(850)](n(766) + a);
+        console[n(550)](n(568) + o);
       });
     });
   }
-  [i(637)](t) {
+  [i(454)](t) {
     const e = i, x = [];
-    for (let s = 0; s < t.length; s++) {
-      const a = t[s];
-      let n, o;
+    for (let s = 0; s < t[e(445)]; s++) {
+      const o = t[s];
+      let n, a;
       const c = { type: null, light: null };
-      switch (a[e(715)]) {
-        case e(740):
-          this[e(742)](a.path, a[e(649)], a[e(750)]);
+      switch (o[e(696)]) {
+        case e(612):
+          this[e(779)](o[e(798)], o[e(626)], o[e(772)]);
           break;
-        case e(731):
-          this.addEXR(a.path, a[e(649)], a[e(750)]);
+        case e(632):
+          this[e(740)](o[e(798)], o[e(626)], o[e(772)]);
           break;
-        case e(563):
-          n = new l[e(481)](a[e(588)].x, a[e(588)].y, a[e(588)].z), o = this[e(510)](n, a[e(627)], a[e(760)], a[e(790)], a.castShadow), c[e(715)] = "pointLight", c[e(476)] = o;
+        case "pointLight":
+          n = new d.Vector3(o[e(650)].x, o[e(650)].y, o[e(650)].z), a = this[e(546)](n, o[e(489)], o[e(449)], o[e(557)], o[e(703)]), c.type = e(678), c[e(617)] = a;
           break;
-        case e(581):
-          n = new l[e(481)](a[e(588)].x, a[e(588)].y, a[e(588)].z);
-          const d = new l[e(481)](a.target.x, a[e(798)].y, a[e(798)].z);
-          o = this.addDirectionalLight(n, d, a[e(627)], a.intensity, a[e(620)]), c[e(715)] = "directionalLight", c.light = o;
+        case e(725):
+          n = new d.Vector3(o[e(650)].x, o[e(650)].y, o[e(650)].z);
+          const l = new d[e(695)](o.target.x, o[e(501)].y, o[e(501)].z);
+          a = this[e(474)](n, l, o.color, o[e(449)], o[e(703)]), c[e(696)] = "directionalLight", c[e(617)] = a;
           break;
-        case e(549):
-          o = this[e(640)](a.color, a[e(760)]), c[e(715)] = e(549), c[e(476)] = o;
+        case e(531):
+          a = this.addAmbientLight(o.color, o[e(449)]), c[e(696)] = e(531), c.light = a;
           break;
       }
-      x.push(c);
+      x[e(483)](c);
     }
     return x;
   }
-  [i(510)](t, e = 0, x = 1, s = 1500, a = ![]) {
-    const n = i, o = new l[n(824)](e, x, s);
-    if (o[n(588)][n(639)](t, 1), o[n(620)] = a, o[n(539)] = 0.1, this[n(725)][n(578)](o), window[n(698)]) {
-      const c = new l[n(663)](o, 0.25);
-      this[n(725)][n(578)](c);
+  [i(546)](t, e = 0, x = 1, s = 1500, o = ![]) {
+    const n = i, a = new d[n(510)](e, x, s);
+    if (a.position[n(751)](t, 1), a.castShadow = o, a[n(450)] = 0.1, this[n(638)][n(616)](a), window[n(553)]) {
+      const c = new d.PointLightHelper(a, 0.25);
+      this[n(638)][n(616)](c);
     }
-    return o;
+    return a;
   }
-  [i(640)](t = 0, e = 1) {
-    const x = i, s = new l[x(642)](t, e);
-    return this[x(725)][x(578)](s), s;
+  [i(799)](t = 0, e = 1) {
+    const x = i, s = new d[x(739)](t, e);
+    return this.scene[x(616)](s), s;
   }
-  [i(529)](t, e = new l.Vector3(0, 0, 0), x = 16777215, s = 2, a = ![]) {
-    const n = i, o = new l[n(574)](x, s);
-    if (o.position[n(639)](t, 1), o[n(798)][n(588)][n(639)](e, 1), o.castShadow = a, o[n(539)] = 0.1, this.scene[n(578)](o), this[n(725)][n(578)](o.target), window[n(698)]) {
-      const c = new l.DirectionalLightHelper(o);
-      this[n(725)][n(578)](c);
+  [i(474)](t, e = new d[i(695)](0, 0, 0), x = 16777215, s = 2, o = ![]) {
+    const n = i, a = new d.DirectionalLight(x, s);
+    if (a[n(650)].lerp(t, 1), a.target.position[n(751)](e, 1), a.castShadow = o, a[n(450)] = 0.1, this.scene[n(616)](a), this[n(638)][n(616)](a[n(501)]), window[n(553)]) {
+      const c = new d[n(561)](a);
+      this[n(638)].add(c);
     }
-    return o;
+    return a;
   }
   addHDR(t, e, x) {
-    const s = i, a = new l.PMREMGenerator(this[s(516)]);
-    a[s(572)]();
+    const s = i, o = new d[s(565)](this[s(657)]);
+    o[s(547)]();
     let n;
-    new W()[s(832)](".." + t, (o) => {
+    new G()[s(675)](".." + t, (a) => {
       const c = s;
-      n = a[c(741)](o)[c(758)], this[c(725)][c(571)] = n, this[c(725)][c(718)] = n, this.scene.backgroundIntensity = e, this.scene[c(750)] = x, o.dispose(), a[c(604)]();
+      n = o[c(514)](a)[c(823)], this[c(638)][c(499)] = n, this[c(638)][c(728)] = n, this.scene.backgroundIntensity = e, this[c(638)][c(772)] = x, a[c(520)](), o.dispose();
     });
   }
-  [i(564)](t, e, x) {
-    const s = i, a = new l.PMREMGenerator(this[s(516)]);
-    a.compileEquirectangularShader();
+  [i(740)](t, e, x) {
+    const s = i, o = new d.PMREMGenerator(this[s(657)]);
+    o[s(547)]();
     let n;
-    new G()[s(832)](".." + t, (o) => {
+    new W()[s(675)](".." + t, (a) => {
       const c = s;
-      o[c(696)] = l.EquirectangularReflectionMapping, n = a[c(741)](o)[c(758)], this[c(725)][c(571)] = n, this[c(725)][c(718)] = n, this.scene[c(649)] = e, this[c(725)][c(750)] = x, o.dispose(), a.dispose();
+      a[c(735)] = d[c(770)], n = o[c(514)](a)[c(823)], this[c(638)][c(499)] = n, this.scene[c(728)] = n, this.scene[c(626)] = e, this[c(638)].backgroundBlurriness = x, a[c(520)](), o[c(520)]();
     });
   }
 }
 class Y {
   constructor(t, e) {
     const x = i;
-    l[x(512)].enabled = !![], this[x(538)] = document[x(664)](t), !this.canvas && console[x(660)](x(480), t, x(531)), this.cameraParams = e, this.bloomParams = e[x(577)][x(679)], this[x(536)] = this[x(538)].scrollWidth, this.height = this.canvas[x(507)], this[x(828)] = new l[x(753)](this[x(773)].fov, this[x(536)] / this.height, 0.1, 1e4), this[x(828)][x(543)] = x(614), this[x(725)] = new l[x(554)](), this.renderer, this[x(562)], this[x(552)], this[x(665)] = e[x(577)][x(503)], this[x(556)](), this[x(665)] && this.setupPostEffects();
+    d[x(730)][x(652)] = !![], this[x(496)] = document[x(749)](t), !this[x(496)] && console[x(622)]("Canvas not found. Make sure this returns the correct element: document.GetElementByID(", t, x(614)), this[x(515)] = e, this[x(793)] = e[x(502)][x(570)], this[x(821)] = this[x(496)].scrollWidth, this.height = this[x(496)][x(791)], this[x(653)] = new d.PerspectiveCamera(this[x(515)].fov, this[x(821)] / this.height, 0.1, 1e4), this[x(653)][x(669)] = x(699), this[x(638)] = new d[x(758)](), this.renderer, this[x(575)], this[x(664)], this[x(534)] = e[x(502)][x(652)], this[x(781)](), this[x(534)] && this[x(491)]();
   }
-  [i(558)]() {
-    return this.camera;
+  [i(507)]() {
+    return this[i(653)];
   }
-  [i(528)]() {
-    return this[i(725)];
+  [i(589)]() {
+    return this[i(638)];
   }
-  getRenderer() {
-    return this[i(516)];
+  [i(797)]() {
+    return this[i(657)];
   }
-  [i(556)]() {
+  [i(781)]() {
     const t = i;
-    this.renderer = new l[t(499)]({ canvas: this.canvas, antialias: !![], powerPreference: t(551), failIfMajorPerformanceCaveat: !![] }), this.renderer[t(733)][t(503)] = !![], this[t(828)].layers[t(694)](), this[t(516)][t(833)](this[t(536)], this[t(641)]), this.renderer[t(785)] = l[t(659)], this[t(516)][t(706)] = Math[t(505)](this[t(482)][t(612)], 4), this[t(516)][t(721)] = 4;
+    this.renderer = new d[t(660)]({ canvas: this.canvas, antialias: !![], powerPreference: t(737), failIfMajorPerformanceCaveat: !![] }), this[t(657)].shadowMap[t(652)] = !![], this[t(653)][t(452)][t(539)](), this[t(657)].setSize(this[t(821)], this.height), this[t(657)][t(676)] = d[t(782)], this.renderer.toneMappingExposure = Math.pow(this[t(793)][t(530)], 4), this[t(657)].gammaFactor = 4;
   }
-  [i(650)]() {
-    const t = i, e = new N(this.scene, this[t(828)]), x = new F(new l[t(714)](this[t(536)], this.height), this[t(482)][t(820)], this.bloomParams[t(838)], this[t(482)][t(533)]);
-    x[t(612)] = this[t(482)][t(612)], x[t(533)] = this[t(482)][t(533)], x[t(820)] = this[t(482)][t(820)], x.radius = this.bloomParams[t(838)], this[t(562)] = new U(this[t(516)]), this.finalComposer.setSize(this.width, this[t(641)]), this[t(562)][t(657)](e), this[t(562)].addPass(x);
+  [i(491)]() {
+    const t = i, e = new N(this[t(638)], this[t(653)]), x = new F(new d[t(648)](this[t(821)], this[t(659)]), this[t(793)].strength, this.bloomParams[t(818)], this[t(793)].threshold);
+    x[t(530)] = this[t(793)][t(530)], x[t(572)] = this[t(793)][t(572)], x[t(623)] = this[t(793)][t(623)], x.radius = this[t(793)].radius, this[t(575)] = new q(this[t(657)]), this.finalComposer.setSize(this[t(821)], this[t(659)]), this.finalComposer[t(455)](e), this[t(575)].addPass(x);
   }
-  [i(677)]() {
+  onWindowResized() {
     const t = i;
-    this.width = this[t(538)][t(527)], this[t(641)] = this.canvas.scrollHeight, this[t(828)][t(685)] = this[t(536)] / this[t(641)], this[t(828)].updateProjectionMatrix(), this[t(516)][t(833)](this[t(536)], this.height), this[t(665)] && this[t(562)][t(833)](this.width, this[t(641)]);
+    this[t(821)] = this[t(496)][t(457)], this[t(659)] = this[t(496)][t(791)], this[t(653)][t(560)] = this[t(821)] / this[t(659)], this[t(653)][t(636)](), this[t(657)][t(709)](this.width, this[t(659)]), this[t(534)] && this[t(575)][t(709)](this[t(821)], this[t(659)]);
   }
-  [i(768)]() {
-    this.onWindowResized();
+  [i(513)]() {
+    this[i(564)]();
   }
-  [i(638)]() {
+  [i(503)]() {
     const t = i;
-    this[t(665)] ? this[t(562)][t(638)]() : this[t(516)].render(this.scene, this[t(828)]);
+    this[t(534)] ? this[t(575)][t(503)]() : this[t(657)].render(this.scene, this[t(653)]);
   }
 }
-const L = new l[i(802)]();
-class Q extends l[i(724)] {
+const L = new d[i(535)]();
+class J extends d[i(488)] {
   constructor(t, e, x) {
     const s = i;
-    super(), this[s(518)] = t, this._camera = e, this[s(579)] = x, this[s(842)] = null, this[s(684)] = null, this[s(840)] = [], this[s(701)] = 30, this[s(503)] = !![], this.transformGroup = ![], this.halfWindowWidth = window[s(717)] / 2, this[s(643)] = window[s(799)] / 2, this[s(607)] = 0, this[s(739)] = this.fps, this.intersectableObjects = this[s(609)](this[s(518)]), this[s(809)] = new l[s(714)](), this.onPointerMove = (a) => {
+    super(), this[s(578)] = t, this._camera = e, this[s(698)] = x, this._selected = null, this[s(529)] = null, this[s(809)] = [], this[s(674)] = 30, this.enabled = !![], this[s(817)] = ![], this.halfWindowWidth = window[s(509)] / 2, this.halfWindowWidth = window.innerHeight / 2, this[s(796)] = 0, this.minStaticFrames = this.fps, this[s(689)] = this[s(517)](this[s(578)]), this[s(625)] = new d[s(648)](), this[s(642)] = (o) => {
       const n = s;
-      if (this[n(503)] !== ![] && (this.frame += 1, this.frame > Number[n(769)] && (this[n(607)] = 0), this[n(688)](a), L[n(826)](this[n(809)], this._camera), this[n(520)] == null && (this.intersectableObjects = getIntersectableObjects(this._objects)), a.pointerType === "mouse" || a[n(576)] === n(568) || a.pointerType === "touch"))
-        if (this[n(840)][n(806)] = 0, L.setFromCamera(this[n(809)], this[n(580)]), L[n(514)](this[n(520)], ![], this[n(840)]), this[n(840)][n(806)] > 0) {
-          let o = this[n(840)][0][n(605)];
-          o = this[n(584)](o[n(543)]), this[n(684)] !== o && this._hovered !== null && (this[n(500)]({ type: "hoveroff", object: this[n(684)] }), this._domElement.style[n(600)] = n(603), this[n(684)] = null), this[n(684)] !== o && (this[n(500)]({ type: n(630), object: o }), this[n(579)][n(667)][n(600)] = "pointer", this[n(684)] = o);
+      if (this[n(652)] !== ![] && (this.frame += 1, this[n(796)] > Number.MAX_SAFE_INTEGER && (this.frame = 0), this.updatePointer(o), L[n(624)](this[n(625)], this[n(621)]), this[n(689)] == null && (this[n(689)] = getIntersectableObjects(this[n(578)])), o.pointerType === n(554) || o.pointerType === "pen" || o.pointerType === n(555)))
+        if (this._intersections[n(445)] = 0, L[n(624)](this[n(625)], this[n(621)]), L[n(611)](this.intersectableObjects, ![], this._intersections), this[n(809)].length > 0) {
+          let a = this[n(809)][0][n(511)];
+          a = this[n(672)](a.name), this[n(529)] !== a && this[n(529)] !== null && (this[n(807)]({ type: n(708), object: this._hovered }), this[n(698)][n(506)][n(683)] = n(744), this[n(529)] = null), this[n(529)] !== a && (this[n(807)]({ type: n(485), object: a }), this._domElement[n(506)][n(683)] = n(625), this[n(529)] = a);
         } else
-          this[n(684)] !== null && (this[n(500)]({ type: "hoveroff", object: this[n(684)] }), this[n(579)][n(667)][n(600)] = "auto", this[n(684)] = null);
-    }, this.onPointerUp = (a) => {
+          this[n(529)] !== null && (this[n(807)]({ type: "hoveroff", object: this[n(529)] }), this[n(698)][n(506)][n(683)] = "auto", this._hovered = null);
+    }, this[s(492)] = (o) => {
       const n = s;
-      if (this.enabled !== ![] && !(typeof a === TouchEvent && a[n(546)][n(806)] > 1)) {
-        if (this[n(607)] > Math.min(this.fps * 2, 20)) {
-          this[n(607)] = 0;
+      if (this[n(652)] !== ![] && !(typeof o === TouchEvent && o.touches[n(445)] > 1)) {
+        if (this[n(796)] > Math[n(713)](this.fps * 2, 20)) {
+          this[n(796)] = 0;
           return;
         }
-        if (this[n(607)] = 0, (this[n(520)] == null || this.intersectableObjects == null) && (this[n(520)] = getIntersectableObjects(this[n(518)])), this[n(579)][n(667)].touchAction = "none", this[n(688)](a), this[n(840)].length = 0, L[n(826)](this.pointer, this._camera), L[n(514)](this[n(520)], ![], this._intersections), this._intersections.length > 0) {
-          const o = this[n(840)][0][n(605)];
-          this[n(842)] = this.getHitObject(o[n(543)]), this.dispatchEvent({ type: n(831), object: this[n(842)] }), this[n(684)] = this._selected;
+        if (this[n(796)] = 0, (this[n(689)] == null || this[n(689)] == null) && (this[n(689)] = getIntersectableObjects(this[n(578)])), this[n(698)][n(506)].touchAction = n(748), this[n(605)](o), this[n(809)][n(445)] = 0, L[n(624)](this[n(625)], this[n(621)]), L[n(611)](this[n(689)], ![], this[n(809)]), this._intersections[n(445)] > 0) {
+          const a = this[n(809)][0][n(511)];
+          this[n(825)] = this[n(672)](a[n(669)]), this.dispatchEvent({ type: n(752), object: this[n(825)] }), this[n(529)] = this[n(825)];
         }
       }
-    }, this[s(484)]();
+    }, this.activate();
   }
-  [i(484)]() {
+  [i(495)]() {
     const t = i;
-    this[t(579)][t(669)]("pointermove", this.onPointerMove), this[t(579)].addEventListener(t(723), this[t(602)]), this[t(579)].addEventListener(t(560), this[t(602)]);
+    this[t(698)].addEventListener(t(541), this[t(642)]), this[t(698)][t(768)]("touchend", this.onPointerUp), this[t(698)][t(768)]("mouseup", this[t(492)]);
   }
-  [i(722)]() {
+  deactivate() {
     const t = i;
-    this._domElement.removeEventListener(t(631), this[t(509)]), this[t(579)][t(774)](t(723), this[t(602)]), this[t(579)][t(774)](t(560), this.onPointerUp), this[t(579)][t(667)][t(600)] = "";
+    this[t(698)].removeEventListener(t(541), this.onPointerMove), this._domElement[t(811)](t(670), this[t(492)]), this._domElement.removeEventListener(t(665), this[t(492)]), this[t(698)][t(506)][t(683)] = "";
   }
-  updatePointer(t) {
-    const e = i, x = this._domElement.getBoundingClientRect();
-    this[e(809)].x = (t[e(652)] - x[e(567)]) / x[e(536)] * 2 - 1, this[e(809)].y = -(t[e(680)] - x[e(744)]) / x.height * 2 + 1;
+  [i(605)](t) {
+    const e = i, x = this[e(698)].getBoundingClientRect();
+    this.pointer.x = (t[e(705)] - x.left) / x[e(821)] * 2 - 1, this.pointer.y = -(t[e(726)] - x.top) / x[e(659)] * 2 + 1;
   }
-  [i(604)]() {
-    this.deactivate();
+  [i(520)]() {
+    this[i(680)]();
   }
-  [i(613)]() {
-    return this[i(518)];
+  [i(643)]() {
+    return this[i(578)];
   }
-  getIntersectableObjects(t) {
+  [i(517)](t) {
     const e = i, x = [];
-    for (let s = 0; s < t[e(806)]; s++) {
-      const a = t[s];
-      x[e(794)](a[e(707)]);
+    for (let s = 0; s < t[e(445)]; s++) {
+      const o = t[s];
+      x[e(483)](o[e(524)]);
     }
     return x;
   }
-  [i(584)](t) {
+  [i(672)](t) {
     const e = i;
-    for (let x = 0; x < this._objects[e(806)]; x++) {
-      const s = this[e(518)][x];
-      if (s[e(707)][e(543)] === t)
+    for (let x = 0; x < this[e(578)][e(445)]; x++) {
+      const s = this._objects[x];
+      if (s.raycastTarget[e(669)] === t)
         return s;
     }
     return null;
   }
 }
-class J {
-  constructor(t, e) {
-    const x = i;
-    CameraControls[x(699)]({ THREE: t }), this[x(503)] = !![], this.paused = ![], this[x(593)], this[x(764)], this[x(828)], this.targetPosition, this[x(624)], this[x(608)], this[x(776)], this.defaultDampFactor = 0.05, this[x(845)] = 0.05, this[x(773)] = e, this[x(705)] = 0, this[x(632)] = 0, this[x(800)] = 0, this[x(517)] = 512, this[x(497)] = new Array(this[x(517)])[x(583)](0), this[x(795)] = new Array(this.maxGyroSignals).fill(0), this[x(654)] = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i[x(767)](navigator[x(789)]), this[x(537)] = this[x(654)] ? 1.5 : 3, this[x(743)] = new l[x(714)]();
-  }
-  init(t, e, x, s, a, n) {
-    const o = i;
-    this[o(516)] = t, this[o(828)] = e, this.sceneWrapper = x, this.pointerDownCallback = s, this[o(656)] = a, this[o(634)] = n, this[o(776)] = this[o(608)].getSceneZoneByIndex(this[o(705)]), this[o(616)](), this[o(803)](), this.setupRaycaster(), this[o(648)]();
-  }
-  [i(616)]() {
-    const t = i;
-    if (this[t(773)][t(709)])
-      try {
-        let e = new Gyroscope({ frequency: 15 });
-        e.addEventListener(t(628), (x) => {
-          const s = t;
-          this[s(497)].push(e.y * 2), this[s(795)].push(e.x * 2), this[s(632)] = P[s(490)](this[s(497)]), this.tiltY = P[s(490)](this[s(795)]), this[s(497)].length > this[s(517)] && (this[s(497)].pop(), this[s(795)][s(586)]());
-        }), e[t(854)]();
-      } catch (e) {
-        console.log(t(561), e);
-      }
-  }
-  [i(803)]() {
-    const t = i;
-    this[t(828)][t(588)][t(639)](this.activeSceneZone[t(491)], 1), this[t(828)][t(595)](this[t(776)][t(822)]), this[t(815)](this.fitCameraOffset), this[t(764)] && this[t(764)][t(604)](), this[t(764)] = new CameraControls(this[t(828)], this[t(516)].domElement), this.controls[t(711)] = 0.1, this[t(797)]();
-  }
-  resetControlsLimits() {
-    const t = i;
-    this.cameraParams.orbit !== !![] && (this[t(764)].mouseButtons[t(501)] = CameraControls[t(748)][t(849)], this.controls[t(546)][t(587)] = CameraControls[t(748)].TOUCH_ZOOM, this[t(764)][t(473)] = this[t(764)][t(692)] + this[t(845)], this[t(764)][t(787)] = this.controls.azimuthAngle - this.defaultRotationDistance, this[t(764)][t(676)] = this[t(764)][t(703)] + this[t(845)], this[t(764)][t(784)] = this[t(764)].polarAngle - this[t(845)], this[t(764)][t(522)] = this[t(764)].distance * 2, this[t(764)][t(545)] = this[t(764)][t(606)] * 2, this[t(743)] = new l[t(714)](this[t(764)][t(692)], this[t(764)].polarAngle));
-  }
-  [i(852)]() {
-    const t = i;
-    this[t(593)] && this[t(593)][t(604)]();
-    const e = this.sceneWrapper[t(653)](this[t(776)].zone);
-    this[t(593)] = new Q(e, this.camera, this[t(516)].domElement), this[t(593)].addEventListener(t(831), this.onPointerDown[t(844)](this)), this[t(593)][t(669)](t(630), this.onHoverOver[t(844)](this)), this.raycastManager[t(669)]("hoveroff", this.onHoverOff[t(844)](this));
-  }
-  [i(814)]() {
-    const t = i;
-    this[t(705)] += 1, this[t(608)].wrappedSceneZones[t(806)] <= this[t(705)] && (this[t(705)] = 0), this[t(474)](this[t(705)]);
-  }
-  changeSceneZoneByIndex(t, e = 0.01) {
-    const x = i, s = this.sceneWrapper[x(793)](t);
-    this[x(705)] = t, this[x(779)](s, e);
-  }
-  changeSceneZoneByName(t, e = 0.01) {
-    const x = i, s = this[x(608)].getSceneZoneByName(t);
-    this[x(705)] = s[x(792)], this[x(779)](s[x(548)], e);
-  }
-  [i(779)](t, e = 0.01) {
-    const x = i;
-    this[x(776)] = t;
-    const s = this[x(815)](this[x(537)]);
-    this[x(848)](![]), this[x(801)](t[x(491)], t[x(822)], s, e)[x(515)](() => {
-      const a = x;
-      this[a(764)][a(610)](), this[a(797)](), this[a(848)](!![]);
-    }), this.setupRaycaster();
-  }
-  [i(815)](t = 3) {
-    const e = i, x = Math[e(851)](this[e(776)][e(781)].x, this[e(776)].lookAtTargetSize.y, this[e(776)][e(781)].z), s = x / (2 * Math[e(658)](Math.PI * this.camera[e(532)] / 360)), a = s / this.camera[e(685)], n = t * Math[e(851)](s, a), o = this[e(776)].lookAtTarget[e(855)]()[e(747)](this[e(828)][e(588)])[e(662)]()[e(762)](n);
-    return this[e(828)][e(588)].copy(this.activeSceneZone[e(822)])[e(747)](o), this[e(828)].lookAt(this[e(776)][e(822)]), this[e(828)][e(588)].distanceTo(this[e(776)][e(822)]);
-  }
-  setInputActive(t) {
-    const e = i;
-    this[e(503)] = t, this.raycastManager[e(503)] = t, this[e(764)].enabled = t;
-  }
-  [i(478)](t) {
-    this.paused = t, this.enabled = !t, this.raycastManager.enabled = !t;
-  }
-  [i(648)](t = !![]) {
-    const e = i;
-    this.enabled && (this[e(655)](this.activeSceneZone[e(491)], t), this.setLookAt(this[e(776)].boxCenter, this.activeSceneZone.lookAtTarget, t), this[e(764)][e(768)](t));
-  }
-  setDampFactor(t = 0.05) {
-    const e = i;
-    this[e(764)][e(695)] = t * 50;
-  }
-  setZoom(t, e = !![]) {
-    const x = i;
-    this[x(764)][x(737)](t, e);
-  }
-  [i(599)](t, e, x = !![]) {
-    const s = i;
-    return this[s(764)][s(599)](t.x, t.y, t.z, e.x, e.y, e.z, x);
-  }
-  [i(655)](t, e = !![]) {
-    return this[i(764)].moveTo(t.x, t.y, t.z, !![]);
-  }
-  setCameraOffset(t) {
-    const e = i;
-    this[e(828)][e(690)] = t, this.camera[e(626)]();
-  }
-  orbitCameraTo(t, e, x, s = 0.04, a = !![]) {
-    const n = i;
-    return t = t.sub(e).setLength(x).add(e), this.setDampFactor(s), this[n(764)][n(599)](t.x, t.y, t.z, e.x, e.y, e.z, a);
-  }
-  [i(770)](t) {
-    const e = i;
-    t.object === null || !this[e(503)] || (this[e(593)][e(503)] = ![], this[e(624)](t[e(605)]));
-  }
-  [i(504)](t) {
-    t.object !== null && this.hoverOverCallback(t.object);
-  }
-  [i(757)](t) {
-    const e = i;
-    t[e(605)] !== null && this[e(634)](t[e(605)]);
-  }
-  [i(621)]() {
-    const t = i;
-    if (this[t(764)][t(483)] || this[t(773)].orbit)
-      return;
-    const e = this[t(764)][t(498)] == 32 || this.controls[t(498)] == 1;
-    let x = -1, s = 1;
-    !e && (this[t(773)][t(841)] && this[t(593)].pointer.x && (this[t(743)].x = this[t(593)][t(809)].x + this[t(764)][t(692)], this[t(743)].y = -this[t(593)][t(809)].y + this[t(764)][t(703)], this.rotationTarget.x = P[t(738)](this[t(743)].x, this[t(764)][t(692)] + x, this.controls.azimuthAngle + s, this[t(764)][t(787)], this[t(764)].maxAzimuthAngle), this.rotationTarget.y = P[t(738)](this.rotationTarget.y, this[t(764)][t(703)] + x, this[t(764)].polarAngle + s, this.controls[t(784)], this[t(764)][t(676)])), this[t(654)] && this.cameraParams.gyro && (this[t(743)].x = this.tiltX + this.controls[t(692)], this[t(743)].y = this[t(800)] + this[t(764)].polarAngle), this[t(764)][t(597)](this[t(743)].x, this.rotationTarget.y, ![]));
-  }
-  update(t) {
-    const e = i;
-    this[e(764)] !== null && (this[e(593)][e(701)] = t * 1e3, !this[e(594)] && (this[e(621)](), this[e(764)][e(489)](t)));
-  }
-}
 class K {
   constructor(t, e) {
     const x = i;
-    this[x(683)] = ![], this[x(615)] = x(618), this[x(521)] = x(736), this[x(534)] = document[x(664)](t), this.loadingScreen = document[x(664)](e), !this[x(534)] && console[x(660)](x(716), t, x(531)), !this.loadingScreen && console[x(660)]("loadingScreen not found. Make sure this returns the correct element: document.getElementById(", e, x(531));
+    CameraControls.install({ THREE: t }), this[x(652)] = !![], this[x(545)] = ![], this[x(533)], this.controls, this[x(653)], this[x(582)], this.pointerDownCallback, this[x(691)], this.activeSceneZone, this[x(574)] = 0.05, this[x(738)] = 0.05, this[x(515)] = e, this[x(666)] = 0, this[x(717)] = 0, this[x(458)] = 0, this[x(481)] = 512, this[x(754)] = new Array(this.maxGyroSignals)[x(742)](0), this.tiltYArr = new Array(this.maxGyroSignals)[x(742)](0), this[x(480)] = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i[x(786)](navigator.userAgent), this.fitCameraOffset = this.isMobileDevice ? 1.5 : 3, this[x(692)] = new d[x(648)]();
   }
-  showLoadingScreen(t, e = null) {
+  [i(493)](t, e, x, s, o, n) {
+    const a = i;
+    this[a(657)] = t, this[a(653)] = e, this[a(691)] = x, this.pointerDownCallback = s, this[a(603)] = o, this.hoverOffCallback = n, this[a(644)] = this[a(691)][a(645)](this.activeZoneIndex), this.setupGyro(), this[a(658)](), this[a(470)](), this[a(760)]();
+  }
+  [i(763)]() {
+    const t = i;
+    if (this.cameraParams[t(729)])
+      try {
+        let e = new Gyroscope({ frequency: 15 });
+        e[t(768)](t(518), (x) => {
+          const s = t;
+          this[s(754)][s(483)](e.y * 2), this.tiltYArr[s(483)](e.x * 2), this[s(717)] = z[s(733)](this[s(754)]), this.tiltY = z[s(733)](this[s(767)]), this[s(754)][s(445)] > this[s(481)] && (this[s(754)][s(618)](), this[s(767)].pop());
+        }), e[t(704)]();
+      } catch (e) {
+        console[t(550)](t(722), e);
+      }
+  }
+  [i(658)]() {
+    const t = i;
+    this[t(653)][t(650)][t(751)](this[t(644)][t(465)], 1), this[t(653)][t(804)](this[t(644)][t(610)]), this[t(490)](this[t(780)]), this[t(620)] && this[t(620)][t(520)](), this[t(620)] = new CameraControls(this[t(653)], this[t(657)].domElement), this[t(620)].restThreshold = 0.1, this[t(673)]();
+  }
+  resetControlsLimits() {
+    const t = i;
+    this.cameraParams[t(747)] !== !![] && (this[t(620)][t(494)][t(592)] = CameraControls[t(579)][t(543)], this[t(620)][t(790)][t(714)] = CameraControls.ACTION[t(819)], this[t(620)][t(505)] = this.controls.azimuthAngle + this.defaultRotationDistance, this[t(620)][t(795)] = this[t(620)][t(810)] - this[t(738)], this[t(620)][t(827)] = this.controls.polarAngle + this.defaultRotationDistance, this[t(620)][t(583)] = this.controls[t(601)] - this.defaultRotationDistance, this[t(620)].maxDistance = this[t(620)][t(697)] * 2, this[t(620)][t(609)] = this[t(620)][t(697)] * 2, this[t(692)] = new d[t(648)](this[t(620)][t(810)], this[t(620)][t(601)]));
+  }
+  [i(470)]() {
+    const t = i;
+    this.raycastManager && this[t(533)][t(520)]();
+    const e = this[t(691)].getInteractablesByZone(this.activeSceneZone[t(785)]);
+    this[t(533)] = new J(e, this[t(653)], this.renderer[t(615)]), this[t(533)][t(768)]("pointerdown", this.onPointerDown[t(637)](this)), this[t(533)][t(768)](t(485), this[t(706)][t(637)](this)), this[t(533)][t(768)](t(708), this[t(651)][t(637)](this));
+  }
+  nextSceneZone() {
+    const t = i;
+    this.activeZoneIndex += 1, this[t(691)].wrappedSceneZones[t(445)] <= this.activeZoneIndex && (this[t(666)] = 0), this.changeSceneZoneByIndex(this[t(666)]);
+  }
+  [i(456)](t, e = 0.01) {
+    const x = i, s = this[x(691)][x(645)](t);
+    this.activeZoneIndex = t, this[x(788)](s, e);
+  }
+  [i(619)](t, e = 0.01) {
+    const x = i, s = this[x(691)].getSceneZoneByName(t);
+    this[x(666)] = s[x(469)], this.changeCameraZone(s[x(500)], e);
+  }
+  [i(788)](t, e = 0.01) {
     const x = i;
-    this.isOverlayActive = t, t == !![] || this.loadingScreen.remove(), e != null && (this[x(829)][x(672)](), e());
+    this[x(644)] = t;
+    const s = this.fitCameraToZone(this[x(780)]);
+    this[x(677)](![]), this[x(724)](t[x(465)], t[x(610)], s, e)[x(707)](() => {
+      const o = x;
+      this[o(620)][o(596)](), this[o(673)](), this[o(677)](!![]);
+    }), this[x(470)]();
   }
-  pushHashURL(t = "", e = !![]) {
+  [i(490)](t = 3) {
+    const e = i, x = Math.max(this[e(644)][e(830)].x, this.activeSceneZone[e(830)].y, this[e(644)].lookAtTargetSize.z), s = x / (2 * Math[e(584)](Math.PI * this[e(653)][e(600)] / 360)), o = s / this.camera[e(560)], n = t * Math[e(606)](s, o), a = this.activeSceneZone[e(610)].clone()[e(590)](this[e(653)][e(650)]).normalize()[e(649)](n);
+    return this[e(653)][e(650)][e(472)](this.activeSceneZone.lookAtTarget).sub(a), this[e(653)].lookAt(this[e(644)][e(610)]), this[e(653)].position.distanceTo(this[e(644)].lookAtTarget);
+  }
+  [i(677)](t) {
+    const e = i;
+    this.enabled = t, this[e(533)].enabled = t, this[e(620)][e(652)] = t;
+  }
+  [i(497)](t) {
+    const e = i;
+    this.paused = t, this[e(652)] = !t, this[e(533)][e(652)] = !t;
+  }
+  resetCamera(t = !![]) {
+    const e = i;
+    this[e(652)] && (this[e(774)](this[e(644)][e(465)], t), this[e(460)](this[e(644)][e(465)], this[e(644)].lookAtTarget, t), this[e(620)].reset(t));
+  }
+  [i(812)](t = 0.05) {
+    const e = i;
+    this[e(620)][e(690)] = t * 50;
+  }
+  [i(540)](t, e = !![]) {
+    this.controls.zoomTo(t, e);
+  }
+  [i(460)](t, e, x = !![]) {
+    const s = i;
+    return this[s(620)][s(460)](t.x, t.y, t.z, e.x, e.y, e.z, x);
+  }
+  [i(774)](t, e = !![]) {
     const x = i;
-    window[x(617)][x(502)] && e ? window[x(617)][x(502)](null, null, t) : location[x(590)] = t;
+    return this.controls[x(656)](t.x, t.y, t.z, !![]);
   }
-  [i(565)](t = !![]) {
+  [i(801)](t) {
     const e = i;
-    this[e(683)] = t, t ? (this.contentContainer.classList.add(this[e(521)]), this[e(534)][e(589)][e(672)](this.hiddenSelector)) : (this.contentContainer[e(589)][e(578)](this[e(615)]), this.contentContainer.classList[e(672)](this[e(521)]), this.pushHashURL("", ![]));
+    this[e(653)][e(587)] = t, this[e(653)][e(636)]();
   }
-  [i(700)](t) {
-    const e = i;
-    this.contentContainer[e(752)] = t;
+  [i(724)](t, e, x, s = 0.04, o = !![]) {
+    const n = i;
+    return t = t[n(590)](e).setLength(x)[n(616)](e), this[n(812)](s), this[n(620)][n(460)](t.x, t.y, t.z, e.x, e.y, e.z, o);
   }
-  [i(644)](t) {
+  onPointerDown(t) {
     const e = i;
-    let x = e(746);
-    this[e(534)][e(668)](e(570), x), x = this[e(534)][e(817)]("#z3d-close-btn"), x.addEventListener(e(751), () => {
-      this[e(565)](![]), t();
+    t.object === null || !this.enabled || (this[e(533)][e(652)] = ![], this[e(711)](t[e(511)]));
+  }
+  [i(706)](t) {
+    const e = i;
+    t[e(511)] !== null && this[e(603)](t[e(511)]);
+  }
+  [i(651)](t) {
+    t.object !== null && this.hoverOffCallback(t.object);
+  }
+  [i(765)]() {
+    const t = i;
+    if (this[t(620)][t(815)] || this[t(515)][t(747)])
+      return;
+    const e = this[t(620)][t(466)] == 32 || this[t(620)][t(466)] == 1;
+    let x = -1, s = 1;
+    !e && (this[t(515)][t(746)] && this.raycastManager.pointer.x && (this[t(692)].x = this[t(533)][t(625)].x + this[t(620)][t(810)], this[t(692)].y = -this[t(533)].pointer.y + this[t(620)].polarAngle, this[t(692)].x = z[t(716)](this[t(692)].x, this[t(620)][t(810)] + x, this[t(620)][t(810)] + s, this.controls[t(795)], this[t(620)][t(505)]), this[t(692)].y = z[t(716)](this[t(692)].y, this[t(620)][t(601)] + x, this[t(620)][t(601)] + s, this.controls.minPolarAngle, this[t(620)][t(827)])), this[t(480)] && this[t(515)].gyro && (this[t(692)].x = this[t(717)] + this[t(620)][t(810)], this[t(692)].y = this[t(458)] + this[t(620)][t(601)]), this.controls.rotateTo(this[t(692)].x, this[t(692)].y, ![]));
+  }
+  [i(630)](t) {
+    const e = i;
+    this[e(620)] !== null && (this[e(533)].fps = t * 1e3, !this.paused && (this[e(765)](), this[e(620)][e(630)](t)));
+  }
+}
+class Q {
+  constructor(t, e) {
+    const x = i;
+    this[x(538)] = ![], this[x(519)] = x(814), this[x(468)] = x(498), this[x(824)] = document[x(749)](t), this[x(593)] = document[x(749)](e), !this[x(824)] && console[x(622)](x(594), t, x(614)), !this[x(593)] && console[x(622)]("loadingScreen not found. Make sure this returns the correct element: document.getElementById(", e, x(614));
+  }
+  [i(522)](t, e = null) {
+    const x = i;
+    this.isOverlayActive = t, t == !![] || this.loadingScreen[x(805)](), e != null && (this.loadingScreen[x(805)](), e());
+  }
+  [i(599)](t = "", e = !![]) {
+    const x = i;
+    window[x(552)][x(783)] && e ? window[x(552)][x(783)](null, null, t) : location[x(720)] = t;
+  }
+  showDynamicHTML(t = !![]) {
+    const e = i;
+    this[e(538)] = t, t ? (this[e(824)][e(640)][e(616)](this[e(468)]), this[e(824)][e(640)].remove(this[e(519)])) : (this[e(824)][e(640)].add(this[e(519)]), this[e(824)][e(640)][e(805)](this[e(468)]), this[e(599)]("", ![]));
+  }
+  [i(512)](t) {
+    const e = i;
+    this[e(824)].innerHTML = t;
+  }
+  addDynamicCloseButton(t) {
+    const e = i;
+    let x = e(654);
+    this[e(824)][e(585)](e(792), x), x = this[e(824)].querySelector(e(750)), x[e(768)](e(715), () => {
+      this[e(776)](![]), t();
     });
   }
-  [i(791)](t, e, x) {
+  [i(527)](t, e, x) {
     const s = i;
-    this[s(700)](t), this[s(644)](e), this[s(671)](x);
+    this[s(512)](t), this[s(635)](e), this[s(599)](x);
   }
-  openLink(t) {
-    window.open(t);
+  [i(701)](t) {
+    window[i(639)](t);
   }
-  [i(702)](t) {
+  [i(808)](t) {
     const e = i;
-    this[e(534)][e(817)](e(691)) && (t(), this[e(534)][e(752)] = "");
+    this[e(824)].querySelector(e(694)) && (t(), this.contentContainer[e(567)] = "");
   }
 }
 class r0 {
   constructor(t) {
     const e = i;
-    let x = this, s = null, a, n, o, c, d, u, f = null, w, v;
-    window.DEBUG = t.debug;
-    async function z() {
-      const r = p;
-      s = new Y(t[r(559)].canvasID, t[r(828)]), a = new J(l, t[r(828)]), n = new K(t[r(559)][r(557)], t[r(559)][r(812)]), n[r(780)](!![]);
-      const h = s[r(528)]();
-      f = s[r(558)]();
-      const _ = s[r(485)]();
-      c = await new V(h, _, t[r(827)]).build((A, y, C) => {
+    let x = this, s = null, o, n, a, c, l, b, f = null, g, y;
+    window[e(553)] = t[e(671)];
+    async function T() {
+      const r = e;
+      s = new Y(t.domElements[r(633)], t[r(653)]), o = new K(d, t[r(653)]), n = new Q(t[r(800)][r(608)], t[r(800)][r(464)]), n.showLoadingScreen(!![]);
+      const h = s.getScene();
+      f = s[r(507)]();
+      const _ = s[r(797)]();
+      c = await new X(h, _, t[r(537)])[r(525)]((v, w, A) => {
         const m = r;
-        x[m(633)] && x[m(633)](A, y, Math[m(830)](C));
-      }), w = new l[r(786)](), o = new l[r(493)](h);
-      const b = c[r(623)]();
-      return S(r(819), b, !![]), a[r(524)](_, f, c, j, B, I), n[r(780)](![], k), O(), T(), { camera: f, scene: h, renderer: _, sceneWrapper: c };
+        x[m(829)] && x[m(829)](v, w, Math[m(789)](A));
+      }), g = new d[r(447)](), a = new d[r(741)](h);
+      const u = c[r(731)]();
+      return k(r(667), u, !![]), o[r(493)](_, f, c, O, Z, B), n[r(522)](![], C), I(), P(), { camera: f, scene: h, renderer: _, sceneWrapper: c };
     }
-    function O() {
-      const r = p;
-      window[r(732)] = function() {
+    function I() {
+      const r = e;
+      window[r(685)] = function() {
         const h = r;
-        location[h(590)] == "" ? n[h(702)](k) : window[h(617)][h(513)] && window.history[h(513)]();
-      }, window[r(669)](r(477), () => {
-        k();
+        location[h(720)] == "" ? n.closeDynamicContent(C) : window[h(552)][h(757)] && window.history[h(757)]();
+      }, window[r(768)](r(759), () => {
+        C();
       }, ![]);
     }
-    function T() {
-      const r = p;
-      requestAnimationFrame(T), !n.isOverlayActive && (v = w[r(846)](), o.update(v), a[r(489)](v), s.render(), x[r(523)] && x[r(523)](v));
+    function P() {
+      const r = e;
+      requestAnimationFrame(P), !n[r(538)] && (y = g[r(773)](), a[r(630)](y), o[r(630)](y), s[r(503)](), x.onUpdate && x[r(586)](y));
     }
-    function k(r = !![]) {
-      const h = p;
-      s[h(768)](), a[h(648)](r);
+    function C(r = !![]) {
+      const h = e;
+      s.reset(), o[h(760)](r);
     }
-    async function S(r, h, _ = ![], M = ![], b = null) {
-      function A(C) {
-        const m = p;
-        return Object.keys(C)[m(806)] === 0;
+    async function k(r, h, _ = ![], M = ![], u = null) {
+      function v(A) {
+        const m = S;
+        return Object[m(646)](A)[m(445)] === 0;
       }
-      return A(h) === !![] || !(r in h) ? void 0 : D(h[r], b, _, M);
+      return v(h) === !![] || !(r in h) ? void 0 : E(h[r], u, _, M);
     }
-    async function D(r, h = null, _ = ![], M = ![]) {
-      const b = p;
-      let A = 0;
-      for (let y = 0; y < r.length; y++) {
-        const C = r[y], m = o[b(687)](C, h);
-        m.blendMode = l.NoBlending, m.stop(), m[b(768)](), m[b(647)] = !![], m[b(839)] = !![], !_ && (m[b(591)](l[b(592)]), m[b(768)]()), m.clampWhenFinished = M, m[b(816)](), C.duration > A && (A = C[b(661)]);
+    async function E(r, h = null, _ = ![], M = ![]) {
+      const u = e;
+      let v = 0;
+      for (let w = 0; w < r[u(445)]; w++) {
+        const A = r[w], m = a[u(762)](A, h);
+        m.blendMode = d[u(598)], m[u(467)](), m[u(513)](), m.zeroSlopeAtEnd = !![], m[u(569)] = !![], !_ && (m[u(753)](d[u(723)]), m.reset()), m[u(727)] = M, m.play(), A[u(681)] > v && (v = A[u(681)]);
       }
-      return new Promise((y) => setTimeout(() => {
-        y();
-      }, A * 1e3));
+      return new Promise((w) => setTimeout(() => {
+        w();
+      }, v * 1e3));
+    }
+    function Z(r) {
+      const h = e;
+      r[h(524)] == null || !o[h(652)] || (k(h(516), r[h(743)]), x[h(451)] !== null && x[h(451)](r));
     }
     function B(r) {
-      const h = p;
-      r[h(707)] == null || !a[h(503)] || (S(h(712), r.animations), x[h(805)] !== null && x.onHoverOverCallback(r));
+      const h = e;
+      r.raycastTarget != null && x[h(446)] !== null && x[h(446)](r);
     }
-    function I(r) {
-      const h = p;
-      r.raycastTarget != null && x.onHoverOffCallback !== null && x[h(777)](r);
-    }
-    async function j(r) {
-      const h = p;
-      x[h(596)] !== null && x[h(596)](r), a[h(478)](!![]), o.stopAllAction();
-      const _ = S(h(828), r.animations, ![], ![], f), M = S("onClick", r[h(771)], ![], ![]);
-      await Promise[h(807)]([_, M]);
-      const b = c[h(623)]();
-      S(h(819), b, !![]), R(r), a[h(478)](![]);
+    async function O(r) {
+      const h = e;
+      x[h(536)] !== null && x[h(536)](r), o[h(497)](!![]), a[h(475)]();
+      const _ = k("camera", r[h(743)], ![], ![], f), M = k("onClick", r[h(743)], ![], ![]);
+      await Promise[h(718)]([_, M]);
+      const u = c[h(731)]();
+      k("looping", u, !![]), R(r), o[h(497)](![]);
     }
     function R(r) {
-      const h = p;
-      switch (d = r[h(601)][h(525)], u = r[h(601)][h(547)], d) {
+      const h = e;
+      switch (l = r[h(461)][h(548)], b = r[h(461)][h(655)], l) {
         case "animation":
           break;
-        case h(519):
-          a[h(754)](u);
+        case h(482):
+          o.nextScene(b);
           break;
-        case h(506):
-          a.changeSceneZoneByName(u);
+        case h(631):
+          o.changeSceneZoneByName(b);
           break;
-        case "iframe":
-          n.setDynamicContent(u, k), n[h(565)]();
+        case h(721):
+          n.setDynamicContent(b, C), n[h(776)]();
           break;
         case "link":
-          n[h(783)](u), k();
+          n[h(701)](b), C();
           break;
       }
-      u = null, d = null;
+      b = null, l = null;
     }
-    x[e(745)] = function(r, h = 0.01) {
-      a[e(745)](r, h);
-    }, x[e(814)] = function() {
-      a[e(754)]();
-    }, x.setup = z, x.reset = k, x[e(596)] = null, x.onHoverOverCallback = null, x[e(777)] = null, x[e(523)] = null, x[e(633)] = null;
+    x.changeSceneZoneByName = function(r, h = 0.01) {
+      o[e(619)](r, h);
+    }, x[e(473)] = function() {
+      o[e(802)]();
+    }, x[e(734)] = T, x.reset = C, x[e(536)] = null, x[e(451)] = null, x[e(446)] = null, x[e(586)] = null, x.onProgressLoading = null;
   }
+}
+function S(p, t) {
+  const e = D();
+  return S = function(x, s) {
+    return x = x - 445, e[x];
+  }, S(p, t);
 }
 export {
   r0 as default
