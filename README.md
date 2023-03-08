@@ -149,13 +149,13 @@ const ZED = new Z3D({
 					"content": "pages/about.html"
 				},
 				{
-					"type": "buttonNextZone",
+					"type": "goToNextZone",
 					"modelName": "Button_GoToNextZone",
 					"conent": "1"
 				},
 				{
-					"type": "buttonZone",
-					"modelName": "LandingZoneLabelModel",
+					"type": "goToZone",
+					"modelName": "LandingScreen_LabelModel",
 					"conent": "LandingZone"
 				}
 			]

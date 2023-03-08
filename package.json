@@ -4,13 +4,13 @@
   "description": "An fully extensible 3D flat file cms, built with Three.js.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/64blit/Z3D.js.git"
+    "url": "git+https://github.com/64blit/xyz3d.js.git"
   },
   "files": [
-    "./Z3D.umd.js",
-    "./Z3D.es.js"
+    "./xyz3d.umd.js",
+    "./xyz3d.es.js"
   ],
-  "main": "./Z3D.umd.js",
+  "main": "./xyz3d.umd.js",
   "keywords": [
     "3d",
     "cms",
@@ -20,9 +20,9 @@
   "author": "64blit",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/64blit/Z3D.js/issues"
+    "url": "https://github.com/64blit/xyz3d.js/issues"
   },
-  "homepage": "https://github.com/64blit/Z3D.js#readme",
+  "homepage": "https://github.com/64blit/xyz3d.js#readme",
   "directories": {
     "doc": "docs"
   },
