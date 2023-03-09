@@ -17,6 +17,27 @@ Features:
 - Three.js "animationLoop" and variables, such as "scene, camera, renderer," exposed for simpler development
 - And more! :-)
 
+## Installation
+
+```html
+<!-- scripts -->
+<script async src="https://unpkg.com/es-module-shims@1.7.0/dist/es-module-shims.js"></script>
+<script type="importmap">
+	{
+		"imports": {
+			"three": "https://unpkg.com/three@0.150.1/build/three.js",
+			"camera-controls": "https://unpkg.com/browse/camera-controls@2.3.1/dist/camera-controls.module.js",
+			"xyz3d-cms": "https://unpkg.com/browse/xyz3d-cms@1.0.6/dist/xyz3d-cms.js"
+		}
+	}
+</script>
+```
+
+```javascript
+import XYZ3d from 'xyz3d-cms'
+const xyzed = new XYZ3d({ xyz3dParams })
+```
+
 ### Blender plugin
 
 [xyz3d.js-blender-plugin](https://github.com/64blit/xyz3d.js-blender-plugin)
