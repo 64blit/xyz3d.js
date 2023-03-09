@@ -1,6 +1,6 @@
 {
   "name": "xyz3d-cms",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An fully extensible 3D flat file cms, built with Three.js.",
   "repository": {
     "type": "git",
