@@ -1,16 +1,23 @@
 {
   "name": "xyz3d-cms",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An fully extensible 3D flat file cms, built with Three.js.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/64blit/xyz3d.js.git"
   },
+  "type": "module",
+  "main": "./xyz3d.es.js",
   "files": [
     "./xyz3d.umd.js",
     "./xyz3d.es.js"
   ],
-  "main": "./xyz3d.umd.js",
+  "exports": {
+    ".": {
+      "import": "./xyz3d.es.js",
+      "require": "./xyz3d.umd.js"
+    }
+  },
   "keywords": [
     "3d",
     "cms",
