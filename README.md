@@ -25,9 +25,9 @@ Features:
 <script type="importmap">
 	{
 		"imports": {
-			"three": "https://unpkg.com/three@0.150.1/build/three.js",
-			"camera-controls": "https://unpkg.com/browse/camera-controls@2.3.1/dist/camera-controls.module.js",
-			"xyz3d-cms": "https://unpkg.com/browse/xyz3d-cms@1.0.6/dist/xyz3d-cms.js"
+			"three": "https://unpkg.com/three@0.150.1/build/three.module.js",
+			"camera-controls": "https://unpkg.com/camera-controls@2.3.1/dist/camera-controls.module.js",
+			"xyz3d-cms": "https://unpkg.com/xyz3d-cms@1.0.6/dist/xyz3d-cms.js"
 		}
 	}
 </script>
