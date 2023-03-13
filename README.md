@@ -19,22 +19,9 @@ Features:
 
 ## Installation
 
-```html
-<!-- scripts -->
-<script async src="https://unpkg.com/es-module-shims@1.7.0/dist/es-module-shims.js"></script>
-<script type="importmap">
-	{
-		"imports": {
-			"three": "https://unpkg.com/three@0.150.1/build/three.module.js",
-			"camera-controls": "https://unpkg.com/camera-controls@2.3.1/dist/camera-controls.module.js",
-			"xyz3d-cms": "https://unpkg.com/xyz3d-cms@1.0.6/dist/xyz3d-cms.js"
-		}
-	}
-</script>
-```
-
 ```javascript
-import XYZ3d from 'xyz3d-cms'
+import { THREE, XYZ3d } from 'https://unpkg.com/xyz3d-cms@{ENTER VERSION HERE: ex 1.0.6}/dist/xyz3d-cms.js'
+
 const xyzed = new XYZ3d({ xyz3dParams })
 ```
 
