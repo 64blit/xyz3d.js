@@ -189,7 +189,7 @@
                 <tr>
   <td class='break-word'><span class='code bold'>XYZ3dConfig.debug</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>
   </td>
-  <td class='break-word'><span>Turns on or off debugging which ads an AxisHelper to the scene and logs more details of the scene, this introduces significant startup lag. Default is false.
+  <td class='break-word'><span>Turns on or off debugging mode. This adds performance monitoring, live raycast hit tracing, an axes helper, and verbose scene logging. Default is false.
 </span></td>
 </tr>
 
@@ -287,6 +287,15 @@
 
   
     <tr>
+  <td class='break-word'><span class='code bold'>XYZ3dConfig.camera.cameraFramePadding</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>
+  </td>
+  <td class='break-word'><span>, Controls the amount of padding from the interactable elements to the sides of the display, to ensure all interactables of the current zone are always in frame, default is 1.
+</span></td>
+</tr>
+
+
+  
+    <tr>
   <td class='break-word'><span class='code bold'>XYZ3dConfig.camera.postEffects</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>
   </td>
   <td class='break-word'><span>Controls post effects.
@@ -356,6 +365,15 @@
 
 
   
+
+
+  
+    <tr>
+  <td class='break-word'><span class='code bold'>XYZ3dConfig.camera.postEffects.antialias</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>
+  </td>
+  <td class='break-word'><span>Turns on or off atialiasing post effects. Default is true.
+</span></td>
+</tr>
 
 
   

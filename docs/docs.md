@@ -38,7 +38,7 @@ Create a 3D static, flat-file, CMS instance.
 
 *   `XYZ3dConfig` **[Object][28]**&#x20;
 
-    *   `XYZ3dConfig.debug` **[Boolean][29]** Turns on or off debugging which ads an AxisHelper to the scene and logs more details of the scene, this introduces significant startup lag. Default is false.
+    *   `XYZ3dConfig.debug` **[Boolean][29]** Turns on or off debugging mode. This adds performance monitoring, live raycast hit tracing, an axes helper, and verbose scene logging. Default is false.
     *   `XYZ3dConfig.jsonPath` **[String][30]** The path of the 3D scene created with the corresponding plugin.
     *   `XYZ3dConfig.domElements` **[Object][28]** All html IDs required to link the Threejs componenets.
 
@@ -51,6 +51,7 @@ Create a 3D static, flat-file, CMS instance.
         *   `XYZ3dConfig.camera.followMouse` **[Boolean][29]** Turns on or off camera movement based on hovering pointer position, only for desktop. Default is true.
         *   `XYZ3dConfig.camera.gyro` **[Boolean][29]** Turns on or off camera movement based on gyroscope movement, only for mobile.
         *   `XYZ3dConfig.camera.fov` **[String][30]** Controls camera fov, default is 30.
+        *   `XYZ3dConfig.camera.cameraFramePadding` **[String][30]** , Controls the amount of padding from the interactable elements to the sides of the display, to ensure all interactables of the current zone are always in frame, default is 1.
         *   `XYZ3dConfig.camera.postEffects` **[Object][28]** Controls post effects.
 
             *   `XYZ3dConfig.camera.postEffects.enabled` **[Boolean][29]** Turns on or off post effects. Default is true.
@@ -61,6 +62,7 @@ Create a 3D static, flat-file, CMS instance.
                 *   `XYZ3dConfig.camera.postEffects.bloom.threshold` **[Number][31]** Controls bloom post effects threshold. Default is 0.1.
                 *   `XYZ3dConfig.camera.postEffects.bloom.strength` **[Number][31]** Controls bloom post effects strength. Default is 2.
                 *   `XYZ3dConfig.camera.postEffects.bloom.radius` **[Number][31]** Controls bloom post effects radius. Default is 1.
+            *   `XYZ3dConfig.camera.postEffects.antialias` **[Object][28]** Turns on or off atialiasing post effects. Default is true.
 
 ### Examples
 

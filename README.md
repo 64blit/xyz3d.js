@@ -1,21 +1,19 @@
 # xyz3d-cms
 
-An extensible flat file cms with a 3D interface built on Three.js. The easiest way to create fully 3D websites.
+A js front-end framework for streamlined 3D website creation. Built with Three.js.
 
 Features:
 
-- GLTF file support - including lighting and materials
-- Animation support and animation firing callbacks. Animation types include: "looping, onClick, onHover"
+- Responsive to display size!
+- Animated GLTF support (including light export!)
+- Animate your objects in blender and have them fired on events like: "onClick, onHover" or simply played on loop
 - Clickable models that open iframe or popup window
 - JSON file for scene configuration and loading dynamic lights/hdr environments
 - Custom Blender plugin for rapid development
 - Smooth 3D scene navigation with JS APIs - "xyz3d.changeSceneZoneByName('HomePage')"
 - Built in post processing
 - Mobile devices supported + gryo based movement
-- Easy fallback method for legacy devices
-- No database, or complex server setup required. Fully static!
-- Three.js "animationLoop" and variables, such as "scene, camera, renderer," exposed for simpler development
-- And more! :-)
+- Built in fallback method for legacy devices
 
 ## Installation
 
@@ -125,11 +123,15 @@ const xyz3d = new XYZ3d({
 
 ### Example Scene JSON
 
+All json options are shown below,
+
 ```json
 {
 	"models": [
 		{
 			"id": "city 1",
+			"enabled": true,
+			"path": "/assets/models/city_model.glb",
 			"position": {
 				"x": 0,
 				"y": 0,
@@ -146,28 +148,30 @@ const xyz3d = new XYZ3d({
 				"z": 0,
 				"w": 0
 			},
-			"castShadow": true,
-			"receiveShadow": true,
-			"path": "/assets/models/city_model.glb",
+			"shadow": true, // sets both castShadow and receiveShadow to this value
+			"shadowBias": 0.0005,
+			"shadowNormalBias": 0.01,
+			"shadowRadius": 4.0,
+			"frustumCulled": true,
 			"interactablesContent": [
 				{
 					"type": "link",
-					"modelName": "Button_OpenStore",
+					"modelName": "ModelNameGoesHere",
 					"content": "https://www.ebay.com"
 				},
 				{
 					"type": "iframe",
-					"modelName": "Button_AboutUs",
+					"modelName": "ModelNameGoesHere",
 					"content": "pages/about.html"
 				},
 				{
 					"type": "goToNextZone",
-					"modelName": "Button_GoToNextZone",
+					"modelName": "ModelNameGoesHere",
 					"conent": "1"
 				},
 				{
 					"type": "goToZone",
-					"modelName": "LandingScreen_LabelModel",
+					"modelName": "ModelNameGoesHere",
 					"conent": "LandingZone"
 				}
 			]
@@ -177,6 +181,7 @@ const xyz3d = new XYZ3d({
 		{
 			"id": "point light 1",
 			"type": "pointLight",
+			"enabled": true,
 			"position": {
 				"x": 0,
 				"y": 0.25,
@@ -190,12 +195,14 @@ const xyz3d = new XYZ3d({
 		{
 			"id": "ambient light 1",
 			"type": "ambientLight",
+			"enabled": true,
 			"color": "#FFFFFF",
 			"intensity": 1.0
 		},
 		{
 			"id": "dir light 1",
 			"type": "directionalLight",
+			"enabled": true,
 			"position": {
 				"x": 10,
 				"y": 10,
@@ -213,6 +220,7 @@ const xyz3d = new XYZ3d({
 		{
 			"id": "bg hdr",
 			"type": "hdr",
+			"enabled": true,
 			"path": "/assets/textures/bg.hdr",
 			"backgroundIntensity": 1,
 			"backgroundBlurriness": 0
@@ -220,6 +228,7 @@ const xyz3d = new XYZ3d({
 		{
 			"id": "bg exr",
 			"type": "exr",
+			"enabled": true,
 			"path": "/assets/textures/1k.exr",
 			"backgroundIntensity": 1,
 			"backgroundBlurriness": 0
