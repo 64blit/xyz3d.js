@@ -48,9 +48,11 @@ Create a 3D static, flat-file, CMS instance.
     *   `XYZ3dConfig.camera` **[Object][28]** The object containing camera options.
 
         *   `XYZ3dConfig.camera.orbit` **[Boolean][29]** Turns on or off orbit camera controls. When enabled, gyro and followMouse is disabled automatically. Default is false.
+        *   `XYZ3dConfig.camera.cameraShiftAmount` **[String][30]** Controls the X/Y camera movement intensity when orbit is off, default is 0.05.
         *   `XYZ3dConfig.camera.followMouse` **[Boolean][29]** Turns on or off camera movement based on hovering pointer position, only for desktop. Default is true.
         *   `XYZ3dConfig.camera.gyro` **[Boolean][29]** Turns on or off camera movement based on gyroscope movement, only for mobile.
         *   `XYZ3dConfig.camera.fov` **[String][30]** Controls camera fov, default is 30.
+        *   `XYZ3dConfig.camera.cameraSmoothTime` **[String][30]** Controls camera movement time in seconds, default is .25
         *   `XYZ3dConfig.camera.cameraFramePadding` **[String][30]** , Controls the amount of padding from the interactable elements to the sides of the display, to ensure all interactables of the current zone are always in frame, default is 1.
         *   `XYZ3dConfig.camera.postEffects` **[Object][28]** Controls post effects.
 
@@ -102,7 +104,7 @@ such as a "Home Page," or an "Ecommerce Storefront"
 ### Parameters
 
 *   `name` **[String][30]** *   The name of the scene zone to move to, this is defined inside the blender plugin.
-*   `dampSpeed` **[number][31]** The speed at which the camera lerps to the new zone. (optional, default `0.01`)
+*   `dampSpeed` **[number][31]** The speed at which the camera lerps to the new zone. (optional, default `null`)
 
 ### Examples
 
