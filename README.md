@@ -10,7 +10,7 @@ Features:
 - Clickable models that open iframe or popup window
 - JSON file for scene configuration and loading dynamic lights/hdr environments
 - Custom Blender plugin for rapid development
-- Smooth 3D scene navigation with JS APIs - "xyz3d.changeSceneZoneByName('HomePage')"
+- Smooth 3D scene navigation with JS APIs - "xyz3d.gotoSceneZone('HomePage')"
 - Built in post processing
 - Mobile devices supported + gryo based movement
 - Built in fallback method for legacy devices
@@ -34,7 +34,7 @@ const xyzed = new XYZ3d({ xyz3dParams })
 - [new XYZ3d()][1]
   - [Parameters][2]
   - [Examples][3]
-- [changeSceneZoneByName('')][4]
+- [gotoSceneZone('')][4]
   - [Parameters][5]
   - [Examples][6]
 - [nextSceneZone()][7]
@@ -70,7 +70,7 @@ const xyzed = new XYZ3d({ xyz3dParams })
   - `XYZ3dConfig.domElements` **[Object][28]** All html IDs required to link the Threejs componenets.
 
     - `XYZ3dConfig.domElements.canvasID` **[String][30]** The rendering canvas.
-    - `XYZ3dConfig.domElements.iframeID` **[String][30]** The parent dom object for the content iframe.
+    - `XYZ3dConfig.domElements.iframe` **[String][30]** The parent dom object for the content iframe.
     - `XYZ3dConfig.domElements.loadingScreenId` **[String][30]** The dom object to destroy once the 3d scene is loaded.
 
   - `XYZ3dConfig.camera` **[Object][28]** The object containing camera options.
@@ -99,7 +99,7 @@ const xyz3d = new XYZ3d({
 	debug: false,
 	domElements: {
 		canvasID: 'main-canvas',
-		iframeID: 'iframe-content',
+		iframe: 'popup-content',
 		loadingScreenID: 'loading-screen',
 	},
 	camera: {
@@ -148,7 +148,7 @@ All json options are shown below,
 				"z": 0,
 				"w": 0
 			},
-			"shadow": true, // sets both castShadow and receiveShadow to this value
+			"shadow": true, , "//comment_shadow": "sets both castShadow and receiveShadow to this value"
 			"shadowBias": 0.0005,
 			"shadowNormalBias": 0.01,
 			"shadowRadius": 4.0,
@@ -160,14 +160,14 @@ All json options are shown below,
 					"content": "https://www.ebay.com"
 				},
 				{
-					"type": "iframe",
+					"type": "popup",
 					"modelName": "ModelNameGoesHere",
 					"content": "pages/about.html"
 				},
 				{
 					"type": "goToNextZone",
 					"modelName": "ModelNameGoesHere",
-					"conent": "1"
+					"conent": "1" , "//comment_content": "This value can be negative, it's the number of zones to change based on the zone index."
 				},
 				{
 					"type": "goToZone",
@@ -221,7 +221,7 @@ All json options are shown below,
 			"id": "bg hdr",
 			"type": "hdr",
 			"enabled": true,
-			"path": "/assets/textures/bg.hdr",
+			"path": "/assets/textures/4k.hdr",
 			"backgroundIntensity": 1,
 			"backgroundBlurriness": 0
 		},
@@ -229,7 +229,7 @@ All json options are shown below,
 			"id": "bg exr",
 			"type": "exr",
 			"enabled": true,
-			"path": "/assets/textures/1k.exr",
+			"path": "/assets/textures/4k.exr",
 			"backgroundIntensity": 1,
 			"backgroundBlurriness": 0
 		}
@@ -237,7 +237,7 @@ All json options are shown below,
 }
 ```
 
-## changeSceneZoneByName
+## gotoSceneZone
 
 Moves the camera to the provided scene zone. Scene zones correspond to different pages in a site
 such as a "Home Page," or an "Ecommerce Storefront"
@@ -250,7 +250,7 @@ such as a "Home Page," or an "Ecommerce Storefront"
 ### Examples
 
 ```javascript
-XYZ3d.changeSceneZoneByName('About')
+XYZ3d.gotoSceneZone('About')
 ```
 
 ## nextSceneZone
@@ -368,10 +368,10 @@ XYZ3d.onProgressLoading = (step, steps, percent) => {
 [1]: #XYZ3d
 [2]: #parameters
 [3]: #examples
-[4]: #changescenezonebyname
+[4]: #gotoSceneZone
 [5]: #parameters-1
 [6]: #examples-1
-[7]: #nextscenezone
+[7]: #nextSceneZone
 [8]: #examples-2
 [9]: #setup
 [10]: #examples-3

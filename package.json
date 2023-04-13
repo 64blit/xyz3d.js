@@ -1,6 +1,6 @@
 {
   "name": "xyz3d",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "An fully extensible 3D flat file cms, built with Three.js.",
   "repository": {
     "type": "git",
@@ -25,7 +25,7 @@
     "three.js",
     "webgl"
   ],
-  "dependencies": {},
+  "dependencies": { },
   "author": "64blit",
   "license": "ISC",
   "bugs": {
