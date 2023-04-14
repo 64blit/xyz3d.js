@@ -1,7 +1,7 @@
 {
   "name": "xyz3d",
   "version": "0.0.1",
-  "description": "An fully extensible 3D flat file cms, built with Three.js.",
+  "description": "A Three.js typescript framework for easy 3d website creation with streamlined blender integration.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/64blit/xyz3d.js.git"
@@ -21,7 +21,8 @@
   },
   "keywords": [
     "3d",
-    "cms",
+    "framework",
+    "typescript",
     "three.js",
     "webgl"
   ],
