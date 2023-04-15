@@ -9,6 +9,7 @@ https://www.youtube.com/watch?v=3TKJ34WUUyA
 ---
 
 ![example](./docs/btc_example.png)
+![example](./docs/demo.gif)
 ![example](./docs/bio_example.png)
 
 ---
