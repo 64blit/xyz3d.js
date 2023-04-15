@@ -1,6 +1,7 @@
 # xyz3d.js
 
-A js front-end framework for streamlined 3D website creation. Built with Three.js.
+A Three.js framework for easy 3d website creation with streamlined blender integration. Works on mobile, has built in post-effects, responsive, optimized, and built in raycasting, animations, & more.
+
 Intro video: https://www.youtube.com/watch?v=3TKJ34WUUyA
 
 Features:
