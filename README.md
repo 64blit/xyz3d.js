@@ -6,15 +6,11 @@ A Three.js framework for easy 3d websites and 3d landing pages. Includes a blend
 
 https://www.youtube.com/watch?v=3TKJ34WUUyA
 
----
-
 <div  align="center">
-  <img align="center" width="33%" src="./docs/btc_example.png" />
-  <img align="center" width="33%" src="./docs/demo.gif" />
-  <img align="center" width="33%" src="./docs/bio_example.png" />
+  <img align="center" width="31%" src="./docs/btc_example.png" />
+  <img align="center" width="31%" src="./docs/demo.gif" />
+  <img align="center" width="31%" src="./docs/bio_example.png" />
 </div>
-
----
 
 ## Features:
 
