@@ -1,18 +1,18 @@
 # xyz3d.js
 
-A Three.js framework for easy 3d websites and 3d landing pages. Includes a blender plugin and works on mobile, has built in post-effects, is screen size responsive, highly optimized, built in raycasting, animations, & more!
+A Three.js framework for creating fast and professional 3D websites and landing pages. This framework includes a Blender plugin and works on mobile devices; it includes built-in post-effects, raycasting, as well as animations and much more. It does the heavy lifting of loading a Blender-made GLTF model, setting up post effects, cross-platform camera controls, and a host of other complexities. It also provides debugging tools that make the Three.js development process much more accessible. Once the framework is created, it returns the Three.js components: scene, camera, and renderer, so you can concentrate on creating 3d scenes without getting bogged down in webgl details.
+Inspired by https://threejs-journey.com/
 
 ## Intro
 
 https://www.youtube.com/watch?v=3TKJ34WUUyA
+live demo: https://xyz3d-web-studio-example.glitch.me/
 
 <div  align="center">
   <img align="center" width="31%" src="./docs/btc_example.png" />
   <img align="center" width="31%" src="./docs/demo.gif" />
   <img align="center" width="31%" src="./docs/bio_example.png" />
 </div>
-
-live demo: https://xyz3d-web-studio-example.glitch.me/
 
 ## Features:
 
