@@ -12,6 +12,8 @@ https://www.youtube.com/watch?v=3TKJ34WUUyA
   <img align="center" width="31%" src="./docs/bio_example.png" />
 </div>
 
+live demo: https://xyz3d-web-studio-example.glitch.me/
+
 ## Features:
 
 - Responsive to display size!
