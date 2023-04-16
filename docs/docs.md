@@ -46,11 +46,11 @@ Creates an instance of XYZ3d, a helper framework for 3D websites.
 *   `config` **[Object][35]** The configuration object for the XYZ3d instance.
 
     *   `config.debug` **[Boolean][36]** Enables or disables debugging mode. Defaults to false.
-    *   `config.jsonPath` **[String][37]** The path to the 3D scene created with the corresponding plugin.
-    *   `config.domElements` **[Object][35]** The IDs of the HTML elements used to link the Three.js components.
+    *   `config.jsonPath` **[String][37]** The path to the 3D scene created with the blender plugin - see the examples or the bottom of the readme for details on this file.
+    *   `config.domElements` **[Object][35]** The IDs of the HTML elements which are used by the plugin.
 
         *   `config.domElements.canvas` **[String][37]** The rendering canvas.
-        *   `config.domElements.popup` **[String][37]** The content popup.
+        *   `config.domElements.popup` **[String][37]** The content popup element. A dom element which has an iframe injected into it based on the json file data. Adds and revmoces the following classes .XYZ3d-hidden and .XYZ3d-visible to hide and show the popup. This dom element can be styled to your liking.
     *   `config.camera` **[Object][35]** The configuration object for the camera.
 
         *   `config.camera.orbit` **[Boolean][36]** Enables or disables orbit camera controls. When enabled, gyro and followMouse are disabled automatically. Defaults to false.
