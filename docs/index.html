@@ -147,6 +147,16 @@
                 
                 </li>
               
+                
+                <li><a
+                  href='#xyz3dconfigjsoncontent'
+                  class="">
+                  XYZ3dConfig.jsonContent
+                  
+                </a>
+                
+                </li>
+              
             </ul>
           </div>
           <div class='mt1 h6 quiet'>
@@ -1193,6 +1203,176 @@
     
       
       <pre class='p1 overflow-auto round fill-light'><span class="hljs-title class_">XYZ3</span>d.<span class="hljs-property">onProgressLoading</span> = <span class="hljs-function">(<span class="hljs-params">step, steps, percent</span>) =&gt;</span> { <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(step, steps, percent) }</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='xyz3dconfigjsoncontent'>
+      XYZ3dConfig.jsonContent
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>XYZ3dConfig.jsonContent</div>
+  
+    <p>
+      Type:
+      <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+    </p>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-string">``</span><span class="hljs-string">` json
+   {
+     &quot;models&quot;: [
+       {
+         &quot;id&quot;: &quot;test 1&quot;,
+         &quot;enabled&quot;: true,
+         &quot;path&quot;: &quot;assets/models/city_model.glb&quot;,
+         &quot;position&quot;: {
+           &quot;x&quot;: 0,
+           &quot;y&quot;: 0,
+           &quot;z&quot;: 0
+         },
+         &quot;scale&quot;: {
+           &quot;x&quot;: 1,
+           &quot;y&quot;: 1,
+           &quot;z&quot;: 1
+         },
+         &quot;rotation&quot;: { , &quot;//comment_rotation&quot;: &quot;quaternion rotation&quot;,
+           &quot;x&quot;: 0,
+           &quot;y&quot;: 0,
+           &quot;z&quot;: 0,
+           &quot;w&quot;: 0
+         },
+         &quot;shadow&quot;: true, &quot;//comment_shadow&quot;: &quot;sets both castShadow and receiveShadow to this value&quot;,
+         &quot;shadowBias&quot;: 0.0005,
+         &quot;shadowNormalBias&quot;: 0.01,
+         &quot;shadowRadius&quot;: 4.0,
+         &quot;frustumCulled&quot;: true,
+         &quot;interactables&quot;: [  , &quot;//comment_interactables&quot;: &quot;Assign interaction types here&quot;,
+           {
+             &quot;type&quot;: &quot;link&quot;, &quot;//comment_link&quot;: &quot;When the listed model (under modelName) is clicked it&#x27;s animations will play, then the link inside &#x27;content&#x27; will be opened in a new tab&quot;,
+             &quot;modelName&quot;: &quot;ModelNameGoesHere&quot;,
+             &quot;content&quot;: &quot;https://www.ebay.com&quot;
+           },
+           {
+             &quot;type&quot;: &quot;popup&quot; , &quot;//comment_popup&quot;: &quot;When the listed model (under modelName) is clicked it&#x27;s animations will play, then the html dom object contained in the domeElements.popup will have the class .XYZ3d-hidden replaced with .XYZ3d-visible&quot;,
+             &quot;modelName&quot;: &quot;ModelNameGoesHere&quot;,
+             &quot;content&quot;: &quot;pages/about.html&quot;
+           },
+           {
+             &quot;type&quot;: &quot;goToNextZone&quot;, &quot;//comment_goToNextZone&quot;: &quot;When the model is clicked, the camera move to the zoneIndex incremented by the &#x27;content&#x27; amount&quot;,
+             &quot;modelName&quot;: &quot;ModelNameGoesHere&quot;,
+             &quot;conent&quot;: &quot;1&quot; , &quot;//comment_content&quot;: &quot;This value can be negative, it&#x27;s the number of zones to change based on the zone index.&quot;
+           },
+           {
+             &quot;type&quot;: &quot;goToZone&quot;,
+             &quot;modelName&quot;: &quot;ModelNameGoesHere&quot;,
+             &quot;conent&quot;: &quot;LandingZone&quot;
+           }
+         ]
+       }
+     ],
+     &quot;lights&quot;: [ , &quot;//comment_lights&quot;: &quot;Lights here are optional, lights inside the gltf file are automatically imported into the scene&quot;
+       {
+         &quot;id&quot;: &quot;bg hdr&quot;,
+         &quot;type&quot;: &quot;hdr&quot;,
+         &quot;enabled&quot;: true,
+         &quot;path&quot;: &quot;assets/textures/4k.hdr&quot;,
+         &quot;backgroundIntensity&quot;: 1,
+         &quot;backgroundBlurriness&quot;: 0
+       },
+       {
+         &quot;id&quot;: &quot;bg exr&quot;,
+         &quot;type&quot;: &quot;exr&quot;,
+         &quot;enabled&quot;: true,
+         &quot;path&quot;: &quot;assets/textures/4k.exr&quot;,
+         &quot;backgroundIntensity&quot;: 1,
+         &quot;backgroundBlurriness&quot;: 0
+       },
+       {
+         &quot;id&quot;: &quot;point light 1&quot;,
+         &quot;type&quot;: &quot;pointLight&quot;,
+         &quot;enabled&quot;: true,
+         &quot;position&quot;: {
+           &quot;x&quot;: 0,
+           &quot;y&quot;: 0.25,
+           &quot;z&quot;: 0
+         },
+         &quot;color&quot;: &quot;#FFFF00&quot;,
+         &quot;intensity&quot;: 1,
+         &quot;size&quot;: 100,
+         &quot;castShadow&quot;: false
+       },
+       {
+         &quot;id&quot;: &quot;ambient light 1&quot;,
+         &quot;type&quot;: &quot;ambientLight&quot;,
+         &quot;enabled&quot;: true,
+         &quot;color&quot;: &quot;#FFFFFF&quot;,
+         &quot;intensity&quot;: 1.0
+       },
+       {
+         &quot;id&quot;: &quot;dir light 1&quot;,
+         &quot;type&quot;: &quot;directionalLight&quot;,
+         &quot;enabled&quot;: true,
+         &quot;position&quot;: {
+           &quot;x&quot;: 10,
+           &quot;y&quot;: 10,
+           &quot;z&quot;: 10
+         },
+         &quot;target&quot;: {
+           &quot;x&quot;: 0,
+           &quot;y&quot;: 0,
+           &quot;z&quot;: 0
+         },
+         &quot;color&quot;: &quot;#FFFFFF&quot;,
+         &quot;intensity&quot;: 1,
+         &quot;castShadow&quot;: false
+       }
+     ]
+   }
+`</span><span class="hljs-string">``</span></pre>
     
   
 

@@ -34,6 +34,8 @@
 *   [onProgressLoading][30]
     *   [Parameters][31]
     *   [Examples][32]
+*   [XYZ3dConfig.jsonContent][33]
+    *   [Examples][34]
 
 ## XYZ3d
 
@@ -41,35 +43,35 @@ Creates an instance of XYZ3d, a helper framework for 3D websites.
 
 ### Parameters
 
-*   `config` **[Object][33]** The configuration object for the XYZ3d instance.
+*   `config` **[Object][35]** The configuration object for the XYZ3d instance.
 
-    *   `config.debug` **[Boolean][34]** Enables or disables debugging mode. Defaults to false.
-    *   `config.jsonPath` **[String][35]** The path to the 3D scene created with the corresponding plugin.
-    *   `config.domElements` **[Object][33]** The IDs of the HTML elements used to link the Three.js components.
+    *   `config.debug` **[Boolean][36]** Enables or disables debugging mode. Defaults to false.
+    *   `config.jsonPath` **[String][37]** The path to the 3D scene created with the corresponding plugin.
+    *   `config.domElements` **[Object][35]** The IDs of the HTML elements used to link the Three.js components.
 
-        *   `config.domElements.canvas` **[String][35]** The rendering canvas.
-        *   `config.domElements.popup` **[String][35]** The content popup.
-    *   `config.camera` **[Object][33]** The configuration object for the camera.
+        *   `config.domElements.canvas` **[String][37]** The rendering canvas.
+        *   `config.domElements.popup` **[String][37]** The content popup.
+    *   `config.camera` **[Object][35]** The configuration object for the camera.
 
-        *   `config.camera.orbit` **[Boolean][34]** Enables or disables orbit camera controls. When enabled, gyro and followMouse are disabled automatically. Defaults to false.
-        *   `config.camera.cameraShiftAmount` **[Number][36]** Controls the intensity of X/Y camera movement when orbit is off. Defaults to 0.05.
-        *   `config.camera.followMouse` **[Boolean][34]** Enables or disables camera movement based on hovering pointer position, only for desktop. Defaults to true.
-        *   `config.camera.gyro` **[Boolean][34]** Enables or disables camera movement based on gyroscope movement, only for mobile. Defaults to true.
-        *   `config.camera.gyroScale` **[Boolean][34]** Scales the gyroscope movement of the camera, only for mobile. Defaults to 20.
-        *   `config.camera.fov` **[Number][36]** Controls camera field of view. Defaults to 30.
-        *   `config.camera.cameraSmoothTime` **[Number][36]** Controls camera movement time in seconds. Defaults to 0.25.
-        *   `config.camera.cameraFramePadding` **[Number][36]** Controls the amount of padding from the interactable elements to the sides of the display, to ensure all interactables of the current zone are always in frame. Defaults to 1.
-        *   `config.camera.postEffects` **[Object][33]** The configuration object for post effects.
+        *   `config.camera.orbit` **[Boolean][36]** Enables or disables orbit camera controls. When enabled, gyro and followMouse are disabled automatically. Defaults to false.
+        *   `config.camera.cameraShiftAmount` **[Number][38]** Controls the intensity of X/Y camera movement when orbit is off. Defaults to 0.05.
+        *   `config.camera.followMouse` **[Boolean][36]** Enables or disables camera movement based on hovering pointer position, only for desktop. Defaults to true.
+        *   `config.camera.gyro` **[Boolean][36]** Enables or disables camera movement based on gyroscope movement, only for mobile. Defaults to true.
+        *   `config.camera.gyroScale` **[Boolean][36]** Scales the gyroscope movement of the camera, only for mobile. Defaults to 20.
+        *   `config.camera.fov` **[Number][38]** Controls camera field of view. Defaults to 30.
+        *   `config.camera.cameraSmoothTime` **[Number][38]** Controls camera movement time in seconds. Defaults to 0.25.
+        *   `config.camera.cameraFramePadding` **[Number][38]** Controls the amount of padding from the interactable elements to the sides of the display, to ensure all interactables of the current zone are always in frame. Defaults to 1.
+        *   `config.camera.postEffects` **[Object][35]** The configuration object for post effects.
 
-            *   `config.camera.postEffects.enabled` **[Boolean][34]** Enables or disables post effects. Defaults to true.
-            *   `config.camera.postEffects.bloom` **[Object][33]** The configuration object for bloom post effects.
+            *   `config.camera.postEffects.enabled` **[Boolean][36]** Enables or disables post effects. Defaults to true.
+            *   `config.camera.postEffects.bloom` **[Object][35]** The configuration object for bloom post effects.
 
-                *   `config.camera.postEffects.bloom.enabled` **[Boolean][34]** Enables or disables bloom post effects. Defaults to true.
-                *   `config.camera.postEffects.bloom.exposure` **[Number][36]** Controls bloom post effects exposure. Defaults to 1.1.
-                *   `config.camera.postEffects.bloom.threshold` **[Number][36]** Controls bloom post effects threshold. Defaults to 0.1.
-                *   `config.camera.postEffects.bloom.strength` **[Number][36]** Controls bloom post effects strength. Defaults to 1.
-                *   `config.camera.postEffects.bloom.radius` **[Number][36]** Controls bloom post effects radius. Defaults to 1.
-            *   `config.camera.postEffects.antialias` **[Boolean][34]** Enables or disables antialiasing post effects. Defaults to true.
+                *   `config.camera.postEffects.bloom.enabled` **[Boolean][36]** Enables or disables bloom post effects. Defaults to true.
+                *   `config.camera.postEffects.bloom.exposure` **[Number][38]** Controls bloom post effects exposure. Defaults to 1.1.
+                *   `config.camera.postEffects.bloom.threshold` **[Number][38]** Controls bloom post effects threshold. Defaults to 0.1.
+                *   `config.camera.postEffects.bloom.strength` **[Number][38]** Controls bloom post effects strength. Defaults to 1.
+                *   `config.camera.postEffects.bloom.radius` **[Number][38]** Controls bloom post effects radius. Defaults to 1.
+            *   `config.camera.postEffects.antialias` **[Boolean][36]** Enables or disables antialiasing post effects. Defaults to true.
 
 ### Examples
 
@@ -89,8 +91,8 @@ This function moves the camera to a scene zone with the given name. The scene zo
 
 ### Parameters
 
-*   `name` **[String][35]** *   The name of the scene zone to move to, this is defined inside the blender plugin.
-*   `dampTime` **[number][36]** The speed at which the camera lerps to the new zone. defaults to 0.1 seconds
+*   `name` **[String][37]** *   The name of the scene zone to move to, this is defined inside the blender plugin.
+*   `dampTime` **[number][38]** The speed at which the camera lerps to the new zone. defaults to 0.1 seconds
 
 ### Examples
 
@@ -102,8 +104,8 @@ XYZ3d.gotoSceneZone('About')
 
 ### Parameters
 
-*   `increment` **[Number][36]** the incremental value to move scene zones by, value can be negative or positive. Defaults to 1. (optional, default `1`)
-*   `dampTime` **[number][36]** The speed at which the camera lerps to the new zone. defaults to 0.1 seconds (optional, default `null`)
+*   `increment` **[Number][38]** the incremental value to move scene zones by, value can be negative or positive. Defaults to 1. (optional, default `1`)
+*   `dampTime` **[number][38]** The speed at which the camera lerps to the new zone. defaults to 0.1 seconds (optional, default `null`)
 
 ### Examples
 
@@ -131,7 +133,7 @@ XYZ3d.reset()
 
 ### Parameters
 
-*   `eventData` **[object][33]** The intersected 3d model and corresponding html content
+*   `eventData` **[object][35]** The intersected 3d model and corresponding html content
 
 ### Examples
 
@@ -143,7 +145,7 @@ XYZ3d.onPointerDown = (event) => { console.log(event) }
 
 ### Parameters
 
-*   `eventData` **[object][33]** The intersected 3d model and corresponding html content
+*   `eventData` **[object][35]** The intersected 3d model and corresponding html content
 
 ### Examples
 
@@ -155,7 +157,7 @@ XYZ3d.onHoverOver = (event) => { console.log(event) }
 
 ### Parameters
 
-*   `eventData` **[object][33]** The intersected 3d model and corresponding html content
+*   `eventData` **[object][35]** The intersected 3d model and corresponding html content
 
 ### Examples
 
@@ -183,7 +185,7 @@ XYZ3d.onSwipeDown = () => { console.log('Swipe down detected') }
 
 ### Parameters
 
-*   `deltaTime` **[number][36]** The time the previous frame took in seconds.
+*   `deltaTime` **[number][38]** The time the previous frame took in seconds.
 
 ### Examples
 
@@ -195,15 +197,135 @@ XYZ3d.onUpdate = (deltaTime) => { console.log(deltaTime) }
 
 ### Parameters
 
-*   `step` **[number][36]** The model index being loaded.
-*   `steps` **[number][36]** The total models to be loaded.
-*   `percent` **[number][36]** The percentage loaded of the current model.
+*   `step` **[number][38]** The model index being loaded.
+*   `steps` **[number][38]** The total models to be loaded.
+*   `percent` **[number][38]** The percentage loaded of the current model.
 
 ### Examples
 
 ```javascript
 XYZ3d.onProgressLoading = (step, steps, percent) => { console.log(step, steps, percent) }
 ```
+
+## XYZ3dConfig.jsonContent
+
+Type: [Object][35]
+
+### Examples
+
+````javascript
+``` json
+   {
+     "models": [
+       {
+         "id": "test 1",
+         "enabled": true,
+         "path": "assets/models/city_model.glb",
+         "position": {
+           "x": 0,
+           "y": 0,
+           "z": 0
+         },
+         "scale": {
+           "x": 1,
+           "y": 1,
+           "z": 1
+         },
+         "rotation": { , "//comment_rotation": "quaternion rotation",
+           "x": 0,
+           "y": 0,
+           "z": 0,
+           "w": 0
+         },
+         "shadow": true, "//comment_shadow": "sets both castShadow and receiveShadow to this value",
+         "shadowBias": 0.0005,
+         "shadowNormalBias": 0.01,
+         "shadowRadius": 4.0,
+         "frustumCulled": true,
+         "interactables": [  , "//comment_interactables": "Assign interaction types here",
+           {
+             "type": "link", "//comment_link": "When the listed model (under modelName) is clicked it's animations will play, then the link inside 'content' will be opened in a new tab",
+             "modelName": "ModelNameGoesHere",
+             "content": "https://www.ebay.com"
+           },
+           {
+             "type": "popup" , "//comment_popup": "When the listed model (under modelName) is clicked it's animations will play, then the html dom object contained in the domeElements.popup will have the class .XYZ3d-hidden replaced with .XYZ3d-visible",
+             "modelName": "ModelNameGoesHere",
+             "content": "pages/about.html"
+           },
+           {
+             "type": "goToNextZone", "//comment_goToNextZone": "When the model is clicked, the camera move to the zoneIndex incremented by the 'content' amount",
+             "modelName": "ModelNameGoesHere",
+             "conent": "1" , "//comment_content": "This value can be negative, it's the number of zones to change based on the zone index."
+           },
+           {
+             "type": "goToZone",
+             "modelName": "ModelNameGoesHere",
+             "conent": "LandingZone"
+           }
+         ]
+       }
+     ],
+     "lights": [ , "//comment_lights": "Lights here are optional, lights inside the gltf file are automatically imported into the scene"
+       {
+         "id": "bg hdr",
+         "type": "hdr",
+         "enabled": true,
+         "path": "assets/textures/4k.hdr",
+         "backgroundIntensity": 1,
+         "backgroundBlurriness": 0
+       },
+       {
+         "id": "bg exr",
+         "type": "exr",
+         "enabled": true,
+         "path": "assets/textures/4k.exr",
+         "backgroundIntensity": 1,
+         "backgroundBlurriness": 0
+       },
+       {
+         "id": "point light 1",
+         "type": "pointLight",
+         "enabled": true,
+         "position": {
+           "x": 0,
+           "y": 0.25,
+           "z": 0
+         },
+         "color": "#FFFF00",
+         "intensity": 1,
+         "size": 100,
+         "castShadow": false
+       },
+       {
+         "id": "ambient light 1",
+         "type": "ambientLight",
+         "enabled": true,
+         "color": "#FFFFFF",
+         "intensity": 1.0
+       },
+       {
+         "id": "dir light 1",
+         "type": "directionalLight",
+         "enabled": true,
+         "position": {
+           "x": 10,
+           "y": 10,
+           "z": 10
+         },
+         "target": {
+           "x": 0,
+           "y": 0,
+           "z": 0
+         },
+         "color": "#FFFFFF",
+         "intensity": 1,
+         "castShadow": false
+       }
+     ]
+   }
+```
+````
 
 [1]: #xyz3d
 
@@ -269,10 +391,14 @@ XYZ3d.onProgressLoading = (step, steps, percent) => { console.log(step, steps, p
 
 [32]: #examples-11
 
-[33]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+[33]: #xyz3dconfigjsoncontent
 
-[34]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[34]: #examples-12
 
-[35]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[35]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
 
-[36]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+[36]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+
+[37]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+
+[38]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
