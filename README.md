@@ -3,10 +3,9 @@
 A Three.js framework for creating fast and professional 3D websites and landing pages. This framework includes a Blender plugin and works on mobile devices; it includes built-in post-effects, raycasting, as well as animations and much more. It does the heavy lifting of loading a Blender-made GLTF model, setting up post effects, cross-platform camera controls, and a host of other complexities. It also provides debugging tools that make the Three.js development process much more accessible. Once the framework is created, it returns the Three.js components: scene, camera, and renderer, so you can concentrate on creating 3d scenes without getting bogged down in webgl details.
 Inspired by https://threejs-journey.com/
 
-## Intro
+Intro video: https://www.youtube.com/watch?v=3TKJ34WUUyA
 
-https://www.youtube.com/watch?v=3TKJ34WUUyA
-live demo: https://xyz3d-web-studio-example.glitch.me/
+Live demo: https://xyz3d-example-cubicweb-studio.glitch.me/
 
 <div  align="center">
   <img align="center" width="31%" src="./docs/btc_example.png" />
@@ -247,6 +246,7 @@ Creates an instance of XYZ3d, a helper framework for 3D websites.
         *   `config.domElements.popup` **[String][37]** The content popup element. A dom element which has an iframe injected into it based on the json file data. Adds and revmoces the following classes .XYZ3d-hidden and .XYZ3d-visible to hide and show the popup. This dom element can be styled to your liking.
     *   `config.camera` **[Object][35]** The configuration object for the camera.
 
+        *   `config.camera.controls` **[Object][35]** Enables or disables the camera controls. Defaults to true.
         *   `config.camera.orbit` **[Boolean][36]** Enables or disables orbit camera controls. When enabled, gyro and followMouse are disabled automatically. Defaults to false.
         *   `config.camera.cameraShiftAmount` **[Number][38]** Controls the intensity of X/Y camera movement when orbit is off. Defaults to 0.05.
         *   `config.camera.followMouse` **[Boolean][36]** Enables or disables camera movement based on hovering pointer position, only for desktop. Defaults to true.
