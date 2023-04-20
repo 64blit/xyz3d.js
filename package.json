@@ -1,6 +1,6 @@
 {
   "name": "xyz3d",
-  "version": "00.00.05",
+  "version": "00.00.06",
   "description": "A Three.js typescript framework for easy 3d website creation with streamlined blender integration.",
   "repository": {
     "type": "git",
