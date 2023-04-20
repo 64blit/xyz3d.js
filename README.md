@@ -8,9 +8,9 @@ Intro video: https://www.youtube.com/watch?v=3TKJ34WUUyA
 Live demo: https://xyz3d-example-cubicweb-studio.glitch.me/
 
 <div  align="center">
-  <img align="center" width="31%" src="./docs/btc_example.png" />
+  <img align="center" width="31%" src="./docs/btc_example.gif" />
   <img align="center" width="31%" src="./docs/demo.gif" />
-  <img align="center" width="31%" src="./docs/bio_example.png" />
+  <img align="center" width="31%" src="./docs/bio_example.gif" />
 </div>
 
 ## Features:
