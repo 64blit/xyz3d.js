@@ -11,31 +11,33 @@
 *   [nextSceneZone][7]
     *   [Parameters][8]
     *   [Examples][9]
-*   [setup][10]
-    *   [Examples][11]
-*   [reset][12]
+*   [sceneZoneIndex][10]
+*   [maxSceneZoneIndex][11]
+*   [setup][12]
     *   [Examples][13]
-*   [onPointerDown][14]
-    *   [Parameters][15]
-    *   [Examples][16]
-*   [onHoverOver][17]
-    *   [Parameters][18]
-    *   [Examples][19]
-*   [onHoverOff][20]
-    *   [Parameters][21]
-    *   [Examples][22]
-*   [onSwipeUp][23]
+*   [reset][14]
+    *   [Examples][15]
+*   [onPointerDown][16]
+    *   [Parameters][17]
+    *   [Examples][18]
+*   [onHoverOver][19]
+    *   [Parameters][20]
+    *   [Examples][21]
+*   [onHoverOff][22]
+    *   [Parameters][23]
     *   [Examples][24]
-*   [onSwipeDown][25]
+*   [onSwipeUp][25]
     *   [Examples][26]
-*   [onUpdate][27]
-    *   [Parameters][28]
-    *   [Examples][29]
-*   [onProgressLoading][30]
-    *   [Parameters][31]
-    *   [Examples][32]
-*   [XYZ3dConfig.jsonContent][33]
+*   [onSwipeDown][27]
+    *   [Examples][28]
+*   [onUpdate][29]
+    *   [Parameters][30]
+    *   [Examples][31]
+*   [onProgressLoading][32]
+    *   [Parameters][33]
     *   [Examples][34]
+*   [XYZ3dConfig.jsonContent][35]
+    *   [Examples][36]
 
 ## XYZ3d
 
@@ -43,36 +45,36 @@ Creates an instance of XYZ3d, a helper framework for 3D websites.
 
 ### Parameters
 
-*   `config` **[Object][35]** The configuration object for the XYZ3d instance.
+*   `config` **[Object][37]** The configuration object for the XYZ3d instance.
 
-    *   `config.debug` **[Boolean][36]** Enables or disables debugging mode. Defaults to false.
-    *   `config.jsonPath` **[String][37]** The path to the 3D scene created with the blender plugin - see the examples or the bottom of the readme for details on this file.
-    *   `config.domElements` **[Object][35]** The IDs of the HTML elements which are used by the plugin.
+    *   `config.debug` **[Boolean][38]** Enables or disables debugging mode. Defaults to false.
+    *   `config.jsonPath` **[String][39]** The path to the 3D scene created with the blender plugin - see the examples or the bottom of the readme for details on this file.
+    *   `config.domElements` **[Object][37]** The IDs of the HTML elements which are used by the plugin.
 
-        *   `config.domElements.canvas` **[String][37]** The rendering canvas.
-        *   `config.domElements.popup` **[String][37]** The content popup element. A dom element which has an iframe injected into it based on the json file data. Adds and revmoces the following classes .XYZ3d-hidden and .XYZ3d-visible to hide and show the popup. This dom element can be styled to your liking.
-    *   `config.camera` **[Object][35]** The configuration object for the camera.
+        *   `config.domElements.canvas` **[String][39]** The rendering canvas.
+        *   `config.domElements.popup` **[String][39]** The content popup element. A dom element which has an iframe injected into it based on the json file data. Adds and revmoces the following classes .XYZ3d-hidden and .XYZ3d-visible to hide and show the popup. This dom element can be styled to your liking.
+    *   `config.camera` **[Object][37]** The configuration object for the camera.
 
-        *   `config.camera.controls` **[Object][35]** Enables or disables the camera controls. Defaults to true.
-        *   `config.camera.orbit` **[Boolean][36]** Enables or disables orbit camera controls. When enabled, gyro and followMouse are disabled automatically. Defaults to false.
-        *   `config.camera.cameraShiftAmount` **[Number][38]** Controls the intensity of X/Y camera movement when orbit is off. Defaults to 0.05.
-        *   `config.camera.followMouse` **[Boolean][36]** Enables or disables camera movement based on hovering pointer position, only for desktop. Defaults to true.
-        *   `config.camera.gyro` **[Boolean][36]** Enables or disables camera movement based on gyroscope movement, only for mobile. Defaults to true.
-        *   `config.camera.gyroScale` **[Boolean][36]** Scales the gyroscope movement of the camera, only for mobile. Defaults to 20.
-        *   `config.camera.fov` **[Number][38]** Controls camera field of view. Defaults to 30.
-        *   `config.camera.cameraSmoothTime` **[Number][38]** Controls camera movement time in seconds. Defaults to 0.25.
-        *   `config.camera.cameraFramePadding` **[Number][38]** Controls the amount of padding from the interactable elements to the sides of the display, to ensure all interactables of the current zone are always in frame. Defaults to 1.
-        *   `config.camera.postEffects` **[Object][35]** The configuration object for post effects.
+        *   `config.camera.controls` **[Object][37]** Enables or disables the camera controls. Defaults to true.
+        *   `config.camera.orbit` **[Boolean][38]** Enables or disables orbit camera controls. When enabled, gyro and followMouse are disabled automatically. Defaults to false.
+        *   `config.camera.cameraShiftAmount` **[Number][40]** Controls the intensity of X/Y camera movement when orbit is off. Defaults to 0.05.
+        *   `config.camera.followMouse` **[Boolean][38]** Enables or disables camera movement based on hovering pointer position, only for desktop. Defaults to true.
+        *   `config.camera.gyro` **[Boolean][38]** Enables or disables camera movement based on gyroscope movement, only for mobile. Defaults to true.
+        *   `config.camera.gyroScale` **[Boolean][38]** Scales the gyroscope movement of the camera, only for mobile. Defaults to 20.
+        *   `config.camera.fov` **[Number][40]** Controls camera field of view. Defaults to 30.
+        *   `config.camera.cameraSmoothTime` **[Number][40]** Controls camera movement time in seconds. Defaults to 0.25.
+        *   `config.camera.cameraFramePadding` **[Number][40]** Controls the amount of padding from the interactable elements to the sides of the display, to ensure all interactables of the current zone are always in frame. Defaults to 1.
+        *   `config.camera.postEffects` **[Object][37]** The configuration object for post effects.
 
-            *   `config.camera.postEffects.enabled` **[Boolean][36]** Enables or disables post effects. Defaults to true.
-            *   `config.camera.postEffects.bloom` **[Object][35]** The configuration object for bloom post effects.
+            *   `config.camera.postEffects.enabled` **[Boolean][38]** Enables or disables post effects. Defaults to true.
+            *   `config.camera.postEffects.bloom` **[Object][37]** The configuration object for bloom post effects.
 
-                *   `config.camera.postEffects.bloom.enabled` **[Boolean][36]** Enables or disables bloom post effects. Defaults to true.
-                *   `config.camera.postEffects.bloom.exposure` **[Number][38]** Controls bloom post effects exposure. Defaults to 1.1.
-                *   `config.camera.postEffects.bloom.threshold` **[Number][38]** Controls bloom post effects threshold. Defaults to 0.1.
-                *   `config.camera.postEffects.bloom.strength` **[Number][38]** Controls bloom post effects strength. Defaults to 1.
-                *   `config.camera.postEffects.bloom.radius` **[Number][38]** Controls bloom post effects radius. Defaults to 1.
-            *   `config.camera.postEffects.antialias` **[Boolean][36]** Enables or disables antialiasing post effects. Defaults to true.
+                *   `config.camera.postEffects.bloom.enabled` **[Boolean][38]** Enables or disables bloom post effects. Defaults to true.
+                *   `config.camera.postEffects.bloom.exposure` **[Number][40]** Controls bloom post effects exposure. Defaults to 1.1.
+                *   `config.camera.postEffects.bloom.threshold` **[Number][40]** Controls bloom post effects threshold. Defaults to 0.1.
+                *   `config.camera.postEffects.bloom.strength` **[Number][40]** Controls bloom post effects strength. Defaults to 1.
+                *   `config.camera.postEffects.bloom.radius` **[Number][40]** Controls bloom post effects radius. Defaults to 1.
+            *   `config.camera.postEffects.antialias` **[Boolean][38]** Enables or disables antialiasing post effects. Defaults to true.
 
 ### Examples
 
@@ -92,8 +94,8 @@ This function moves the camera to a scene zone with the given name. The scene zo
 
 ### Parameters
 
-*   `name` **[String][37]** *   The name of the scene zone to move to, this is defined inside the blender plugin.
-*   `dampTime` **[number][38]** The speed at which the camera lerps to the new zone. defaults to 0.1 seconds
+*   `name` **[String][39]** *   The name of the scene zone to move to, this is defined inside the blender plugin.
+*   `dampTime` **[number][40]** The speed at which the camera lerps to the new zone. defaults to 0.1 seconds
 
 ### Examples
 
@@ -105,14 +107,18 @@ XYZ3d.gotoSceneZone('About')
 
 ### Parameters
 
-*   `increment` **[Number][38]** the incremental value to move scene zones by, value can be negative or positive. Defaults to 1. (optional, default `1`)
-*   `dampTime` **[number][38]** The speed at which the camera lerps to the new zone. defaults to 0.1 seconds (optional, default `null`)
+*   `increment` **[Number][40]** the incremental value to move scene zones by, value can be negative or positive. Defaults to 1. (optional, default `1`)
+*   `dampTime` **[number][40]** The speed at which the camera lerps to the new zone. defaults to 0.1 seconds (optional, default `null`)
 
 ### Examples
 
 ```javascript
 XYZ3d.nextSceneZone()
 ```
+
+## sceneZoneIndex
+
+## maxSceneZoneIndex
 
 ## setup
 
@@ -134,7 +140,7 @@ XYZ3d.reset()
 
 ### Parameters
 
-*   `eventData` **[object][35]** The intersected 3d model and corresponding html content
+*   `eventData` **[object][37]** The intersected 3d model and corresponding html content
 
 ### Examples
 
@@ -146,7 +152,7 @@ XYZ3d.onPointerDown = (event) => { console.log(event) }
 
 ### Parameters
 
-*   `eventData` **[object][35]** The intersected 3d model and corresponding html content
+*   `eventData` **[object][37]** The intersected 3d model and corresponding html content
 
 ### Examples
 
@@ -158,7 +164,7 @@ XYZ3d.onHoverOver = (event) => { console.log(event) }
 
 ### Parameters
 
-*   `eventData` **[object][35]** The intersected 3d model and corresponding html content
+*   `eventData` **[object][37]** The intersected 3d model and corresponding html content
 
 ### Examples
 
@@ -186,7 +192,7 @@ XYZ3d.onSwipeDown = () => { console.log('Swipe down detected') }
 
 ### Parameters
 
-*   `deltaTime` **[number][38]** The time the previous frame took in seconds.
+*   `deltaTime` **[number][40]** The time the previous frame took in seconds.
 
 ### Examples
 
@@ -198,9 +204,9 @@ XYZ3d.onUpdate = (deltaTime) => { console.log(deltaTime) }
 
 ### Parameters
 
-*   `step` **[number][38]** The model index being loaded.
-*   `steps` **[number][38]** The total models to be loaded.
-*   `percent` **[number][38]** The percentage loaded of the current model.
+*   `step` **[number][40]** The model index being loaded.
+*   `steps` **[number][40]** The total models to be loaded.
+*   `percent` **[number][40]** The percentage loaded of the current model.
 
 ### Examples
 
@@ -210,7 +216,7 @@ XYZ3d.onProgressLoading = (step, steps, percent) => { console.log(step, steps, p
 
 ## XYZ3dConfig.jsonContent
 
-Type: [Object][35]
+Type: [Object][37]
 
 ### Examples
 
@@ -346,60 +352,64 @@ Type: [Object][35]
 
 [9]: #examples-2
 
-[10]: #setup
+[10]: #scenezoneindex
 
-[11]: #examples-3
+[11]: #maxscenezoneindex
 
-[12]: #reset
+[12]: #setup
 
-[13]: #examples-4
+[13]: #examples-3
 
-[14]: #onpointerdown
+[14]: #reset
 
-[15]: #parameters-3
+[15]: #examples-4
 
-[16]: #examples-5
+[16]: #onpointerdown
 
-[17]: #onhoverover
+[17]: #parameters-3
 
-[18]: #parameters-4
+[18]: #examples-5
 
-[19]: #examples-6
+[19]: #onhoverover
 
-[20]: #onhoveroff
+[20]: #parameters-4
 
-[21]: #parameters-5
+[21]: #examples-6
 
-[22]: #examples-7
+[22]: #onhoveroff
 
-[23]: #onswipeup
+[23]: #parameters-5
 
-[24]: #examples-8
+[24]: #examples-7
 
-[25]: #onswipedown
+[25]: #onswipeup
 
-[26]: #examples-9
+[26]: #examples-8
 
-[27]: #onupdate
+[27]: #onswipedown
 
-[28]: #parameters-6
+[28]: #examples-9
 
-[29]: #examples-10
+[29]: #onupdate
 
-[30]: #onprogressloading
+[30]: #parameters-6
 
-[31]: #parameters-7
+[31]: #examples-10
 
-[32]: #examples-11
+[32]: #onprogressloading
 
-[33]: #xyz3dconfigjsoncontent
+[33]: #parameters-7
 
-[34]: #examples-12
+[34]: #examples-11
 
-[35]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+[35]: #xyz3dconfigjsoncontent
 
-[36]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[36]: #examples-12
 
-[37]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[37]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
 
-[38]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+[38]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+
+[39]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+
+[40]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
