@@ -54,7 +54,7 @@ export default class SceneBuilder
     models.push(...gltfData.models)
     animations.push(...gltfData.animations)
 
-    this.adddDebuggingHelpers(models)
+    this.addDebuggingHelpers(models)
 
     this.sceneWrapper = new SceneWrapper(models, lights, animations, this.scene, this.params)
 

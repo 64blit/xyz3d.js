@@ -1,12 +1,16 @@
-export default class MathHelpers {
-	static getRandomRange (min, max) {
+export default class MathHelpers
+{
+	static getRandomRange(min, max)
+	{
 		return Math.random() * (max - min) + min
 	}
-	static getRandomIntRange (min, max) {
+	static getRandomIntRange(min, max)
+	{
 		return Math.round(Math.random() * (max - min) + min)
 	}
 
-	static quaternionToVector3 (x, y, z, w) {
+	static quaternionToVector3(x, y, z, w)
+	{
 		const x2 = x + x
 		const y2 = y + y
 		const z2 = z + z
@@ -27,24 +31,29 @@ export default class MathHelpers {
 		}
 	}
 
-	static map (value, in_min, in_max, out_min, out_max) {
+	static map(value, in_min, in_max, out_min, out_max)
+	{
 		return ((value - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min
 	}
 
-	static average (arr) {
+	static average(arr)
+	{
 		let sum = 0
-		arr.forEach((element) => {
+		arr.forEach((element) =>
+		{
 			sum += element
 		})
 
 		return sum / arr.length
 	}
 
-	static clamp (val, min, max) {
+	static clamp(val, min, max)
+	{
 		return
 	}
 
-	static lerp (v0, v1, t) {
+	static lerp(v0, v1, t)
+	{
 		let val = v0 * (1 - t) + v1 * t
 		return val
 	}

@@ -23541,7 +23541,7 @@ class aw {
   }
   async build(e) {
     const t = await this.readJsonFile(this.jsonPath), n = [], i = [], s = await this.addLighting(t.lights, e), r = await this.addGLTFModel(t.models, e);
-    return s.push(...r.lights), n.push(...r.models), i.push(...r.animations), this.adddDebuggingHelpers(n), this.sceneWrapper = new sw(n, s, i, this.scene, this.params), this.sceneWrapper;
+    return s.push(...r.lights), n.push(...r.models), i.push(...r.animations), this.addDebuggingHelpers(n), this.sceneWrapper = new sw(n, s, i, this.scene, this.params), this.sceneWrapper;
   }
   addDebuggingHelpers(e) {
     if (!window.DEBUG_xyz3d)
