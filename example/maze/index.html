@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>XYZ3d example</title>
+    <meta name="author" content="64blit" />
+    <meta name="description" content="XYZ3d CMS Example" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0,  initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="icon" type="image/jpg" href="assets/avatar.jpg" />
+    <link href="./style.css" rel="stylesheet" />
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <!-- rendering canvas -->
+
+    <canvas id="main-canvas" class="fullscreen-canvas" title=""></canvas>
+
+
+
+    <!-- nav bar -->
+
+    <div id="site-title" class="menu-btn">
+        <div>Interphaze</div>
+    </div>
+    <input type="checkbox" id="active">
+    <label id="hamburger-btn" for="active" class="menu-btn"><span></span></label>
+    <label for="active" class="close"></label>
+    <div class="wrapper">
+        <ul>
+            <li><a id="nav-shop-btn" href="#">Shop</a></li>
+            <li><a id="nav-gallery-btn" href="#">Gallery</a></li>
+            <li><a id="nav-bio-btn" href="#">Bio</a></li>
+            <li><a id="nav-contact-btn" href="#">Contact</a></li>
+        </ul>
+    </div>
+
+
+
+    <!-- iframe overlay -->
+
+    <div id="popup-content" class="hidden"></div>
+
+
+
+
+    <!-- loading screen -->
+
+    <div id="loading-screen">
+        <progress id="progress-bar" max="100" value="0" \>
+    </div>
+
+
+
+    <script type="module">
+        import { THREE, XYZ3d } from './xyz3d.es.js'
+
+        window.addEventListener('load', (event) =>
+        {
+            let isDebugging = false
+
+            const xyzed = new XYZ3d({
+                jsonPath: 'scene.json',
+                debug: isDebugging,
+                domElements: {
+                    canvas: document.getElementById('main-canvas'),
+                    popup: document.getElementById('popup-content'),
+                },
+                camera: {
+                    cameraFramePadding: 3,
+                    cameraShiftAmount: 0.3,
+                    postEffects: {
+                        bloom: {
+                            enabled: true,
+                            threshold: 0.85,
+                            strength: 0.64,
+                        }
+                    },
+                },
+            })
+
+
+
+            let threeComponents = {
+                camera: null,
+                scene: null,
+                renderer: null,
+                sceneWrapper: null,
+            }
+
+            function setup()
+            {
+                const progressBar = document.getElementById('progress-bar')
+
+                function onModelLoading(step, steps, percent)
+                {
+                    progressBar.value = (step / steps) * percent
+                }
+
+                function onHoverOver(eventObject)
+                {
+                    eventObject.raycastTarget.material.visible = true
+                }
+
+                function onHoverOff(eventObject)
+                {
+                    eventObject.raycastTarget.material.visible = false
+                }
+
+                function onUpdate(deltaTime) { }
+
+
+                function onSwipeUp()
+                {
+                    xyzed.nextSceneZone(-1)
+                }
+
+                function onSwipeDown()
+                {
+                    if (threeComponents.camera == null)
+                    {
+                        return;
+                    }
+
+                    xyzed.nextSceneZone(1)
+                }
+
+
+                xyzed.onProgressLoading = onModelLoading
+                xyzed.onHoverOver = onHoverOver
+                xyzed.onHoverOff = onHoverOff
+                xyzed.onPointerDown = null
+                xyzed.onSwipeUp = onSwipeUp
+                xyzed.onSwipeDown = onSwipeDown
+                xyzed.onUpdate = onUpdate
+                xyzed
+                    .setup()
+                    .then((result) =>
+                    {
+
+                        threeComponents = result
+                        document.getElementById('loading-screen').remove()
+
+                        xyzed.gotoSceneZone('Shop')
+
+
+                        if (isDebugging)
+                        {
+                            console.log(':>> Three.js variables: ', threeComponents)
+                        }
+                    })
+                    .catch((error) =>
+                    {
+
+                        console.error(error)
+                        console.error('Redirecting page to fallback page in 5 seconds....')
+
+                        setTimeout(() =>
+                        {
+                            // window.location.href = "pages/fallback.html";
+                        }, 5000);
+
+                    })
+
+                function setupNavButtons()
+                {
+                    const navHomeBtn = document.getElementById('nav-shop-btn')
+                    const navAboutBtn = document.getElementById('nav-bio-btn')
+                    const navGalleryBtn = document.getElementById('nav-gallery-btn')
+                    const navContactBtn = document.getElementById('nav-contact-btn')
+                    const navBurger = document.getElementById('hamburger-btn')
+                    const title = document.getElementById('site-title')
+
+                    navHomeBtn.addEventListener('click', () =>
+                    {
+                        xyzed.gotoSceneZone('Shop')
+                        navBurger.click()
+                    })
+                    navAboutBtn.addEventListener('click', () =>
+                    {
+                        xyzed.gotoSceneZone('Bio')
+                        navBurger.click()
+                    })
+                    navContactBtn.addEventListener('click', () =>
+                    {
+                        xyzed.gotoSceneZone('Contact')
+                        navBurger.click()
+                    })
+                    navGalleryBtn.addEventListener('click', () =>
+                    {
+                        xyzed.gotoSceneZone('Gallery')
+                        navBurger.click()
+                    })
+
+                    title.addEventListener('click', () =>
+                    {
+                        xyzed.gotoSceneZone('Shop')
+                    })
+
+                }
+
+                setupNavButtons()
+            }
+
+            setup()
+        })
+
+    </script>
+
+</body>
+
+</html>

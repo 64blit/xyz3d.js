@@ -1,0 +1,222 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <title>XYZ3d example</title>         
+        <meta name="author" content="64blit"/> 
+        <meta name="description" content="XYZ3d CMS Example"/> 
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0,  initial-scale=1, shrink-to-fit=no"/> 
+        <link rel="icon" type="image/jpg" href="assets/avatar.jpg"/> 
+        <link href="./style.css" rel="stylesheet"/> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/> 
+    </head>     
+    <body> 
+        <div class="header"> 
+            <div class="progress-container"> 
+                <div class="progress-bar" id="scrollProgressBar"></div>                 
+            </div>             
+        </div>         
+        <!-- rendering canvas -->         
+        <canvas id="main-canvas" class="fullscreen-canvas" title=""></canvas>         
+        <!-- iframe overlay -->         
+        <div id="popup-content" class="XYZ3d-hidden"></div>         
+        <!-- loading screen -->         
+        <div id="loading-screen"> 
+            <progress id="progress-bar" max="100" value="0" \> 
+        </div>         <a onclick="onSwipeDown()" href="javascript:void(0);"> <div id="mouse-scroll"> 
+                <div class="mouse"> 
+                    <div class="mouse-in"></div>                     
+                </div>                 
+            </div> </a> 
+        <script type="module">
+        import { THREE, XYZ3d } from './xyz3d.es.js'
+        // import { THREE, XYZ3d } from '../../src/XYZ3D.js'
+        import StarrySkyShader from './assets/stars.js';
+
+        let currentSceneZone = 0
+        let bgSphere = null
+        const scrollProgressBar = document.getElementById("scrollProgressBar")
+
+        function updateScrollProgressbar(direction)
+        {
+
+            currentSceneZone += direction
+            if (currentSceneZone > 18)
+            {
+                currentSceneZone = 18
+            } else if (currentSceneZone < 0) 
+            {
+                currentSceneZone = 0
+            }
+            console.log(currentSceneZone);
+            scrollProgressBar.style.height = (currentSceneZone / 10) * 100 + "%"
+        }
+
+        window.addEventListener('load', (event) =>
+        {
+            let isDebugging = false
+
+            const xyzed = new XYZ3d({
+                jsonPath: 'scene.json',
+                debug: isDebugging,
+                domElements: {
+                    canvas: document.getElementById('main-canvas'),
+                    popup: document.getElementById('popup-content'),
+                },
+                camera: {
+                    orbit: false,
+                    cameraFramePadding: 1,
+                    cameraSmoothTime: 0.5,
+                    fov: 60,
+                    cameraShiftAmount: 0.15,
+                    gyroScale: 10,
+                    postEffects: {
+                        enanbled: false,
+                        bloom: {
+                            enabled: true,
+                            threshold: 0.8,
+                            strength: 0.8,
+                        }
+                    },
+                },
+            })
+
+
+            let threeComponents = {
+                camera: null,
+                scene: null,
+                renderer: null,
+                sceneWrapper: null,
+            }
+
+
+            const progressBar = document.getElementById('progress-bar')
+
+            xyzed.onPointerDown = (event) =>
+            {
+            }
+
+            xyzed.onProgressLoading = (step, steps, percent) =>
+            {
+                progressBar.value = (step / steps) * percent
+            }
+
+
+            xyzed.onSwipeDown = window.onSwipeDown = () =>
+            {
+                if (threeComponents.camera == null)
+                {
+                    return;
+                }
+
+
+                xyzed.nextSceneZone(1)
+
+                updateScrollProgressbar(1)
+
+            }
+
+            xyzed.onSwipeUp = () =>
+            {
+                if (threeComponents.camera == null)
+                {
+                    return;
+                }
+
+                xyzed.nextSceneZone(-1)
+                updateScrollProgressbar(-1)
+
+            }
+
+
+
+            function setMaterials()
+            {
+                const texture = new THREE.TextureLoader().load('assets/galaxy.jpg');
+                var skyDomeRadius = 100.51;
+                var sphereMaterial = new THREE.ShaderMaterial({
+                    uniforms: {
+                        skyRadius: { value: skyDomeRadius },
+                        bg: { value: texture },
+                        env_c1: { value: new THREE.Color("#0d1a2f") },
+                        env_c2: { value: new THREE.Color("#0f8682") },
+                        noiseOffset: { value: new THREE.Vector3(150.01, 150.01, 150.01) },
+                        starSize: { value: 0.009 },
+                        starDensity: { value: 0.28 },
+                        clusterStrength: { value: 0.5 },
+                        clusterSize: { value: 0.25 },
+                    },
+                    vertexShader: StarrySkyShader.vertexShader,
+                    fragmentShader: StarrySkyShader.fragmentShader,
+                    side: THREE.DoubleSide,
+                })
+
+                threeComponents.scene.traverse((child) =>
+                {
+                    switch (child.name)
+                    {
+                        case 'StarsSphere':
+                            child.material = sphereMaterial
+                            child.material.side = THREE.FrontSide
+                            bgSphere = child
+                            break;
+
+                        default:
+                            break;
+                    }
+                })
+
+            }
+
+            xyzed.onUpdate = (deltaTime) =>
+            {
+                if (bgSphere)
+                {
+                    bgSphere.rotation.y += 0.00005
+                }
+            }
+
+            function onStart(result)
+            {
+                threeComponents = result
+
+                if (isDebugging)
+                {
+                    console.log(':>> Three.js variables: ', threeComponents)
+                }
+
+                setMaterials()
+
+                threeComponents.camera.fov = 60
+                threeComponents.camera.updateProjectionMatrix()
+                document.getElementById('loading-screen').remove()
+                xyzed.nextSceneZone(0)
+            }
+
+            function onError(error)
+            {
+                console.error(error)
+                console.error('Redirecting page to fallback page in 5 seconds....')
+
+                setTimeout(() =>
+                {
+                    // window.location.href = "pages/fallback.html";
+                }, 5000);
+
+            }
+
+
+
+
+
+            xyzed.setup()
+                .then(onStart)
+                .catch(onError)
+
+
+        })
+
+    </script>         
+    </body>     
+</html>

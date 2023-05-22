@@ -1,0 +1,47 @@
+{
+	"models": [
+		{
+			"name": "blue bio template",
+			"path": "assets/scene.glb",
+			"enabled": true,
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"scale": {
+				"x": 1,
+				"y": 1,
+				"z": 1
+			},
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": 0,
+				"w": 0
+			},
+			"interactable": [
+				{
+					"type": "link",
+					"modelName": "BitcoinButton",
+					"content": "https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=bitcoin+coin&_sacat=0"
+				}
+			],
+			"shadow": false,
+			"shadowBias": 0.0005,
+			"shadowNormalBias": 0.01,
+			"shadowRadius": 1.0,
+			"frustumCulled": true
+		}
+	],
+	"lights": [
+		{
+			"id": "bg",
+			"enabled": true,
+			"type": "hdr",
+			"path": "assets/bg.hdr",
+			"backgroundIntensity": 0.02,
+			"backgroundBlurriness": 0.13
+		}
+	]
+}

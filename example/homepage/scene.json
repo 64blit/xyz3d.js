@@ -1,0 +1,89 @@
+{
+	"models": [
+		{
+			"name": "homepage",
+			"path": "assets/scene.glb",
+			"enabled": true,
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"scale": {
+				"x": 1,
+				"y": 1,
+				"z": 1
+			},
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": 0,
+				"w": 0
+			},
+			"interactable": [
+				{
+					"type": "animation",
+					"modelName": "scene1_intro"
+				},
+				{
+					"type": "popup",
+					"modelName": "scene1_services",
+					"content": "pages/untree.co-minimal/index.html"
+				},
+				{
+					"type": "animation",
+					"modelName": "balloons001"
+				},
+				{
+					"type": "animation",
+					"modelName": "balloons002"
+				},
+				{
+					"type": "animation",
+					"modelName": "balloons003"
+				},
+				{
+					"type": "animation",
+					"modelName": "balloons"
+				},
+				{
+					"type": "animation",
+					"modelName": "scene4_store"
+				},
+				{
+					"type": "animation",
+					"modelName": "white_shoe"
+				},
+				{
+					"type": "animation",
+					"modelName": "scene4_tutorials"
+				},
+				{
+					"type": "popup",
+					"modelName": "scene5_shop",
+					"content": "pages/untree.co-minimal/index.html"
+				},
+				{
+					"type": "animation",
+					"modelName": "scene5_contact"
+				}
+			],
+			"shadow": false,
+			"shadowBias": 0.0005,
+			"shadowNormalBias": 0.01,
+			"shadowRadius": 1.0,
+			"frustumCulled": false
+		}
+	],
+	"lights": [
+		{
+			"id": "bg",
+			"enabled": true,
+			"type": "exr",
+			"path": "assets/industrial_sunset_puresky_2k.exr",
+			"backgroundIntensity": 1,
+			"backgroundBlurriness": 0
+		}
+	]
+}
+

@@ -1,0 +1,212 @@
+
+body {
+  font-family: $font-family-sans-serif;
+  line-height: 1.6;
+  background: $white;
+  overflow-x: hidden;
+  font-size: 16px;
+  &:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    right: 0;
+    bottom: 0;
+    background:rgba($black, .2);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s all ease;
+  }
+  &.offcanvas-menu {
+    &:before {
+      opacity: 1;
+      visibility: visible;
+    }
+  }  
+}
+.text-black {
+  color: $black!important;
+}
+.text-secondary {
+  color: $secondary!important;
+}
+.bg-primary-light {
+  background-color: rgba($primary, .05);
+}
+.bg-secondary-light {
+  background-color: rgba($secondary, .05);
+}
+a {
+  color: $primary;
+  transition: .3s all ease;
+  &:hover {
+    color: $primary;
+    text-decoration: none;
+  }
+}
+
+::-moz-selection { background: $black; color: $white; }
+::selection { background: $black; color: $white; }
+
+.text-primary {
+  color: $primary!important;
+}
+
+a.text-primary {
+  color: $primary!important;
+  &:hover {
+    color: $primary!important;
+  }
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+  font-family: $font-family-heading;
+  color: #dddde6;
+}
+
+.btn {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 0px;
+  font-size: 14px;
+  border: 1px solid transparent;
+  &:active, &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  &.btn-primary {
+    background: $primary;
+    border-color: $primary;
+    &:hover {
+      border-color: lighten($primary, 4%);
+      background: lighten($primary, 4%);
+    }
+  }
+  &.btn-black {
+    background: $black;
+    color: $white;
+    &:hover {
+      border-color: $black;
+      background: transparent;
+      color: $black;
+    }
+  }
+  &.btn-outline-black {
+    background: transparent;
+    color: $black;
+    border-color: $black;
+    &:hover {
+      border-color: $black;
+      background: $black;
+      color: $white;
+    }
+  }
+  &.btn-secondary {
+    background: $secondary;
+    border-color: $secondary;
+    &:hover {
+      background: lighten($secondary, 4%);
+      border-color: lighten($secondary, 4%);
+    }
+  }
+}
+
+
+.form-control, .custom-select {
+  border: none;
+  font-size: 16px;
+  height: 45px;
+  padding-left: 0;
+  padding-right: 0;
+  background: transparent;
+  border-bottom: 1px solid lighten($bg_color, 5%);
+  border-radius: 0;
+  // color: $white;
+  &:active, &:focus {
+    // color: $white;
+    border-color: $primary;
+    box-shadow: none;
+    background: transparent;
+  }
+}
+
+.gutter-v1 {
+  margin-right: -20px;
+  margin-left: -20px;
+  @include media-breakpoint-down(md) {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  > .col,
+  > [class*="col-"] {
+    padding-right: 20px;
+    padding-left: 20px;
+    @include media-breakpoint-down(md) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+}
+
+.gutter-v2 {
+  margin-right: -5px;
+  margin-left: -5px;
+  @include media-breakpoint-down(md) {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  > .col,
+  > [class*="col-"] {
+    padding-right: 5px;
+    padding-left: 5px;
+    @include media-breakpoint-down(md) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+}
+
+.gutter-v3 {
+  margin-right: -40px;
+  margin-left: -40px;
+  @include media-breakpoint-down(md) {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  > .col,
+  > [class*="col-"] {
+    padding-right: 40px;
+    padding-left: 40px;
+    @include media-breakpoint-down(md) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+}
+
+.spinner-border {
+	color: $primary;
+}
+/*PRELOADING------------ */
+#overlayer {
+  width:100%;
+  height:100%;  
+  position:fixed;
+  z-index:7100;
+  background: $white;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.loader {
+	z-index:7700;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

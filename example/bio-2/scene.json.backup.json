@@ -1,0 +1,109 @@
+{
+    "models": [
+        {
+            "id": "city 1",
+            "enabled": true,
+            "path": "/assets/models/city_model.glb",
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 0
+            },
+            "shadow": true,
+            "shadowBias": 0.0005,
+            "shadowNormalBias": 0.01,
+            "shadowRadius": 4.0,
+            "frustumCulled": true,
+            "interactable": [
+                {
+                    "type": "link",
+                    "modelName": "ModelNameGoesHere",
+                    "content": "https://www.ebay.com"
+                },
+                {
+                    "type": "popup",
+                    "modelName": "ModelNameGoesHere",
+                    "content": "pages/about.html"
+                },
+                {
+                    "type": "goToNextZone",
+                    "modelName": "ModelNameGoesHere",
+                    "conent": "1"
+                },
+                {
+                    "type": "goToZone",
+                    "modelName": "ModelNameGoesHere",
+                    "conent": "LandingZone"
+                }
+            ]
+        }
+    ],
+    "lights": [
+        {
+            "id": "point light 1",
+            "type": "pointLight",
+            "enabled": true,
+            "position": {
+                "x": 0,
+                "y": 0.25,
+                "z": 0
+            },
+            "color": "#FFFF00",
+            "intensity": 1,
+            "size": 100,
+            "castShadow": false
+        },
+        {
+            "id": "ambient light 1",
+            "type": "ambientLight",
+            "enabled": true,
+            "color": "#FFFFFF",
+            "intensity": 1.0
+        },
+        {
+            "id": "dir light 1",
+            "type": "directionalLight",
+            "enabled": true,
+            "position": {
+                "x": 10,
+                "y": 10,
+                "z": 10
+            },
+            "target": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "color": "#FFFFFF",
+            "intensity": 1,
+            "castShadow": false
+        },
+        {
+            "id": "bg hdr",
+            "type": "hdr",
+            "enabled": true,
+            "path": "/assets/textures/bg.hdr",
+            "backgroundIntensity": 1,
+            "backgroundBlurriness": 0
+        },
+        {
+            "id": "bg exr",
+            "type": "exr",
+            "enabled": true,
+            "path": "/assets/textures/1k.exr",
+            "backgroundIntensity": 1,
+            "backgroundBlurriness": 0
+        }
+    ]
+}

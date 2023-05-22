@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Brave",
+      "type": "chrome",
+      "request": "launch",
+      "runtimeExecutable": "C://Program Files//BraveSoftware//Brave-Browser//Application//brave.exe",
+      "url": "http://localhost:4000/example/index.html",
+      "webRoot": "C://Users//edmun//Documents//_SPACE//_WEB//library-js-xyz3d//example",
+      "port": 9222,
+      "runtimeArgs": [
+        "--remote-debugging-port=9222"
+      ],
+    },
+  ]
+}

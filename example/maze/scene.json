@@ -1,0 +1,62 @@
+{
+	"models": [
+		{
+			"name": "complx maze",
+			"path": "assets/scene.glb",
+			"enabled": true,
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"scale": {
+				"x": 1,
+				"y": 1,
+				"z": 1
+			},
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": 0,
+				"w": 0
+			},
+			"interactable": [
+				{
+					"type": "popup",
+					"modelName": "ShopButton",
+					"content": "/pages/untree.co-minimal/index.html"
+				},
+				{
+					"type": "popup",
+					"modelName": "BioButton",
+					"content": "/pages/untree.co-minimal/index.html"
+				},
+				{
+					"type": "popup",
+					"modelName": "ContactButton",
+					"content": "/pages/untree.co-minimal/index.html"
+				},
+				{
+					"type": "popup",
+					"modelName": "GalleryButton",
+					"content": "/pages/untree.co-minimal/index.html"
+				}
+			],
+			"shadow": false,
+			"shadowBias": 0.0005,
+			"shadowNormalBias": 0.01,
+			"shadowRadius": 1.0,
+			"frustumCulled": true
+		}
+	],
+	"lights": [
+		{
+			"id": "bg",
+			"enabled": true,
+			"type": "exr",
+			"path": "/maze/assets/industrial_sunset_puresky_2k.exr",
+			"backgroundIntensity": 0.1,
+			"backgroundBlurriness": 0
+		}
+	]
+}

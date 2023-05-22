@@ -1,0 +1,29 @@
+/*
+* Template Name: Space
+* Template Author: Untree.co
+* Author URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/
+@import "functions";
+@import "variables";
+@import "mixins";
+
+$primary: #0389ff;
+$secondary: #000000;
+$black: #000000;
+$white: #ffffff;
+$grey: #5b5656;
+$yellow: #ffeb00;
+$heading_color: #dddde6;
+$text_light_color: #b2b2b8;
+$bg_color: #37373f;
+$font-family: 'PT Mono',  monospace;
+$font-family-heading: 'Montserrat', sans-serif;
+$font-family-sans-serif: $font-family;
+
+@import 'site-base';
+@import 'site-navbar';
+@import 'site-blocks';
+@import 'site-isotope';
+@import 'site-elements';
+@import 'site-footer';

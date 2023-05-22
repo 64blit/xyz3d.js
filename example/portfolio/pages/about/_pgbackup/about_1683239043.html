@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="description" content="About Edmund"/>
+        <meta name="author" content="Edmund Dao"/>
+        <title>About Edmund</title>
+        <link rel="icon" type="image/jpg" href="assets/avatar.jpg"/>
+        <link href="css/theme.css" rel="stylesheet" type="text/css">
+        <link href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'"/>
+        <link href="./css/about-style.css" rel="stylesheet" media="print" onload="this.media='all'"/>
+    </head>
+    <body>
+        <!-- content -->
+        <div class="container solid-border">
+            <div class="about-blurb d-flex flex-column justify-content-center align-items-center inherit-border">
+                <!-- Contact Form -->
+                <div id="contact-form" class="w-100 align-items-center d-flex flex-column inherit-border justify-content-evenly">
+                    <form class="align-items-center contact-me-form d-flex flex-column" enctype="multipart/form-data" method="post" action="/send-contact-form" name="contact-me-form">
+                        <input type="text" class="m-3 form-control w-50" placeholder="Name" maxlength="512" id="contact-form-name" name="name"/>
+                        <input type="email" class="m-3 form-control w-50" placeholder="Email" minlength="5" maxlength="512" id="contact-form-email" name="email"/>
+                        <textarea class="m-3 form-control w-50" rows="6" placeholder="Message..." minlength="5" maxlength="100000" id="contact-form-message" name="message"></textarea>
+                        <button class="m-5 btn btn-primary contact-me-button d-block rounded-pill text-uppercase w-50" type="button">Submit</button>
+                    </form>
+                    <div id="spinning-loading-parent" class="m-5 dashed-border">
+                        <div class="loader center inherit-border">
+                            <div class="line line-1 inherit-border"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="text-dark modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true" style="color: black">
+                <div class="text-dark modal-dialog" role="document">
+                    <div class="text-dark modal-content">
+                        <div class="text-dark modal-header">
+                            <h5 class="text-dark modal-title" id="infoModalLabel"></h5>
+                            <button type="button" class="close close-modal-button" aria-label="Close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="text-dark modal-body"></div>
+                        <div class="text-dark modal-footer">
+                            <button type="button" class="btn btn-primary close-modal-button" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-text position-absolute">
+            <div class="flex-row flex-wrap text-center p-sm-1 p-md-5 about-blurb-body d-flex inherit-border w-100 justify-content-center">
+                <div class="flex-row flex-wrap p-4 w-100 about-blurb-body contains-text d-flex">I design and build websites,
+                    games, apps, tools, plugins, and art.
+</div>
+                <p class="flex-row flex-wrap p-3 w-100 about-blurb-body contains-text d-flex"> Science,
+                technology, and art has fascinated me from a young age. That curiosity led me into an
+                undergraduates program of Computer Science, where I worked as a department tutor and web
+                freelancer. My free time was quickly engulfed with coding and app design. It was around this
+                time that I realized my software hobby had turned into a passion. Out of university, I
+                joined a small team working on holographic displays as a Software Engineer. There I focused
+                on interactive 3D demos, contributing to their content creation pipelines, providing
+                developer support, and a handful of other things. Since then, I&rsquo;ve ventured into
+                unknown territory; Discovering what it means to start a game studio, with a team and
+                without, studied economics, design, art, crypto, education, and greatly grown my skills as a
+                software creative. </p>
+            </div>
+        </div>
+        <!-- scripts -->
+        <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
+        <script src="https://www.unpkg.com/jquery-validation/dist/jquery.validate.min.js"></script>
+        <script src="https://unpkg.com/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <script type="module" src="./About.js"></script>
+    </body>
+</html>
