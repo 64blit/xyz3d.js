@@ -1,0 +1,82 @@
+{
+	"models": [
+		{
+			"name": "bio template",
+			"path": "assets/scene.glb",
+			"enabled": true,
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"scale": {
+				"x": 1,
+				"y": 1,
+				"z": 1
+			},
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": 0,
+				"w": 0
+			},
+			"interactable": [
+				{
+					"type": "link",
+					"modelName": "Icon_IG",
+					"content": "https://www.instagram.com"
+				},
+				{
+					"type": "link",
+					"modelName": "Icon_Spotify",
+					"content": "https://www.spotify.com"
+				},
+				{
+					"type": "link",
+					"modelName": "Icon_Youtube",
+					"content": "https://www.youtube.com"
+				},
+				{
+					"type": "link",
+					"modelName": "Icon_Twitter",
+					"content": "https://www.twitter.com"
+				},
+				{
+					"type": "popup",
+					"modelName": "Button_1_Mesh",
+					"content": "pages/untree.co-minimal/index.html"
+				},
+				{
+					"type": "popup",
+					"modelName": "Button_2_Mesh",
+					"content": "pages/untree.co-minimal/index.html"
+				},
+				{
+					"type": "popup",
+					"modelName": "Button_3_Mesh",
+					"content": "pages/untree.co-minimal/index.html"
+				},
+				{
+					"type": "popup",
+					"modelName": "Button_4_Mesh",
+					"content": "pages/untree.co-minimal/index.html"
+				}
+			],
+			"shadow": false,
+			"shadowBias": 0.005,
+			"shadowNormalBias": 0.01,
+			"shadowRadius": 1.0,
+			"frustumCulled": true
+		}
+	],
+	"lights": [
+		{
+			"id": "bg hdr",
+			"enabled": true,
+			"type": "hdr",
+			"path": "assets/bg.hdr",
+			"backgroundIntensity": 1,
+			"backgroundBlurriness": 0
+		}
+	]
+}

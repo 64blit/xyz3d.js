@@ -1,12 +1,11 @@
 {
   "name": "xyz3d",
-  "version": "00.00.07",
-  "description": "A Three.js typescript framework for easy 3d website creation with streamlined blender integration.",
+  "version": "00.00.08",
+  "description": "A Three.js framework for interactive 3d website creation with streamlined blender integration.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/64blit/xyz3d.js.git"
   },
-  "type": "module",
   "main": "./dist/xyz3d.umd.js",
   "module": "./dist/xyz3d.js",
   "browser": "./dist/xyz3d.js",
@@ -26,7 +25,6 @@
     "three.js",
     "webgl"
   ],
-  "dependencies": { },
   "author": "64blit",
   "license": "ISC",
   "bugs": {
@@ -37,6 +35,29 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "camera-controls": "^2.3.1",
+    "path": "^0.12.7",
+    "stats-js": "^1.0.1",
+    "three": "^0.150.1",
+    "vite": "^4.0.4",
+    "build": "call build.bat"
+  },
+  "dependencies": {
+    "camera-controls": "^2.3.1",
+    "path": "^0.12.7",
+    "stats-js": "^1.0.1",
+    "three": "^0.150.1",
+    "vite": "^4.0.4"
+  },
+  "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.3",
+    "@types/three": "^0.149.0",
+    "@vitejs/plugin-basic-ssl": "^1.0.1",
+    "javascript-obfuscator": "^4.0.2",
+    "rollup": "^3.18.0",
+    "rollup-obfuscator": "^3.0.2",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-dts": "^5.2.0",
+    "rollup-plugin-esbuild": "^5.0.0"
   }
 }

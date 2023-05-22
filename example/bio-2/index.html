@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>XYZ3d example</title>
+    <meta name="author" content="64blit" />
+    <meta name="description" content="XYZ3d CMS Example" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0,  initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="icon" type="image/jpg" href="assets/avatar.jpg" />
+    <link href="./style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+
+    <!-- rendering canvas -->
+
+    <canvas id="main-canvas" class="fullscreen-canvas" title=""></canvas>
+
+
+    <!-- iframe overlay -->
+
+    <div id="popup-content" class="hidden"></div>
+
+
+    <!-- loading screen -->
+
+    <div id="loading-screen">
+        <progress id="progress-bar" max="100" value="0" \>
+    </div>
+
+
+    <script type="module">
+        import { THREE, XYZ3d } from './xyz3d.es.js'
+
+        window.addEventListener('load', (event) =>
+        {
+            let isDebugging = false
+
+            let threeComponents = {
+                camera: null,
+                scene: null,
+                renderer: null,
+                sceneWrapper: null,
+            }
+
+            const xyzed = new XYZ3d({
+                jsonPath: './scene.json',
+                debug: isDebugging,
+                domElements: {
+                    canvas: document.getElementById('main-canvas'),
+                    popup: document.getElementById('popup-content'),
+                },
+                camera: {
+                    orbit: false,
+                    fov: 20,
+                    gyroScale: 50,
+                    cameraFramePadding: 1,
+                    postEffects: {
+                        bloom: {
+                            enabled: true,
+                            exposure: 1.0,
+                            threshold: 0.95,
+                            strength: 1.04,
+                            radius: 0.1,
+                        },
+                    },
+                },
+            })
+
+            function setup()
+            {
+                const progressBar = document.getElementById('progress-bar')
+                const particles = []
+
+                function onModelLoading(step, steps, percent)
+                {
+                    progressBar.value = (step / steps) * percent
+                }
+
+                function onStart(result) 
+                {
+                    if (isDebugging)
+                    {
+                        console.log(':>> Three.js variables: ', threeComponents)
+                    }
+
+                    threeComponents = result
+                    xyzed.gotoSceneZone('Home')
+                    document.getElementById('loading-screen').remove()
+
+                    threeComponents.scene.traverse((obj) =>
+                    {
+                        if (obj.name.includes('particle'))
+                        {
+                            particles.push(obj)
+                            obj.rotation.x = Math.random() * 360
+                            obj.rotation.y = Math.random() * 360
+                            obj.rotation.z = Math.random() * 360
+                        }
+                    })
+
+                }
+
+                function onUpdate(deltaTime)
+                {
+                    for (let i = 0; i < particles.length; i++)
+                    {
+                        const element = particles[ i ]
+                        element.rotation.x += Math.random() * 0.05
+                        element.rotation.y += Math.random() * 0.05
+                        element.rotation.z += Math.random() * 0.05
+                    }
+                }
+
+                function onError(error)
+                {
+                    console.error(error)
+                    console.error('Redirecting page to fallback page in 5 seconds....')
+
+                    setTimeout(() =>
+                    {
+                        // window.location.href = "pages/fallback.html";
+                    }, 5000);
+                }
+
+                xyzed.onProgressLoading = onModelLoading
+                xyzed.onUpdate = onUpdate
+
+                xyzed
+                    .setup()
+                    .then(onStart)
+                    .catch(onError)
+            }
+
+            setup()
+        })
+
+    </script>
+
+</body>
+
+</html>

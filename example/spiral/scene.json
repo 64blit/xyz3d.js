@@ -1,0 +1,73 @@
+{
+	"models": [
+		{
+			"name": "homepage",
+			"path": "assets/spiral_demo.glb",
+			"enabled": true,
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"scale": {
+				"x": 1,
+				"y": 1,
+				"z": 1
+			},
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": 0,
+				"w": 0
+			},
+			"interactable": [
+				{
+					"type": "goToNextZone",
+					"modelName": "button_body",
+					"content": "1"
+				},
+				{
+					"type": "goToNextZone",
+					"modelName": "button_holo",
+					"content": "1"
+				},
+				{
+					"type": "animation",
+					"modelName": "button_quant"
+				},
+				{
+					"type": "goToNextZone",
+					"modelName": "button_yourself",
+					"content": "1"
+				},
+				{
+					"type": "popup",
+					"modelName": "button_spirit",
+					"content": "pages/untree.co-minimal/index.html"
+				}
+			],
+			"shadow": false,
+			"shadowBias": 0.0005,
+			"shadowNormalBias": 0.01,
+			"shadowRadius": 1.0,
+			"frustumCulled": true
+		}
+	],
+	"lights": [
+		{
+			"id": "ambient light 1",
+			"type": "ambientLight",
+			"enabled": false,
+			"color": "#FFFFFF",
+			"intensity": 0.25
+		},
+		{
+			"id": "bg",
+			"enabled": true,
+			"type": "exr",
+			"path": "assets/industrial_sunset_puresky_2k.exr",
+			"backgroundIntensity": 0.0,
+			"backgroundBlurriness": 0
+		}
+	]
+}

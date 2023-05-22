@@ -1,0 +1,88 @@
+{
+	"models": [
+		{
+			"name": "homepage",
+			"path": "assets/scene.glb",
+			"enabled": true,
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"scale": {
+				"x": 1,
+				"y": 1,
+				"z": 1
+			},
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": 0,
+				"w": 0
+			},
+			"interactable": [
+				{
+					"type": "goToNextZone",
+					"modelName": "button_enter_landing",
+					"content": "1"
+				},
+				{
+					"type": "link",
+					"modelName": "button_xyz3d_home",
+					"content": "https://github.com/64blit/xyz3d.js"
+				},
+				{
+					"type": "link",
+					"modelName": "button_xyz3d_1",
+					"content": "https://xyz3d-studio-homepage-dev.glitch.me/"
+				},
+				{
+					"type": "link",
+					"modelName": "button_xyz3d_2",
+					"content": "https://xyz3d-example-bitcoin-spinning.glitch.me/"
+				},
+				{
+					"type": "link",
+					"modelName": "button_xyz3d_3",
+					"content": "https://xyz3d-example-cubicweb-studio.glitch.me/"
+				},
+				{
+					"type": "link",
+					"modelName": "button_xyz3d_4",
+					"content": "https://xyz3d-example-spiral.glitch.me/"
+				},
+				{
+					"type": "link",
+					"modelName": "button_visma",
+					"content": "https://64blit.itch.io/visma/"
+				},
+				{
+					"type": "link",
+					"modelName": "button_art",
+					"content": "https://dribbble.com/64blit/"
+				},
+				{
+					"type": "popup",
+					"modelName": "button_contact",
+					"content": "pages/about/about.html"
+				}
+			],
+			"shadow": false,
+			"shadowBias": 0.0005,
+			"shadowNormalBias": 0.01,
+			"shadowRadius": 1.0,
+			"frustumCulled": false
+		}
+	],
+	"lights": [
+		{
+			"id": "bg",
+			"enabled": true,
+			"type": "exr",
+			"path": "assets/universe2.exr",
+			"backgroundIntensity": 1,
+			"backgroundBlurriness": 0.1
+		}
+	]
+}
+

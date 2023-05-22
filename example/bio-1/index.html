@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>XYZ3d example</title>
+    <meta name="author" content="64blit" />
+    <meta name="description" content="XYZ3d CMS Example" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0,  initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="icon" type="image/jpg" href="assets/avatar.jpg" />
+    <link href="./style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+
+    <!-- rendering canvas -->
+
+    <canvas id="main-canvas" class="fullscreen-canvas" title=""></canvas>
+
+
+    <!-- iframe overlay -->
+
+    <div id="popup-content" class="hidden"></div>
+
+
+    <!-- loading screen -->
+
+    <div id="loading-screen">
+        <progress id="progress-bar" max="100" value="0" \>
+    </div>
+
+
+    <script type="module">
+        // import { THREE, XYZ3d } from '../../src/XYZ3d.js'
+        import { THREE, XYZ3d } from './xyz3d.es.js'
+
+        window.addEventListener('load', (event) =>
+        {
+            let isDebugging = false
+
+            let threeComponents = {
+                camera: null,
+                scene: null,
+                renderer: null,
+                sceneWrapper: null,
+            }
+
+            const canvas = document.getElementById('main-canvas')
+            const popup = document.getElementById('popup-content')
+
+            const xyzed = new XYZ3d({
+                jsonPath: 'scene.json',
+                debug: isDebugging,
+                domElements: {
+                    canvas: canvas,
+                    popup: popup,
+                },
+                camera: {
+                    orbit: false,
+                    followMouse: true,
+                    fov: 50,
+                    gyro: true,
+                    cameraFramePadding: 1,
+                    postEffects: {
+                        enabled: true,
+                        bloom: {
+                            enabled: true,
+                            exposure: 1.0,
+                            threshold: 0.95,
+                            strength: 0.64,
+                            radius: 0.1,
+                        },
+                        antialias: {
+                            enabled: true,
+                        },
+                    },
+                },
+            })
+
+            function setup()
+            {
+                const progressBar = document.getElementById('progress-bar')
+
+
+                function onModelLoading(step, steps, percent)
+                {
+                    progressBar.value = (step / steps) * percent
+                }
+
+                xyzed
+                    .setup()
+                    .then((result) =>
+                    {
+                        if (isDebugging)
+                        {
+                            console.log(':>> Three.js variables: ', threeComponents)
+                        }
+
+                        threeComponents = result
+
+                        xyzed.gotoSceneZone('Home')
+                        document.getElementById('loading-screen').remove()
+
+                    })
+                    .catch((error) =>
+                    {
+
+                        console.error(error)
+                        console.error('Redirecting page to fallback page in 5 seconds....')
+
+                        setTimeout(() =>
+                        {
+                            // window.location.href = "pages/fallback.html";
+                        }, 5000);
+
+                    })
+            }
+
+            setup()
+        })
+
+    </script>
+
+</body>
+
+</html>

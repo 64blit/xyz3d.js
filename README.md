@@ -1,4 +1,23 @@
-# xyz3d.js
+#
+
+<h1 align="center">
+ 🌟 xyz3d.js 🌟
+</h1>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/xyz3d">
+    <img src="https://img.shields.io/npm/v/xyz3d.svg" alt="Version" />
+  </a>
+  <a href="https://www.npmjs.com/package/xyz3d">
+    <img src="https://badgen.net/packagephobia/publish/xyz3d" alt="Minzipped" />
+  </a>
+  <a href="https://www.npmjs.com/package/xyz3d">
+    <img src="https://img.shields.io/npm/dt/xyz3d.svg" alt="Downloads" />
+  </a>
+  <a href="https://www.npmjs.com/package/xyz3d">
+    <img src="https://badgen.net/npm/license/xyz3d" alt="License" />
+  </a>
+</p>
 
 <div  align="center">
   <img align="center" width="31%" src="./docs/btc_example.gif" />
@@ -6,38 +25,42 @@
   <img align="center" width="31%" src="./docs/bio_example.gif" />
 </div>
 
-A Three.js framework for creating fast and professional 3D websites and landing pages. This framework includes a Blender plugin and works on mobile devices; it includes built-in post-effects, raycasting, as well as animations and much more. It does the heavy lifting of loading a Blender-made GLTF model, setting up post effects, cross-platform camera controls, and a host of other complexities. It also provides debugging tools that make the Three.js development process much more streamlined. Once the framework is created, it returns the Three.js components: scene, camera, and renderer, so you can concentrate on creating the 3d scene and interactivity, without hiding the core mutable webgl components. 
+#
 
+A powerful Three.js framework for creating stunning 3D websites and landing pages. 🚀 This framework comes with a Blender plugin and supports mobile devices. It offers a range of features including built-in post-effects, raycasting, animations, and more, taking care of complex tasks like loading Blender-made GLTF models, setting up post effects, and providing cross-platform camera controls. With convenient debugging tools, Three.js development becomes a breeze. Once the framework is set up, it returns the essential components: scene, camera, and renderer, allowing you to focus on crafting captivating 3D scenes without worrying about WebGL details.
 
-Intro video: https://www.youtube.com/watch?v=3TKJ34WUUyA
+🎥 **Intro video:** [Watch here](https://www.youtube.com/watch?v=3TKJ34WUUyA)
 
-Live demo: https://xyz3d-example-cubicweb-studio.glitch.me/
+🔮 **Live demo:** [Check it out](https://xyz3d-example-cubicweb-studio.glitch.me/)
 
-## Features:
+🚀 **Features:** 🚀
 
-- Professional Blender to Three.js workflow
-- Built in raycasting
-  - triggers mesh/camera animation on hover/clicks
-  - display HTML inside popup iframe on clicking a model
-- Built in camera controls
-  - orbit
-  - parallax based on mouse movement
-  - gyro tilt
-  - touch support
-- Easy scene swapping and configuration based on JSON file
-  - add dynamic lights/hdr/exr environments in the JSON file
-  - add multiple models into one Three.js scene
-- Smooth 3D scene navigation with JS APIs - "xyz3d.gotoSceneZone('HomePage')"
-- Built in post processing,
-  - Bloom
-  - FXAA
-  - GammaCorrection
-- Built in fallback for devices not supporting webgl
+- Professional Blender to Three.js workflow 🎨
+- Built-in raycasting 🎯
+- Trigger mesh/camera animation on hover/clicks 👆
+- Display HTML inside a popup iframe when clicking a model 🖱️
+- Built-in camera controls:
+  - Orbit 🔄
+  - Parallax based on mouse movement 🖱️
+  - Gyro tilt 📱
+  - Touch support 📱
+- Easy scene swapping and dynamic light adding method based on JSON files 💡🔄
+- Combine multiple models into one Three.js scene 🧩
+- Smooth 3D scene navigation with JS APIs: `xyz3d.gotoSceneZone('HomePage')` ⛳️
+- Built-in post-processing:
+  - Bloom 🌼
+  - FXAA 🖌️
+  - GammaCorrection 🌈
+- Fallback HTML pages 📵🖌️
 
 ## Blender plugin
 
 [xyz3d.js-blender-plugin](https://github.com/64blit/xyz3d.js-blender-plugin)
 
+## Examples and Quick Start
+
+Download the examples repo here:  
+[xyz3d.js-examples](https://github.com/64blit/xyz3d.js-examples)
 
 ---
 
@@ -251,11 +274,12 @@ XYZ3d.onUpdate = (deltaTime) => { console.log(deltaTime) }
 *   `step` **[number][40]** The model index being loaded.
 *   `steps` **[number][40]** The total models to be loaded.
 *   `percent` **[number][40]** The percentage loaded of the current model.
+*   `stage` **[string][39]** The current stage, value is either "Textures" or "Models".
 
 ### Examples
 
 ```javascript
-XYZ3d.onProgressLoading = (step, steps, percent) => { console.log(step, steps, percent) }
+XYZ3d.onProgressLoading = (step, steps, percent, stage) => { console.log(step, steps, percent, stage) }
 ```
 
 ## XYZ3dConfig.jsonContent

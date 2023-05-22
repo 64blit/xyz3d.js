@@ -1,0 +1,93 @@
+{
+	"models": [
+		{
+			"name": "homepage",
+			"path": "assets/scene.glb",
+			"enabled": true,
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"scale": {
+				"x": 1,
+				"y": 1,
+				"z": 1
+			},
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": 0,
+				"w": 0
+			},
+			"interactable": [
+				{
+					"type": "goToNextZone",
+					"modelName": "homepage_button_1",
+					"content": 1
+				},
+				{
+					"type": "popup",
+					"modelName": "mail_button",
+					"content": "pages/untree.co-minimal/index.html"
+				},
+				{
+					"type": "popup",
+					"modelName": "project_button",
+					"content": "pages/untree.co-minimal/index.html"
+				},
+				{
+					"type": "popup",
+					"modelName": "project_button.001",
+					"content": "pages/untree.co-minimal/index.html"
+				},
+				{
+					"type": "popup",
+					"modelName": "project_button.002",
+					"content": "pages/untree.co-minimal/index.html"
+				},
+				{
+					"type": "popup",
+					"modelName": "project_button--003",
+					"content": "pages/untree.co-minimal/index.html"
+				},
+				{
+					"type": "popup",
+					"modelName": "project_button.004",
+					"content": "pages/untree.co-minimal/index.html"
+				},
+				{
+					"type": "popup",
+					"modelName": "project_button.005",
+					"content": "pages/untree.co-minimal/index.html"
+				},
+				{
+					"type": "popup",
+					"modelName": "project_button.006",
+					"content": "pages/untree.co-minimal/index.html"
+				},
+				{
+					"type": "popup",
+					"modelName": "project_button.007",
+					"content": "pages/untree.co-minimal/index.html"
+				}
+			],
+			"shadow": false,
+			"shadowBias": 0.0005,
+			"shadowNormalBias": 0.01,
+			"shadowRadius": 1.0,
+			"frustumCulled": false
+		}
+	],
+	"lights": [
+		{
+			"id": "bg",
+			"enabled": true,
+			"type": "exr",
+			"path": "assets/industrial_sunset_puresky_2k.exr",
+			"backgroundIntensity": 0.5,
+			"backgroundBlurriness": 0.01
+		}
+	]
+}
+

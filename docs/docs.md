@@ -207,11 +207,12 @@ XYZ3d.onUpdate = (deltaTime) => { console.log(deltaTime) }
 *   `step` **[number][40]** The model index being loaded.
 *   `steps` **[number][40]** The total models to be loaded.
 *   `percent` **[number][40]** The percentage loaded of the current model.
+*   `stage` **[string][39]** The current stage, value is either "Textures" or "Models".
 
 ### Examples
 
 ```javascript
-XYZ3d.onProgressLoading = (step, steps, percent) => { console.log(step, steps, percent) }
+XYZ3d.onProgressLoading = (step, steps, percent, stage) => { console.log(step, steps, percent, stage) }
 ```
 
 ## XYZ3dConfig.jsonContent

@@ -1,0 +1,68 @@
+.site-footer {
+
+	padding: 70px 0;
+
+	a {
+		color: #777;
+		position: relative;
+		display: inline-block;
+		
+		&:hover {
+			color: $primary;
+			&:before {
+				background: rgba($primary, 1);
+			}
+		}
+	}
+	.btn {
+		&:before {
+			display: none;
+		}
+	}
+
+	.widget {
+		margin-bottom: 40px;
+		display: block;
+		h3 {
+			font-size: 16px;
+			color: $black;
+			font-weight: 700;
+			margin-bottom: 30px;
+		}
+
+		.links {
+			li {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	.social {
+		li {
+			display: inline-block;
+			a {
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				position: relative;
+				background: $primary;
+				border-radius: 50%;
+				color: $white;
+				&:before {
+					display: none;
+				}
+				> span {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+				&:hover {
+					background: lighten($primary, 10%);
+					color: $white;
+				}
+			}
+		}
+	}
+
+}
