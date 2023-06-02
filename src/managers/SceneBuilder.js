@@ -159,6 +159,13 @@ export default class SceneBuilder
         const html = this.getHtml(jsonData, element.name)
         modelContainer[ 'type' ] = html.type
         modelContainer[ 'content' ] = html.content
+
+        // Get the interactable info from the model if the json file is empty
+        if (html.type === '' || html.content === '')
+        {
+          modelContainer[ 'type' ] = element.userData.interactableType
+          modelContainer[ 'content' ] = element.userData.interactableData
+        }
         break
       case 'raycastMesh':
         break
