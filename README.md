@@ -31,7 +31,7 @@ A powerful Three.js framework for creating stunning 3D websites and landing page
 
 🎥 **Intro video:** [Watch here](https://www.youtube.com/watch?v=3TKJ34WUUyA)
 
-🔮 **Live demo:** [Check it out](https://xyz3d-example-cubicweb-studio.glitch.me/)
+🔮 **Live demo:** [Check it out](https://64blit.com/)
 
 🚀 **Features:** 🚀
 
